@@ -1,10 +1,10 @@
 ﻿using System.Drawing;
 
-namespace GauntletMain
+namespace GauntletMain.Classes
 {
     public abstract class Card : GameObject
     {
-        public Card(string name, Image artImage) 
+        protected Card(string name, Image artImage) 
             : base(name, artImage)
         {
         }

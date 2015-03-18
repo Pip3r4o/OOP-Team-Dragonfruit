@@ -1,11 +1,11 @@
 ﻿using System.Drawing;
 
-namespace GauntletMain
+namespace GauntletMain.Classes
 {
     public abstract class GameObject
     {
 
-        public GameObject(string name, Image artImage)
+        protected GameObject(string name, Image artImage)
         {
             this.Name = name;
             this.ArtImage = artImage;

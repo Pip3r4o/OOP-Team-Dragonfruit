@@ -1,6 +1,6 @@
 ﻿namespace GauntletMain.Classes
 {
-    public class ModifierCard
+    public class ModifierCard //: Encounter
     {
         //TODO
     }

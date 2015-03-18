@@ -2,9 +2,9 @@
 
 namespace GauntletMain.Classes
 {
-    public class Encounter : Card
+    public abstract class Encounter : Card
     {
-        public Encounter(string name, Image artImage)
+        protected Encounter(string name, Image artImage)
             : base(name, artImage)
         {
         }
