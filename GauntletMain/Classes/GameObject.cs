@@ -1,7 +1,9 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace GauntletMain.Classes
 {
+    [Serializable]
     public abstract class GameObject
     {
 

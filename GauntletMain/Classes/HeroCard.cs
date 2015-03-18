@@ -1,7 +1,9 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace GauntletMain.Classes
 {
+    [Serializable]
     public class HeroCard : Card
     {
         public HeroCard(string name, Image artImage, int healthPoints, int actionPoints, EntityStats stats)

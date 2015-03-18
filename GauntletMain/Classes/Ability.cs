@@ -2,6 +2,7 @@
 
 namespace GauntletMain
 {
+    [Serializable]
     public class Ability
     {
         public static void Charge() //Juggernaut-specific ability

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace GauntletMain.Classes
 {
@@ -9,7 +10,7 @@ namespace GauntletMain.Classes
     //attack points
     //defense points
     //special ability (if present)
-
+    [Serializable]
     public class WeaponCard : Card
     {
         public WeaponCard(string name, Image artImage, int additionalDice, EntityStats stats)

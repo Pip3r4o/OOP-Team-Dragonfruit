@@ -1,8 +1,10 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace GauntletMain.Classes
 {
-    class MonsterCard : Encounter
+    [Serializable]
+    public class MonsterCard : Encounter
     {
 
         public MonsterCard(string name, Image artImage, int damage, EntityStats stats, bool alive, int coinsAwarded)
