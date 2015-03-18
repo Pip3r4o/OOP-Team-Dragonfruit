@@ -1,0 +1,8 @@
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\bin\Debug\GauntletMain.exe.config
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\bin\Debug\GauntletMain.exe
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\bin\Debug\GauntletMain.pdb
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\obj\Debug\GauntletMain.csprojResolveAssemblyReference.cache
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\obj\Debug\GauntletMain.Properties.Resources.resources
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\obj\Debug\GauntletMain.csproj.GenerateResource.Cache
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\obj\Debug\GauntletMain.exe
+C:\Users\Pete\Documents\GitHub\GauntletOfFools\GauntletMain\obj\Debug\GauntletMain.pdb
