@@ -11,7 +11,7 @@ namespace GauntletMain.Classes
             var heroes = new List<HeroCard>();
 
             BinaryFormatter formatter = new BinaryFormatter();
-            Stream stream = new FileStream(@"..\..\Cards\heroes.cards", FileMode.Open, FileAccess.Read, FileShare.Read);
+            Stream stream = new FileStream("..\\..\\Cards\\heroes.cards", FileMode.Open, FileAccess.Read, FileShare.Read);
             heroes = (List<HeroCard>)formatter.Deserialize(stream);
 
             stream.Close();
@@ -23,7 +23,7 @@ namespace GauntletMain.Classes
             var weapons = new List<WeaponCard>();
 
             BinaryFormatter formatter = new BinaryFormatter();
-            Stream stream = new FileStream(@"..\..\Cards\monsters.cards", FileMode.Open, FileAccess.Read, FileShare.Read);
+            Stream stream = new FileStream("..\\..\\Cards\\monsters.cards", FileMode.Open, FileAccess.Read, FileShare.Read);
             weapons = (List<WeaponCard>)formatter.Deserialize(stream);
 
             stream.Close();
@@ -35,7 +35,7 @@ namespace GauntletMain.Classes
             var monsters = new List<MonsterCard>();
 
             BinaryFormatter formatter = new BinaryFormatter();
-            Stream stream = new FileStream(@"..\..\Cards\monsters.cards", FileMode.Open, FileAccess.Read, FileShare.Read);
+            Stream stream = new FileStream("..\\..\\Cards\\monsters.cards", FileMode.Open, FileAccess.Read, FileShare.Read);
             monsters = (List<MonsterCard>)formatter.Deserialize(stream);
 
             stream.Close();

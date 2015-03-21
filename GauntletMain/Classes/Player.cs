@@ -4,10 +4,14 @@ namespace GauntletMain.Classes
 {
     public class Player : GameObject
     {
-        public Player(string name, Image artImage, int dice, int totalHealthPoints, int totalAttackPoints, int totalDefensePoints, int totalActionPoints, int totalCoins) 
+        private const int InitialDice = 2;
+
+        public Player(string name, Image artImage, HeroCard hero, WeaponCard weapon, int totalHealthPoints, int totalAttackPoints, int totalDefensePoints, int totalActionPoints, int totalCoins) 
             : base(name, artImage)
         {
-            this.Dice = dice;
+            this.CurrentHero = hero;
+            this.CurrentWeapon = weapon;
+            this.Dice = weapon.AdditionalDice + InitialDice;
             this.TotalHealthPoints = totalHealthPoints;
             this.TotalAttackPoints = totalAttackPoints;
             this.TotalDefensePoints = totalDefensePoints;
@@ -15,6 +19,10 @@ namespace GauntletMain.Classes
             this.TotalCoins = totalCoins;
         }
 
+
+        public HeroCard CurrentHero { get; private set; }
+        public WeaponCard CurrentWeapon { get; private set; }
+        
         public int Dice { get; set; }
         public int TotalHealthPoints { get; set; }
         public int TotalAttackPoints { get; set; }
