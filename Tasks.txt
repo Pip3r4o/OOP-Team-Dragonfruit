@@ -1,0 +1,54 @@
+Tasks
+
+- UI - Dimitar
+
+- Game Objects Structure - Peter, Stefan
+
+- Game Logic/Calculations - Peter, Dimitar, Stefan
+
+- Cards design - Krasi, Kristiyan
+-- Size:
+--- 173 x 280 (cards size)
+--- 87 x 140 (icon cards size)
+-- Types:
+--- Heroes 6
+--- Weapons 6
+--- Creatures 15
+--- Event/ModifierCards 5
+-- Sounds
+
+- Class High Scores - Veli (* needs to be binary or validation)
+- Player name input validation (regex) - WHO?
+
+- Class card deck
+
+- Sound effects - 
+- Project Documentation
+- Game Documentation
+
+Questions
+- Events - where in the structure?
+- Players - Singleton?
+
+** Extras:
+- Stats - struct or class, with own defined operators, etc.
+(e.g. to sum)
+
+- Design Patterns
+-- Data Serialization
+- Templates / Generics
+- Factory (creating cards)
+
+- Levels
+
+Teamplayers:
+
+Velimira
+Dimitar
+Krasimir
+Kristiyan
+Peter
+Stefan
+Kiril
+Toma
+Bozhko
