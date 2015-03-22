@@ -11,7 +11,8 @@ using System.Windows.Forms;
 namespace GauntletMain
 {
     public partial class Form1 : Form
-    {
+    {//dimitar
+
         public Form1()
         {
             InitializeComponent();
