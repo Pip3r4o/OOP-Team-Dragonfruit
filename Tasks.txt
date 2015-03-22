@@ -22,6 +22,8 @@ Tasks
 
 - Class card deck
 
+- Class ability - Kiril 
+
 - Sound effects - 
 - Project Documentation
 - Game Documentation
