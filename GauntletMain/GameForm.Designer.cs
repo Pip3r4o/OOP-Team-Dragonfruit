@@ -106,9 +106,9 @@
             // 
             this.btnGame1.BackColor = System.Drawing.Color.Red;
             this.btnGame1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGame1.Location = new System.Drawing.Point(7, 519);
+            this.btnGame1.Location = new System.Drawing.Point(7, 501);
             this.btnGame1.Name = "btnGame1";
-            this.btnGame1.Size = new System.Drawing.Size(180, 23);
+            this.btnGame1.Size = new System.Drawing.Size(180, 41);
             this.btnGame1.TabIndex = 25;
             this.btnGame1.Text = "PLAY";
             this.btnGame1.UseVisualStyleBackColor = false;

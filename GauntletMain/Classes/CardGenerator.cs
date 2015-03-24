@@ -10,26 +10,24 @@ namespace GauntletMain.Classes
         public const string assetsPathMonster = "..\\..\\Assets\\Monsters\\";
         public const string assetsPathModifier = "..\\..\\Assets\\Modifiers\\";
 
+        public static List<HeroCard> ListOfHeroes = new List<HeroCard>(); 
 
         public static void CreateHeroCard()
         {
             //Abilities not added to entity stats
-            HeroCard rangerCard = new HeroCard("Ranger", Image.FromFile(assetsPathHero + "ranger.jpg"), 1, 2, new EntityStats(2, 14));
-            HeroCard druidCard = new HeroCard("Druid", Image.FromFile(assetsPathHero + "druid.jpg"), 1, 2, new EntityStats(1, 16));
-            HeroCard minerCard = new HeroCard("Miner", Image.FromFile(assetsPathHero + "miner.jpg"), 2, 2, new EntityStats(1, 13));
-            HeroCard necromancerCard = new HeroCard("Necromancer", Image.FromFile(assetsPathHero + "necromancer.jpg"), 1, 3, new EntityStats(2, 14));
-            HeroCard berserkerCard = new HeroCard("Berserker", Image.FromFile(assetsPathHero + "berserker.jpg"), 1, 1, new EntityStats(3, 14));
-            HeroCard juggernautCard = new HeroCard("Juggernaut", Image.FromFile(assetsPathHero + "juggernaut.jpg"), 1, 2, new EntityStats(0, 17));
+            HeroCard rangerCard = new HeroCard("Ranger", AssetsHeroes.h1, 1, 2, new EntityStats(2, 14));
+            HeroCard druidCard = new HeroCard("Druid", AssetsHeroes.h2, 1, 2, new EntityStats(1, 16));
+            HeroCard minerCard = new HeroCard("Miner", AssetsHeroes.h3, 2, 2, new EntityStats(1, 13));
+            HeroCard necromancerCard = new HeroCard("Necromancer", AssetsHeroes.h4, 1, 3, new EntityStats(2, 14));
+            HeroCard berserkerCard = new HeroCard("Berserker", AssetsHeroes.h5, 1, 1, new EntityStats(3, 14));
+            HeroCard juggernautCard = new HeroCard("Juggernaut", AssetsHeroes.h6, 1, 2, new EntityStats(0, 17));
 
-            var heroes = new List<HeroCard>
-            {
-                rangerCard,
-                druidCard,
-                minerCard,
-                necromancerCard,
-                berserkerCard,
-                juggernautCard
-            };
+            ListOfHeroes.Add(rangerCard);
+            ListOfHeroes.Add(druidCard);
+            ListOfHeroes.Add(minerCard);
+            ListOfHeroes.Add(necromancerCard);
+            ListOfHeroes.Add(berserkerCard);
+            ListOfHeroes.Add(juggernautCard);
         }
 
         public static void CreateWeaponCard()

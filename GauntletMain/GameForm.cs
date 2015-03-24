@@ -16,12 +16,13 @@ namespace GauntletMain
         public GameForm()
         {
             InitializeComponent();
-        }
-
-        protected override void OnCreateControl()
-        {
-            base.OnCreateControl();
             BeginNewGame();
         }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+        }
+
     }
 }
