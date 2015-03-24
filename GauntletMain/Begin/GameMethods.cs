@@ -18,9 +18,9 @@ namespace GauntletMain
         {
 
             //play Background music
-            StaticResources.wmp.URL = @"C:\Users\lachkov\Desktop\DragonFruit\oop-team-dragonfruit\GauntletMain\Sounds\Du Hast.mp3";
-            StaticResources.wmp.controls.play();
-            StaticResources.wmp.settings.volume = 50;
+            //StaticResources.wmp.URL = @"C:\Users\lachkov\Desktop\DragonFruit\oop-team-dragonfruit\GauntletMain\Sounds\Du Hast.mp3";
+            //StaticResources.wmp.controls.play();
+            //StaticResources.wmp.settings.volume = 50;
 
             //Hides the tab headers
             tabCtrlGame1.Appearance = TabAppearance.FlatButtons;
@@ -34,6 +34,7 @@ namespace GauntletMain
             //Load the list with the HeroCards - should be a Deck - TO DO!
             CardGenerator.CreateHeroCard();
             var listOfHeroCards = CardGenerator.ListOfHeroes;
+
             //Shuffle ... to DO!!!
 
 

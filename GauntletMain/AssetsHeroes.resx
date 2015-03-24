@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="h1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\h1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BERSERKER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BERSERKER.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="h2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\h2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DRUID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DRUID.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="h3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\h3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="JUGGERNAUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\JUGGERNAUT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="h4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\h4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MINER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MINER.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="h5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\h5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NECROMANCER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\NECROMANCER.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="h6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\h6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RANGER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\RANGER.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

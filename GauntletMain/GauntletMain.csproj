@@ -49,6 +49,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssetsHeroes.resx</DependentUpon>
     </Compile>
+    <Compile Include="AssetsModifiers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetsModifiers.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetsMonsters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetsMonsters.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetsWeapons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetsWeapons.resx</DependentUpon>
+    </Compile>
     <Compile Include="Begin\GameMethods.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +95,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AssetsHeroes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="AssetsModifiers.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssetsModifiers.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetsMonsters.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssetsMonsters.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetsWeapons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssetsWeapons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,24 +133,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\h1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\h2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\h3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\h4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\h5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\h6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <COMReference Include="WMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -136,6 +145,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Sounds\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MINER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NECROMANCER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RANGER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BERSERKER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DRUID.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JUGGERNAUT.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
