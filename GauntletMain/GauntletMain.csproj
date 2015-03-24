@@ -49,11 +49,11 @@
     </Compile>
     <Compile Include="Classes\Ability.cs" />
     <Compile Include="Classes\Card.cs" />
-    <Compile Include="Classes\CardLoader.cs" />
     <Compile Include="Classes\Encounter.cs" />
     <Compile Include="Classes\EntityStats.cs" />
     <Compile Include="Classes\CardGenerator.cs" />
     <Compile Include="Classes\ModifierCard.cs" />
+    <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\MonsterCard.cs" />
     <Compile Include="Classes\WeaponCard.cs" />
     <Compile Include="GameForm.cs">
