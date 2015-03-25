@@ -164,6 +164,69 @@
   <ItemGroup>
     <None Include="Resources\JUGGERNAUT.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DEVOURER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GOO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HALLUCINATION.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIMIC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MOLERAT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MOSSGIANT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPIDER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STATUE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TROLL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZOMBIE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADVENTURER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BANDIT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WARAXE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GRIMOIRE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LONGBOW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICKAXE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHIELD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STAFF.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
