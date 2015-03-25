@@ -55,9 +55,9 @@ namespace GauntletMain
             this.Size = new Size(173, 280);
         }
 
-        public HeroCard Card = null;
+        public Card Card = null;
 
-        public void ShowCard(HeroCard card)
+        public void ShowCard(Card card)
         {
             this.Card = card;
             this.Image = Card.ArtImage;  

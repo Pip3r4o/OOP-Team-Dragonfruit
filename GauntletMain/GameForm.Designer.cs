@@ -209,7 +209,7 @@
             this.labGame6.Name = "labGame6";
             this.labGame6.Size = new System.Drawing.Size(121, 23);
             this.labGame6.TabIndex = 11;
-            this.labGame6.Text = "ActionPoints:";
+            this.labGame6.Text = "AP:";
             // 
             // labGame5
             // 

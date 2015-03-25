@@ -70,6 +70,7 @@
     <Compile Include="Classes\Ability.cs" />
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\Encounter.cs" />
+    <Compile Include="Classes\EncounterEngine.cs" />
     <Compile Include="Classes\EntityStats.cs" />
     <Compile Include="Classes\CardGenerator.cs" />
     <Compile Include="Classes\ModifierCard.cs" />

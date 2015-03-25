@@ -1,6 +1,6 @@
 ﻿namespace GauntletMain.Classes
 {
-    public enum ModifierEventEnum { SpringTrap, HealingSpring, TearSatchel, GoodFortune, BarbedWireTrap}
+    public enum ModifierEventEnum { SpringTrap, HealingSpring, TearSatchel, GoodFortune, BearTrap}
 
     public class ModifierEvent
     {
@@ -38,7 +38,7 @@
             player.TotalCoins = player.TotalCoins + 4;
         }
 
-        public static void BarbedWireTrap(Player player)
+        public static void BearTrap(Player player)
         {
             --player.TotalDefensePoints;
         }
