@@ -124,6 +124,24 @@
   <data name="LONGBOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\LONGBOW.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="miniGRIMOIRE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniGRIMOIRE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniLONGBOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniLONGBOW.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniPICKAXE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniPICKAXE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniSHIELD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniSHIELD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniSTAFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniSTAFF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniWARAXE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\miniWARAXE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PICKAXE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\PICKAXE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

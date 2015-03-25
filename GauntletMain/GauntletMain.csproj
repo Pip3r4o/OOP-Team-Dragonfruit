@@ -227,6 +227,42 @@
   <ItemGroup>
     <None Include="Resources\STAFF.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniJUGGERNAUT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniMINER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniNECROMANCER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniRANGER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniBERSERKER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniDRUID.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniWARAXE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniGRIMOIRE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniLONGBOW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniPICKAXE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniSHIELD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniSTAFF.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
