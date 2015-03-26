@@ -62,6 +62,11 @@
             this.imgContHero2 = new GauntletMain.ImgContainer();
             this.imgContHero1 = new GauntletMain.ImgContainer();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnGame4 = new GauntletMain.btnGame();
+            this.btnGame3 = new GauntletMain.btnGame();
+            this.btnGame2 = new GauntletMain.btnGame();
+            this.imgContainer2 = new GauntletMain.ImgContainer();
+            this.imgContainer1 = new GauntletMain.ImgContainer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.PnlPlayerData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgContainer8)).BeginInit();
@@ -75,6 +80,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgContHero3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgContHero2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgContHero1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgContainer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgContainer1)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlPlayerData
@@ -105,10 +113,11 @@
             // btnGame1
             // 
             this.btnGame1.BackColor = System.Drawing.Color.Red;
+            this.btnGame1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.btnGame1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGame1.Location = new System.Drawing.Point(7, 501);
+            this.btnGame1.Location = new System.Drawing.Point(7, 578);
             this.btnGame1.Name = "btnGame1";
-            this.btnGame1.Size = new System.Drawing.Size(180, 41);
+            this.btnGame1.Size = new System.Drawing.Size(180, 57);
             this.btnGame1.TabIndex = 25;
             this.btnGame1.Text = "PLAY";
             this.btnGame1.UseVisualStyleBackColor = false;
@@ -116,7 +125,8 @@
             // imgContainer8
             // 
             this.imgContainer8.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer8.Location = new System.Drawing.Point(100, 341);
+            this.imgContainer8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContainer8.Location = new System.Drawing.Point(100, 420);
             this.imgContainer8.Name = "imgContainer8";
             this.imgContainer8.Size = new System.Drawing.Size(87, 140);
             this.imgContainer8.TabIndex = 26;
@@ -125,7 +135,8 @@
             // imgContainer7
             // 
             this.imgContainer7.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer7.Location = new System.Drawing.Point(7, 341);
+            this.imgContainer7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContainer7.Location = new System.Drawing.Point(7, 420);
             this.imgContainer7.Name = "imgContainer7";
             this.imgContainer7.Size = new System.Drawing.Size(87, 140);
             this.imgContainer7.TabIndex = 25;
@@ -207,7 +218,7 @@
             this.labGame6.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labGame6.Location = new System.Drawing.Point(3, 156);
             this.labGame6.Name = "labGame6";
-            this.labGame6.Size = new System.Drawing.Size(121, 23);
+            this.labGame6.Size = new System.Drawing.Size(40, 23);
             this.labGame6.TabIndex = 11;
             this.labGame6.Text = "AP:";
             // 
@@ -305,6 +316,7 @@
             this.tabPage1.Controls.Add(this.imgContHero3);
             this.tabPage1.Controls.Add(this.imgContHero2);
             this.tabPage1.Controls.Add(this.imgContHero1);
+            this.tabPage1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -315,7 +327,7 @@
             // labGame19
             // 
             this.labGame19.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame19.Location = new System.Drawing.Point(364, 602);
+            this.labGame19.Location = new System.Drawing.Point(381, 602);
             this.labGame19.Name = "labGame19";
             this.labGame19.Size = new System.Drawing.Size(173, 23);
             this.labGame19.TabIndex = 24;
@@ -324,7 +336,7 @@
             // labGame18
             // 
             this.labGame18.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame18.Location = new System.Drawing.Point(185, 602);
+            this.labGame18.Location = new System.Drawing.Point(202, 602);
             this.labGame18.Name = "labGame18";
             this.labGame18.Size = new System.Drawing.Size(173, 23);
             this.labGame18.TabIndex = 23;
@@ -333,7 +345,7 @@
             // labGame17
             // 
             this.labGame17.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame17.Location = new System.Drawing.Point(6, 602);
+            this.labGame17.Location = new System.Drawing.Point(23, 602);
             this.labGame17.Name = "labGame17";
             this.labGame17.Size = new System.Drawing.Size(173, 23);
             this.labGame17.TabIndex = 22;
@@ -342,7 +354,7 @@
             // labGame16
             // 
             this.labGame16.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame16.Location = new System.Drawing.Point(364, 289);
+            this.labGame16.Location = new System.Drawing.Point(381, 289);
             this.labGame16.Name = "labGame16";
             this.labGame16.Size = new System.Drawing.Size(173, 23);
             this.labGame16.TabIndex = 21;
@@ -351,7 +363,7 @@
             // labGame15
             // 
             this.labGame15.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame15.Location = new System.Drawing.Point(185, 289);
+            this.labGame15.Location = new System.Drawing.Point(202, 289);
             this.labGame15.Name = "labGame15";
             this.labGame15.Size = new System.Drawing.Size(173, 23);
             this.labGame15.TabIndex = 20;
@@ -360,7 +372,7 @@
             // labGame14
             // 
             this.labGame14.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame14.Location = new System.Drawing.Point(6, 289);
+            this.labGame14.Location = new System.Drawing.Point(23, 289);
             this.labGame14.Name = "labGame14";
             this.labGame14.Size = new System.Drawing.Size(173, 23);
             this.labGame14.TabIndex = 19;
@@ -369,7 +381,8 @@
             // imgContainer6
             // 
             this.imgContainer6.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer6.Location = new System.Drawing.Point(364, 319);
+            this.imgContainer6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContainer6.Location = new System.Drawing.Point(381, 319);
             this.imgContainer6.Name = "imgContainer6";
             this.imgContainer6.Size = new System.Drawing.Size(173, 280);
             this.imgContainer6.TabIndex = 5;
@@ -378,7 +391,8 @@
             // imgContainer5
             // 
             this.imgContainer5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer5.Location = new System.Drawing.Point(185, 319);
+            this.imgContainer5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContainer5.Location = new System.Drawing.Point(202, 319);
             this.imgContainer5.Name = "imgContainer5";
             this.imgContainer5.Size = new System.Drawing.Size(173, 280);
             this.imgContainer5.TabIndex = 4;
@@ -387,7 +401,8 @@
             // imgContainer4
             // 
             this.imgContainer4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer4.Location = new System.Drawing.Point(6, 319);
+            this.imgContainer4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContainer4.Location = new System.Drawing.Point(23, 319);
             this.imgContainer4.Name = "imgContainer4";
             this.imgContainer4.Size = new System.Drawing.Size(173, 280);
             this.imgContainer4.TabIndex = 3;
@@ -396,7 +411,8 @@
             // imgContHero3
             // 
             this.imgContHero3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContHero3.Location = new System.Drawing.Point(364, 6);
+            this.imgContHero3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContHero3.Location = new System.Drawing.Point(381, 6);
             this.imgContHero3.Name = "imgContHero3";
             this.imgContHero3.Size = new System.Drawing.Size(173, 280);
             this.imgContHero3.TabIndex = 2;
@@ -405,7 +421,8 @@
             // imgContHero2
             // 
             this.imgContHero2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContHero2.Location = new System.Drawing.Point(185, 6);
+            this.imgContHero2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContHero2.Location = new System.Drawing.Point(202, 6);
             this.imgContHero2.Name = "imgContHero2";
             this.imgContHero2.Size = new System.Drawing.Size(173, 280);
             this.imgContHero2.TabIndex = 1;
@@ -414,7 +431,8 @@
             // imgContHero1
             // 
             this.imgContHero1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContHero1.Location = new System.Drawing.Point(6, 6);
+            this.imgContHero1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgContHero1.Location = new System.Drawing.Point(23, 6);
             this.imgContHero1.Name = "imgContHero1";
             this.imgContHero1.Size = new System.Drawing.Size(173, 280);
             this.imgContHero1.TabIndex = 0;
@@ -423,12 +441,68 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.btnGame4);
+            this.tabPage2.Controls.Add(this.btnGame3);
+            this.tabPage2.Controls.Add(this.btnGame2);
+            this.tabPage2.Controls.Add(this.imgContainer2);
+            this.tabPage2.Controls.Add(this.imgContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(576, 636);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
+            // 
+            // btnGame4
+            // 
+            this.btnGame4.BackColor = System.Drawing.Color.Red;
+            this.btnGame4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGame4.Location = new System.Drawing.Point(93, 548);
+            this.btnGame4.Name = "btnGame4";
+            this.btnGame4.Size = new System.Drawing.Size(390, 27);
+            this.btnGame4.TabIndex = 4;
+            this.btnGame4.Text = "Continue";
+            this.btnGame4.UseVisualStyleBackColor = false;
+            // 
+            // btnGame3
+            // 
+            this.btnGame3.BackColor = System.Drawing.Color.Red;
+            this.btnGame3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGame3.Location = new System.Drawing.Point(192, 466);
+            this.btnGame3.Name = "btnGame3";
+            this.btnGame3.Size = new System.Drawing.Size(187, 66);
+            this.btnGame3.TabIndex = 3;
+            this.btnGame3.Text = "Fight!";
+            this.btnGame3.UseVisualStyleBackColor = false;
+            // 
+            // btnGame2
+            // 
+            this.btnGame2.BackColor = System.Drawing.Color.Red;
+            this.btnGame2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGame2.Location = new System.Drawing.Point(192, 466);
+            this.btnGame2.Name = "btnGame2";
+            this.btnGame2.Size = new System.Drawing.Size(187, 66);
+            this.btnGame2.TabIndex = 2;
+            this.btnGame2.Text = "Defend\nyourself!";
+            this.btnGame2.UseVisualStyleBackColor = false;
+            // 
+            // imgContainer2
+            // 
+            this.imgContainer2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.imgContainer2.Location = new System.Drawing.Point(310, 98);
+            this.imgContainer2.Name = "imgContainer2";
+            this.imgContainer2.Size = new System.Drawing.Size(173, 280);
+            this.imgContainer2.TabIndex = 1;
+            this.imgContainer2.TabStop = false;
+            // 
+            // imgContainer1
+            // 
+            this.imgContainer1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.imgContainer1.Location = new System.Drawing.Point(93, 98);
+            this.imgContainer1.Name = "imgContainer1";
+            this.imgContainer1.Size = new System.Drawing.Size(173, 280);
+            this.imgContainer1.TabIndex = 0;
+            this.imgContainer1.TabStop = false;
             // 
             // tabPage3
             // 
@@ -465,6 +539,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgContHero3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgContHero2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgContHero1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgContainer2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgContainer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -506,6 +583,11 @@
         private ImgContainer imgContainer8;
         private ImgContainer imgContainer7;
         private btnGame btnGame1;
+        private btnGame btnGame4;
+        private btnGame btnGame3;
+        private btnGame btnGame2;
+        private ImgContainer imgContainer2;
+        private ImgContainer imgContainer1;
 
     }
 }
