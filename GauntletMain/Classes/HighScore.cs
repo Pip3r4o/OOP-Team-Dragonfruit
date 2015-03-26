@@ -24,13 +24,13 @@
             return String.Format("{0}. {1}: {2}", this.Position, this.Name, this.Score);
         }
 
-        static List<Highscore> ReadScoresFromFile(string path)
+        static List<Highscore> ReadScoresFromFile(string path, Highscore score)
         {
             var scores = new List<Highscore>();
+            string line = score.ToString();
 
             using (StreamReader reader = new StreamReader(path))
             {
-                String line;
                 while (!reader.EndOfStream)
                 {
                     line = reader.ReadLine();
