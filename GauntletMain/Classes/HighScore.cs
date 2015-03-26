@@ -6,7 +6,7 @@
     using System.IO;
     using System.Linq;
 
-    class Highscore
+    public class Highscore
     {
         public string Name { get; set; }
         public int Position { get; set; }
