@@ -34,14 +34,7 @@
                 while (!reader.EndOfStream)
                 {
                     line = reader.ReadLine();
-                    try
-                    {
-                        scores.Add(new Highscore(line));
-                    }
-                    catch (ArgumentException ex)
-                    {
-                        Console.WriteLine("Invalid score at line \"{0}\": {1}", line, ex);
-                    }
+                    scores.Add(new Highscore(line));
                 }
             }
             return SortAndPositionHighscores(scores);
