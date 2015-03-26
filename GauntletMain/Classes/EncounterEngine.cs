@@ -57,7 +57,7 @@ namespace GauntletMain.Classes
             }
         }
 
-        public static void DetermineEncounter(Player player, Encounter card)
+        public static void DetermineEncounter(Encounter card)
         {
             if (card.GetType().ToString().TrimStart("GauntletMain.Classes.".ToCharArray()) == "MonsterCard")
             {
@@ -94,9 +94,16 @@ namespace GauntletMain.Classes
                     break;
                 case ModifierEventEnum.BearTrap: ModifierEvent.BearTrap(player);
                     MessageBox.Show(
-                        string.Format("You step into a bear trap!\nYou are weakened and thus lose 1 Defense point!"));
+                        string.Format("You step into a bear trap!\nYou are crippled and thus lose 1 Defense point!"));
                     break;
             }
+        }
+
+        public static Player InitializePlayer()
+        {
+            var player = new Player(null, null, null, 4, 0, 0, 0, 0);
+
+            return player;
         }
     }
 }

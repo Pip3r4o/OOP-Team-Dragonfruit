@@ -82,14 +82,14 @@ namespace GauntletMain.Classes
                     };
 
         }
-        /*
+        
                 public static void CreateModifierCard()
                 {
-                    ModifierCard modifier1 = new ModifierCard("Spring Trap", AssetsModifiers.TRAP, ModifierEventEnum.SpringTrap);
+                    ModifierCard modifier1 = new ModifierCard("Spring Trap", AssetsModifiers.SPRINGTRAP, ModifierEventEnum.SpringTrap);
                     ModifierCard modifier2 = new ModifierCard("Healing Spring", AssetsModifiers.HEALINGSPRING, ModifierEventEnum.HealingSpring);
-                    ModifierCard modifier3 = new ModifierCard("Tear Satchel", AssetsModifiers.TEAR, ModifierEventEnum.TearSatchel);
-                    ModifierCard modifier4 = new ModifierCard("Good Fortune", AssetsModifiers.FORTUNE, ModifierEventEnum.GoodFortune);
-                    ModifierCard modifier5 = new ModifierCard("Bear Trap", AssetsModifiers.BEARTRAP, ModifierEventEnum.BarbedWireTrap);
+                    ModifierCard modifier3 = new ModifierCard("Tear Satchel", AssetsModifiers.TEARSATCHEL, ModifierEventEnum.TearSatchel);
+                    ModifierCard modifier4 = new ModifierCard("Good Fortune", AssetsModifiers.GOODFORTUNE, ModifierEventEnum.GoodFortune);
+                    ModifierCard modifier5 = new ModifierCard("Bear Trap", AssetsModifiers.BEARTRAP, ModifierEventEnum.BearTrap);
 
                     var modifiers = new List<ModifierCard>
                     {
@@ -100,6 +100,6 @@ namespace GauntletMain.Classes
                         modifier5
                     };
                 }
-        */
+        
     }
 }

@@ -1,17 +1,20 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace GauntletMain.Classes
 {
-    [Serializable]
     public abstract class GameObject
     {
 
-        protected GameObject(string name, Image artImage)
+        protected GameObject(string name)
         {
             this.Name = name;
+        }
+
+        protected GameObject(string name, Image artImage) :this(name)
+        {
             this.ArtImage = artImage;
         }
+
 
         public string Name { get; set; }
 

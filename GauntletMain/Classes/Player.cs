@@ -6,8 +6,8 @@ namespace GauntletMain.Classes
     {
         private const int InitialDice = 2;
 
-        public Player(string name, Image artImage, HeroCard hero, WeaponCard weapon, int totalHealthPoints, int totalAttackPoints, int totalDefensePoints, int totalActionPoints, int totalCoins) 
-            : base(name, artImage)
+        public Player(string name, HeroCard hero, WeaponCard weapon, int totalHealthPoints, int totalAttackPoints, int totalDefensePoints, int totalActionPoints, int totalCoins) 
+            : base(name)
         {
             this.CurrentHero = hero;
             this.CurrentWeapon = weapon;

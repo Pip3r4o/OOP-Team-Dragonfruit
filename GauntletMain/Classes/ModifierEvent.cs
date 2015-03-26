@@ -1,7 +1,6 @@
 ﻿namespace GauntletMain.Classes
 {
-    public enum ModifierEventEnum { SpringTrap, HealingSpring, TearSatchel, GoodFortune, BearTrap}
-
+    
     public class ModifierEvent
     {
         public static void SpringTrap(Player player)

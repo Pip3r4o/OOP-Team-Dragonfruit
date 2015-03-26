@@ -76,6 +76,7 @@
     <Compile Include="Classes\HighScore.cs" />
     <Compile Include="Classes\ModifierCard.cs" />
     <Compile Include="Classes\ModifierEvent.cs" />
+    <Compile Include="Classes\ModifierEventEnum.cs" />
     <Compile Include="Classes\MonsterCard.cs" />
     <Compile Include="Classes\PlayerCards.cs" />
     <Compile Include="Classes\PlayerNameValidation.cs" />
