@@ -1,9 +1,7 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace GauntletMain.Classes
 {
-    [Serializable]
     public class MonsterCard : Encounter
     {
 

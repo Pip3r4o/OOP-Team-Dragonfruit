@@ -1,26 +1,14 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace GauntletMain.Classes
 {
-    //name
-    //art
-    //additional dice
-
-    //attack points
-    //defense points
-    //special ability (if present)
-    [Serializable]
-    public class WeaponCard : Card
+    public class WeaponCard : PlayerCards
     {
-        public WeaponCard(string name, Image artImage, int additionalDice, EntityStats stats)
-            : base(name, artImage)
+        public WeaponCard(string name, Image artImage, Image miniArtImage, int additionalDice, EntityStats stats)
+            : base(name, artImage, miniArtImage, stats)
         {
             this.AdditionalDice = additionalDice;
-            this.Stats = stats;
         }
-
-        public EntityStats Stats { get; set; }
 
         public int AdditionalDice { get; set; }
 

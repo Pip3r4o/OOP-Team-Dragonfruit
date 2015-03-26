@@ -10,12 +10,12 @@ namespace GauntletMain.Classes
         public static void CreateHeroCard()
         {
             //Abilities not added to entity stats
-            HeroCard rangerCard = new HeroCard("Ranger", AssetsHeroes.RANGER, 1, 2, new EntityStats(2, 14));
-            HeroCard druidCard = new HeroCard("Druid", AssetsHeroes.DRUID, 1, 2, new EntityStats(1, 16));
-            HeroCard minerCard = new HeroCard("Miner", AssetsHeroes.MINER, 2, 2, new EntityStats(1, 13));
-            HeroCard necromancerCard = new HeroCard("Necromancer", AssetsHeroes.NECROMANCER, 1, 3, new EntityStats(2, 14));
-            HeroCard berserkerCard = new HeroCard("Berserker", AssetsHeroes.BERSERKER, 1, 1, new EntityStats(3, 14));
-            HeroCard juggernautCard = new HeroCard("Juggernaut", AssetsHeroes.JUGGERNAUT, 1, 2, new EntityStats(0, 17));
+            HeroCard rangerCard = new HeroCard("Ranger", AssetsHeroes.RANGER, AssetsHeroes.miniRANGER, 1, 2, new EntityStats(2, 14));
+            HeroCard druidCard = new HeroCard("Druid", AssetsHeroes.DRUID, AssetsHeroes.miniDRUID, 1, 2, new EntityStats(1, 16));
+            HeroCard minerCard = new HeroCard("Miner", AssetsHeroes.MINER, AssetsHeroes.miniMINER, 2, 2, new EntityStats(1, 13));
+            HeroCard necromancerCard = new HeroCard("Necromancer", AssetsHeroes.NECROMANCER, AssetsHeroes.miniNECROMANCER,  1, 3, new EntityStats(2, 14));
+            HeroCard berserkerCard = new HeroCard("Berserker", AssetsHeroes.BERSERKER, AssetsHeroes.miniBERSERKER, 1, 1, new EntityStats(3, 14));
+            HeroCard juggernautCard = new HeroCard("Juggernaut", AssetsHeroes.JUGGERNAUT, AssetsHeroes.miniJUGGERNAUT, 1, 2, new EntityStats(0, 17));
 
             ListOfHeroes.Add(rangerCard);
             ListOfHeroes.Add(druidCard);
@@ -27,12 +27,12 @@ namespace GauntletMain.Classes
 
         public static void CreateWeaponCard()
         {
-            WeaponCard weapon1 = new WeaponCard("Bloodied Waraxe", AssetsWeapons.WARAXE, 2, new EntityStats(3, 0));
-            WeaponCard weapon2 = new WeaponCard("Warlock's Grimoire", AssetsWeapons.GRIMOIRE, 3, new EntityStats(0, 0));
-            WeaponCard weapon3 = new WeaponCard("Rusty Pickaxe", AssetsWeapons.PICKAXE, 2, new EntityStats(2, 1));
-            WeaponCard weapon4 = new WeaponCard("Wooden Shield", AssetsWeapons.SHIELD, 2, new EntityStats(0, 3));
-            WeaponCard weapon5 = new WeaponCard("Nature Staff", AssetsWeapons.STAFF, 2, new EntityStats(1, 2));
-            WeaponCard weapon6 = new WeaponCard("Yew Longbow", AssetsWeapons.LONGBOW, 2, new EntityStats(2, 1));
+            WeaponCard weapon1 = new WeaponCard("Bloodied Waraxe", AssetsWeapons.WARAXE, AssetsWeapons.miniWARAXE, 2, new EntityStats(3, 0));
+            WeaponCard weapon2 = new WeaponCard("Warlock's Grimoire", AssetsWeapons.GRIMOIRE, AssetsWeapons.miniGRIMOIRE, 3, new EntityStats(0, 0));
+            WeaponCard weapon3 = new WeaponCard("Rusty Pickaxe", AssetsWeapons.PICKAXE, AssetsWeapons.miniPICKAXE, 2, new EntityStats(2, 1));
+            WeaponCard weapon4 = new WeaponCard("Wooden Shield", AssetsWeapons.SHIELD, AssetsWeapons.miniSHIELD, 2, new EntityStats(0, 3));
+            WeaponCard weapon5 = new WeaponCard("Nature Staff", AssetsWeapons.STAFF, AssetsWeapons.miniSTAFF, 2, new EntityStats(1, 2));
+            WeaponCard weapon6 = new WeaponCard("Yew Longbow", AssetsWeapons.LONGBOW, AssetsWeapons.miniLONGBOW, 2, new EntityStats(2, 1));
 
             ListOfWeapons.Add(weapon1);
             ListOfWeapons.Add(weapon2);

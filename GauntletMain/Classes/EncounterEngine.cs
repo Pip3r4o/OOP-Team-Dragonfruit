@@ -86,7 +86,7 @@ namespace GauntletMain.Classes
                     break;
                 case ModifierEventEnum.TearSatchel: ModifierEvent.TearSatchel(player);
                     MessageBox.Show(
-                        string.Format("You find out that your pouch has torn!\nYou have lost 3 coins!"));
+                        string.Format("You find out that your pouch has been torn!\nYou have lost 3 coins!"));
                     break;
                 case ModifierEventEnum.GoodFortune: ModifierEvent.GoodFortune(player);
                     MessageBox.Show(
