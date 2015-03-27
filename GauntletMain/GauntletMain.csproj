@@ -85,6 +85,7 @@
     <Compile Include="Classes\PlayerNameValidation.cs" />
     <Compile Include="Classes\WeaponCard.cs" />
     <Compile Include="Decks\Deck.cs" />
+    <Compile Include="Decks\DeckOfEncounterCards.cs" />
     <Compile Include="Decks\DeckOfHeroCards.cs" />
     <Compile Include="Decks\DeckOfModifierCards.cs" />
     <Compile Include="Decks\DeckOfMonsterCards.cs" />

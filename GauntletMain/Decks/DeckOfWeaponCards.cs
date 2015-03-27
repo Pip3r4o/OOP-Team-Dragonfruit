@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using GauntletMain.Classes;
 
-namespace GauntletMain.Classes
+namespace GauntletMain.Decks
 {
     class DeckOfWeaponCards : Deck<WeaponCard>
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using GauntletMain.Utilities;
 
-namespace GauntletMain.Classes
+namespace GauntletMain.Decks
 {
     class Deck<T>
     {

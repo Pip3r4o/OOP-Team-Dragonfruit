@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using GauntletMain.Classes;
+using GauntletMain.Decks;
 
 namespace GauntletMain
 {
@@ -18,8 +19,7 @@ namespace GauntletMain
     {
         DeckOfHeroCards deckOfHeroCards = new DeckOfHeroCards();
         DeckOfWeaponCards deckOfWeaponCards = new DeckOfWeaponCards();
-        DeckOfMonsterCards deckOfMonsterCards = new DeckOfMonsterCards();
-        DeckOfModifierCards deckOfModifierCards = new DeckOfModifierCards();
+        DeckOfEncounterCards deckOfEncounterCards = new DeckOfEncounterCards();
 
         //Game begins here
         public void  BeginNewGame()
@@ -43,8 +43,7 @@ namespace GauntletMain
             //Shuffle
             deckOfHeroCards.Shuffle();
             deckOfWeaponCards.Shuffle();
-            deckOfMonsterCards.Shuffle();
-            deckOfModifierCards.Shuffle();
+            deckOfEncounterCards.Shuffle();
 
             //Show the last three Hero Cards in the choices positions
             imgContHero1.ShowCard(deckOfHeroCards[deckOfHeroCards.Count() - 1]);
