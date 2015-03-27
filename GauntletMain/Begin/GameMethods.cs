@@ -16,6 +16,11 @@ namespace GauntletMain
 
     public partial class GameForm
     {
+        DeckOfHeroCards deckOfHeroCards = new DeckOfHeroCards();
+        DeckOfWeaponCards deckOfWeaponCards = new DeckOfWeaponCards();
+        DeckOfMonsterCards deckOfMonsterCards = new DeckOfMonsterCards();
+        DeckOfModifierCards deckOfModifierCards = new DeckOfModifierCards();
+
         //Game begins here
         public void  BeginNewGame()
         {
@@ -35,29 +40,26 @@ namespace GauntletMain
             tabCtrlGame1.TabPages.Add(tabPage1);
             btnGame1.Show();
 
-            //Load the list with the HeroCards - should be a Deck - TO DO!
-            CardGenerator.CreateHeroCard();
-            var listOfHeroCards = CardGenerator.ListOfHeroes;
-            CardGenerator.CreateWeaponCard();
-            var listOfWeaponCards = CardGenerator.ListOfWeapons;
-
-            //Shuffle ... to DO!!!
-
+            //Shuffle
+            deckOfHeroCards.Shuffle();
+            deckOfWeaponCards.Shuffle();
+            deckOfMonsterCards.Shuffle();
+            deckOfModifierCards.Shuffle();
 
             //Show the last three Hero Cards in the choices positions
-            imgContHero1.ShowCard(listOfHeroCards[listOfHeroCards.Count() - 1]);
-            labGame14.Text = listOfHeroCards[listOfHeroCards.Count() - 1].Name;
-            imgContHero2.ShowCard(listOfHeroCards[listOfHeroCards.Count() - 2]);
-            labGame15.Text = listOfHeroCards[listOfHeroCards.Count() - 2].Name;
-            imgContHero3.ShowCard(listOfHeroCards[listOfHeroCards.Count() - 3]);
-            labGame16.Text = listOfHeroCards[listOfHeroCards.Count() - 3].Name;
+            imgContHero1.ShowCard(deckOfHeroCards[deckOfHeroCards.Count() - 1]);
+            labGame14.Text = deckOfHeroCards[deckOfHeroCards.Count() - 1].Name;
+            imgContHero2.ShowCard(deckOfHeroCards[deckOfHeroCards.Count() - 2]);
+            labGame15.Text = deckOfHeroCards[deckOfHeroCards.Count() - 2].Name;
+            imgContHero3.ShowCard(deckOfHeroCards[deckOfHeroCards.Count() - 3]);
+            labGame16.Text = deckOfHeroCards[deckOfHeroCards.Count() - 3].Name;
 
-            imgContainer4.ShowCard(listOfWeaponCards[listOfWeaponCards.Count() - 1]);
-            labGame17.Text = listOfWeaponCards[listOfWeaponCards.Count() - 1].Name;
-            imgContainer5.ShowCard(listOfWeaponCards[listOfWeaponCards.Count() - 2]);
-            labGame18.Text = listOfWeaponCards[listOfWeaponCards.Count() - 2].Name;
-            imgContainer6.ShowCard(listOfWeaponCards[listOfWeaponCards.Count() - 3]);
-            labGame19.Text = listOfWeaponCards[listOfWeaponCards.Count() - 3].Name;
+            imgContainer4.ShowCard(deckOfWeaponCards[deckOfWeaponCards.Count() - 1]);
+            labGame17.Text = deckOfWeaponCards[deckOfWeaponCards.Count() - 1].Name;
+            imgContainer5.ShowCard(deckOfWeaponCards[deckOfWeaponCards.Count() - 2]);
+            labGame18.Text = deckOfWeaponCards[deckOfWeaponCards.Count() - 2].Name;
+            imgContainer6.ShowCard(deckOfWeaponCards[deckOfWeaponCards.Count() - 3]);
+            labGame19.Text = deckOfWeaponCards[deckOfWeaponCards.Count() - 3].Name;
 
 
             labGame8.Text = Player.ActivePlayer.TotalHealthPoints.ToString();
