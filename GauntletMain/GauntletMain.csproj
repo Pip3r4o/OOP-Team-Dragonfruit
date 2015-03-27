@@ -76,7 +76,6 @@
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\Encounter.cs" />
     <Compile Include="Classes\EntityStats.cs" />
-    <Compile Include="Classes\CardGenerator.cs" />
     <Compile Include="Classes\HighScore.cs" />
     <Compile Include="Classes\ModifierCard.cs" />
     <Compile Include="Classes\ModifierEvent.cs" />
