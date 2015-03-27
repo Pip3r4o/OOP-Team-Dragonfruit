@@ -29,7 +29,7 @@ namespace GauntletMain
         {
             var heroCard = CardGenerator.ListOfHeroes;
 
-            UpdateInfoHero(heroCard, (HeroCard)imgContHero1.Card);
+            UpdateInfoHero((HeroCard)imgContHero1.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
@@ -37,7 +37,7 @@ namespace GauntletMain
         {
             var heroCard = CardGenerator.ListOfHeroes;
 
-            UpdateInfoHero(heroCard, (HeroCard)imgContHero2.Card);
+            UpdateInfoHero((HeroCard)imgContHero2.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
@@ -45,7 +45,7 @@ namespace GauntletMain
         {
             var heroCard = CardGenerator.ListOfHeroes;
 
-            UpdateInfoHero(heroCard, (HeroCard)imgContHero3.Card);
+            UpdateInfoHero((HeroCard)imgContHero3.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
@@ -53,7 +53,7 @@ namespace GauntletMain
         {
             var weaponCard = CardGenerator.ListOfWeapons;
 
-            UpdateInfoWeapon(weaponCard, (WeaponCard)imgContainer4.Card);
+            UpdateInfoWeapon((WeaponCard)imgContainer4.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
@@ -61,7 +61,7 @@ namespace GauntletMain
         {
             var weaponCard = CardGenerator.ListOfWeapons;
 
-            UpdateInfoWeapon(weaponCard, (WeaponCard)imgContainer5.Card);
+            UpdateInfoWeapon((WeaponCard)imgContainer5.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
@@ -69,7 +69,7 @@ namespace GauntletMain
         {
             var weaponCard = CardGenerator.ListOfWeapons;
 
-            UpdateInfoWeapon(weaponCard, (WeaponCard)imgContainer6.Card);
+            UpdateInfoWeapon((WeaponCard)imgContainer6.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
@@ -131,7 +131,7 @@ namespace GauntletMain
             }
         }
 
-        private void UpdateInfoHero(List<HeroCard> heroCard, HeroCard card)
+        private void UpdateInfoHero(HeroCard card)
         {
             labGame8.Text = (Player.ActivePlayer.TotalHealthPoints + card.HealthPoints).ToString();
             labGame10.Text = (Player.ActivePlayer.TotalAttackPoints + card.Stats.AttackPoints).ToString();
@@ -140,7 +140,7 @@ namespace GauntletMain
             imgContainer7.ShowMiniCard(card);
         }
 
-        private void UpdateInfoWeapon(List<WeaponCard> weaponCard, WeaponCard card)
+        private void UpdateInfoWeapon(WeaponCard card)
         {
             labGame9.Text = (Player.ActivePlayer.Dice + card.AdditionalDice).ToString();
             labGame10.Text = (Player.ActivePlayer.TotalAttackPoints + card.Stats.AttackPoints).ToString();
