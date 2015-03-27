@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using GauntletMain.Classes;
-using GauntletMain.Decks;
 
 namespace GauntletMain
 {
@@ -26,43 +18,43 @@ namespace GauntletMain
             base.OnLoad(e);
         }
 
-        private void imgContHero1_Click(object sender, EventArgs e)
+        private void heroImgContainer1_Click(object sender, EventArgs e)
         {
-            UpdateInfoHero((HeroCard)imgContHero1.Card);
-            UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
+            UpdateInfoHero((HeroCard)heroImgContainer1.Card);
+            UpdateTotalInfo((HeroCard)playerHeroImgContainer.PlayerCard, (WeaponCard)playerWeaponImgContainer.PlayerCard);
         }
 
-        private void imgContHero2_Click(object sender, EventArgs e)
+        private void heroImgContainer2_Click(object sender, EventArgs e)
         {
-            UpdateInfoHero((HeroCard)imgContHero2.Card);
-            UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
+            UpdateInfoHero((HeroCard)heroImgContainer2.Card);
+            UpdateTotalInfo((HeroCard)playerHeroImgContainer.PlayerCard, (WeaponCard)playerWeaponImgContainer.PlayerCard);
         }
 
-        private void imgContHero3_Click(object sender, EventArgs e)
+        private void heroImgContainer3_Click(object sender, EventArgs e)
         {
-            UpdateInfoHero((HeroCard)imgContHero3.Card);
-            UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
+            UpdateInfoHero((HeroCard)heroImgContainer3.Card);
+            UpdateTotalInfo((HeroCard)playerHeroImgContainer.PlayerCard, (WeaponCard)playerWeaponImgContainer.PlayerCard);
         }
 
-        private void imgContainer4_Click(object sender, EventArgs e)
+        private void weaponImgContainer1_Click(object sender, EventArgs e)
         {
-            UpdateInfoWeapon((WeaponCard)imgContainer4.Card);
-            UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
+            UpdateInfoWeapon((WeaponCard)weaponImgContainer1.Card);
+            UpdateTotalInfo((HeroCard)playerHeroImgContainer.PlayerCard, (WeaponCard)playerWeaponImgContainer.PlayerCard);
         }
 
-        private void imgContainer5_Click(object sender, EventArgs e)
+        private void weaponImgContainer2_Click(object sender, EventArgs e)
         {
-            UpdateInfoWeapon((WeaponCard)imgContainer5.Card);
-            UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
+            UpdateInfoWeapon((WeaponCard)weaponImgContainer2.Card);
+            UpdateTotalInfo((HeroCard)playerHeroImgContainer.PlayerCard, (WeaponCard)playerWeaponImgContainer.PlayerCard);
         }
 
-        private void imgContainer6_Click(object sender, EventArgs e)
+        private void weaponImgContainer3_Click(object sender, EventArgs e)
         {
-            UpdateInfoWeapon((WeaponCard)imgContainer6.Card);
-            UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
+            UpdateInfoWeapon((WeaponCard)weaponImgContainer3.Card);
+            UpdateTotalInfo((HeroCard)playerHeroImgContainer.PlayerCard, (WeaponCard)playerWeaponImgContainer.PlayerCard);
         }
 
-        private void btnGame1_Click(object sender, EventArgs e)
+        private void PlayButton_Click(object sender, EventArgs e)
         {
             if (!PlayerNameValidation.IsHostnameValid(tbxName1.Text))
             {
@@ -75,7 +67,7 @@ namespace GauntletMain
                 Player.ActivePlayer.Name = tbxName1.Text;
             }
 
-            if (imgContainer7.Image == null || imgContainer8.Image == null)
+            if (playerHeroImgContainer.Image == null || playerWeaponImgContainer.Image == null)
             {
                 MessageBox.Show("You must first choose a Hero and a Weapon to play with!", "Invalid Choice!");
                 return;
@@ -83,8 +75,8 @@ namespace GauntletMain
 
 
             Player.ActivePlayer.Name = tbxName1.Text;
-            Player.ActivePlayer.CurrentHero = (HeroCard)imgContainer7.PlayerCard;
-            Player.ActivePlayer.CurrentWeapon = (WeaponCard)imgContainer8.PlayerCard;
+            Player.ActivePlayer.CurrentHero = (HeroCard)playerHeroImgContainer.PlayerCard;
+            Player.ActivePlayer.CurrentWeapon = (WeaponCard)playerWeaponImgContainer.PlayerCard;
 
             Player.ActivePlayer.TotalHealthPoints += Player.ActivePlayer.CurrentHero.HealthPoints;
             Player.ActivePlayer.Dice += Player.ActivePlayer.CurrentWeapon.AdditionalDice;
@@ -93,31 +85,54 @@ namespace GauntletMain
             Player.ActivePlayer.TotalDefensePoints += Player.ActivePlayer.CurrentHero.Stats.DefensePoints +
                                                     Player.ActivePlayer.CurrentWeapon.Stats.DefensePoints;
             Player.ActivePlayer.TotalActionPoints += Player.ActivePlayer.CurrentHero.ActionPoints;
-            UpdateInformation(Player.ActivePlayer);
+            UpdateInformation();
+            ++Player.ActivePlayer.Turn;
 
             tabCtrlGame1.TabPages.Clear();
             tabCtrlGame1.TabPages.Add(tabPage2);
-
-            btnGame1.Hide();
-
+            PlayButton.Hide();
             tbxName1.Enabled = false;
-
-            //SHUFFLE ENCOUNTER DECK
-            //EncounterEngine.DetermineEncounter(encounter card)
+ 
+            DrawCard();
+            DetermineEncounter();
         }
 
-        private void btnGame3_Click(object sender, EventArgs e)
+        private void FightButton_Click(object sender, EventArgs e)
         {
-            //TODO
             switch (StaticResources.CurrentFightPhase)
             {
                 case StaticResources.FightPhase.NA:
                     break;
                 case StaticResources.FightPhase.Fight:
+                {
+                    StaticResources.CurrentFightPhase = StaticResources.FightPhase.Defend;
+                    Attack(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
+                    //btnGame3.BackgroundImage =;
+                    SpecialButton.Hide();
+                }
                     break;
                 case StaticResources.FightPhase.Defend:
+                {
+                    StaticResources.CurrentFightPhase = StaticResources.FightPhase.NA;
+                    Defend(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
+                    //btnGame3.BackgroundImage =;
+                    FightButton.Hide();
+                    ContinueButton.Show();
+                }
                     break;
             }
+        }
+
+        private void ContinueButton_Click(object sender, EventArgs e)
+        {
+            ContinueButton.Hide();
+            DrawCard();
+            DetermineEncounter();
+        }
+
+        private void SpecialButton_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void UpdateInfoHero(HeroCard card)
@@ -126,7 +141,7 @@ namespace GauntletMain
             labGame10.Text = (Player.ActivePlayer.TotalAttackPoints + card.Stats.AttackPoints).ToString();
             labGame11.Text = (Player.ActivePlayer.TotalDefensePoints + card.Stats.DefensePoints).ToString();
             labGame12.Text = (Player.ActivePlayer.TotalActionPoints + card.ActionPoints).ToString();
-            imgContainer7.ShowMiniCard(card);
+            playerHeroImgContainer.ShowMiniCard(card);
         }
 
         private void UpdateInfoWeapon(WeaponCard card)
@@ -134,19 +149,42 @@ namespace GauntletMain
             labGame9.Text = (Player.ActivePlayer.Dice + card.AdditionalDice).ToString();
             labGame10.Text = (Player.ActivePlayer.TotalAttackPoints + card.Stats.AttackPoints).ToString();
             labGame11.Text = (Player.ActivePlayer.TotalDefensePoints + card.Stats.DefensePoints).ToString();
-            imgContainer8.ShowMiniCard(card);
+            playerWeaponImgContainer.ShowMiniCard(card);
         }
 
         private void UpdateTotalInfo(HeroCard heroCard, WeaponCard weaponCard)
         {
-            if (heroCard != null && weaponCard != null)
+            if (heroCard == null || weaponCard == null) return;
+
+            labGame10.Text = (Player.ActivePlayer.TotalAttackPoints + heroCard.Stats.AttackPoints + weaponCard.Stats.AttackPoints).ToString();
+            labGame11.Text = (Player.ActivePlayer.TotalDefensePoints + heroCard.Stats.DefensePoints + weaponCard.Stats.DefensePoints).ToString();
+        }
+
+        private void UpdateInformation()
+        {
+            labGame8.Text = (Player.ActivePlayer.TotalHealthPoints).ToString();
+            labGame9.Text = (Player.ActivePlayer.Dice).ToString();
+            labGame10.Text = (Player.ActivePlayer.TotalAttackPoints).ToString();
+            labGame11.Text = (Player.ActivePlayer.TotalDefensePoints).ToString();
+            labGame12.Text = (Player.ActivePlayer.TotalActionPoints).ToString();
+            labGame13.Text = (Player.ActivePlayer.TotalCoins).ToString();
+
+            //Check if player is alive
+            if (StaticResources.CurrentFightPhase == StaticResources.FightPhase.NA)
             {
-                labGame10.Text = (Player.ActivePlayer.TotalAttackPoints + heroCard.Stats.AttackPoints + weaponCard.Stats.AttackPoints).ToString();
-                labGame11.Text = (Player.ActivePlayer.TotalDefensePoints + heroCard.Stats.DefensePoints + weaponCard.Stats.DefensePoints).ToString();
+                if (Player.ActivePlayer.TotalHealthPoints <= 0)
+                {
+                    GameOver();
+                }
             }
         }
 
+        private void GameOver()
+        {
+            tabCtrlGame1.TabPages.Clear();
+            tabCtrlGame1.TabPages.Add(tabPage3);
+        }
 
-
+        
     }
 }

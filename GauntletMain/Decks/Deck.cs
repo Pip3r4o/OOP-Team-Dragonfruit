@@ -3,7 +3,7 @@ using GauntletMain.Utilities;
 
 namespace GauntletMain.Decks
 {
-    class Deck<T>
+    class Deck<T> : IShuffle
     {
         protected List<T> listOfCards = new List<T>();
 

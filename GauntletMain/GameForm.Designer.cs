@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.PnlPlayerData = new System.Windows.Forms.Panel();
-            this.btnGame1 = new GauntletMain.btnGame();
-            this.imgContainer8 = new GauntletMain.ImgContainer();
-            this.imgContainer7 = new GauntletMain.ImgContainer();
+            this.PlayButton = new GauntletMain.btnGame();
+            this.playerWeaponImgContainer = new GauntletMain.ImgContainer();
+            this.playerHeroImgContainer = new GauntletMain.ImgContainer();
             this.labGame13 = new GauntletMain.labGame();
             this.labGame12 = new GauntletMain.labGame();
             this.labGame11 = new GauntletMain.labGame();
@@ -55,41 +55,41 @@
             this.labGame16 = new GauntletMain.labGame();
             this.labGame15 = new GauntletMain.labGame();
             this.labGame14 = new GauntletMain.labGame();
-            this.imgContainer6 = new GauntletMain.ImgContainer();
-            this.imgContainer5 = new GauntletMain.ImgContainer();
-            this.imgContainer4 = new GauntletMain.ImgContainer();
-            this.imgContHero3 = new GauntletMain.ImgContainer();
-            this.imgContHero2 = new GauntletMain.ImgContainer();
-            this.imgContHero1 = new GauntletMain.ImgContainer();
+            this.weaponImgContainer3 = new GauntletMain.ImgContainer();
+            this.weaponImgContainer2 = new GauntletMain.ImgContainer();
+            this.weaponImgContainer1 = new GauntletMain.ImgContainer();
+            this.heroImgContainer3 = new GauntletMain.ImgContainer();
+            this.heroImgContainer2 = new GauntletMain.ImgContainer();
+            this.heroImgContainer1 = new GauntletMain.ImgContainer();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnGame4 = new GauntletMain.btnGame();
-            this.btnGame3 = new GauntletMain.btnGame();
-            this.btnGame2 = new GauntletMain.btnGame();
-            this.imgContainer2 = new GauntletMain.ImgContainer();
-            this.imgContainer1 = new GauntletMain.ImgContainer();
+            this.ContinueButton = new GauntletMain.btnGame();
+            this.FightButton = new GauntletMain.btnGame();
+            this.SpecialButton = new GauntletMain.btnGame();
+            this.encounterImgContainer = new GauntletMain.ImgContainer();
+            this.encounterBackImgContainer = new GauntletMain.ImgContainer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.PnlPlayerData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerHeroImgContainer)).BeginInit();
             this.PnlPlay.SuspendLayout();
             this.tabCtrlGame1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContHero3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContHero2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContHero1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponImgContainer3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponImgContainer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponImgContainer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlPlayerData
             // 
-            this.PnlPlayerData.Controls.Add(this.btnGame1);
-            this.PnlPlayerData.Controls.Add(this.imgContainer8);
-            this.PnlPlayerData.Controls.Add(this.imgContainer7);
+            this.PnlPlayerData.Controls.Add(this.PlayButton);
+            this.PnlPlayerData.Controls.Add(this.playerWeaponImgContainer);
+            this.PnlPlayerData.Controls.Add(this.playerHeroImgContainer);
             this.PnlPlayerData.Controls.Add(this.labGame13);
             this.PnlPlayerData.Controls.Add(this.labGame12);
             this.PnlPlayerData.Controls.Add(this.labGame11);
@@ -110,38 +110,38 @@
             this.PnlPlayerData.Size = new System.Drawing.Size(200, 662);
             this.PnlPlayerData.TabIndex = 0;
             // 
-            // btnGame1
+            // PlayButton
             // 
-            this.btnGame1.BackColor = System.Drawing.Color.Red;
-            this.btnGame1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.btnGame1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGame1.Location = new System.Drawing.Point(7, 578);
-            this.btnGame1.Name = "btnGame1";
-            this.btnGame1.Size = new System.Drawing.Size(180, 57);
-            this.btnGame1.TabIndex = 25;
-            this.btnGame1.Text = "PLAY";
-            this.btnGame1.UseVisualStyleBackColor = false;
-            this.btnGame1.Click += new System.EventHandler(this.btnGame1_Click);
+            this.PlayButton.BackColor = System.Drawing.Color.Red;
+            this.PlayButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PlayButton.Location = new System.Drawing.Point(7, 578);
+            this.PlayButton.Name = "PlayButton";
+            this.PlayButton.Size = new System.Drawing.Size(180, 57);
+            this.PlayButton.TabIndex = 25;
+            this.PlayButton.Text = "PLAY";
+            this.PlayButton.UseVisualStyleBackColor = false;
+            this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
-            // imgContainer8
+            // playerWeaponImgContainer
             // 
-            this.imgContainer8.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContainer8.Location = new System.Drawing.Point(100, 420);
-            this.imgContainer8.Name = "imgContainer8";
-            this.imgContainer8.Size = new System.Drawing.Size(87, 140);
-            this.imgContainer8.TabIndex = 26;
-            this.imgContainer8.TabStop = false;
+            this.playerWeaponImgContainer.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.playerWeaponImgContainer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.playerWeaponImgContainer.Location = new System.Drawing.Point(100, 420);
+            this.playerWeaponImgContainer.Name = "playerWeaponImgContainer";
+            this.playerWeaponImgContainer.Size = new System.Drawing.Size(87, 140);
+            this.playerWeaponImgContainer.TabIndex = 26;
+            this.playerWeaponImgContainer.TabStop = false;
             // 
-            // imgContainer7
+            // playerHeroImgContainer
             // 
-            this.imgContainer7.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContainer7.Location = new System.Drawing.Point(7, 420);
-            this.imgContainer7.Name = "imgContainer7";
-            this.imgContainer7.Size = new System.Drawing.Size(87, 140);
-            this.imgContainer7.TabIndex = 25;
-            this.imgContainer7.TabStop = false;
+            this.playerHeroImgContainer.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.playerHeroImgContainer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.playerHeroImgContainer.Location = new System.Drawing.Point(7, 420);
+            this.playerHeroImgContainer.Name = "playerHeroImgContainer";
+            this.playerHeroImgContainer.Size = new System.Drawing.Size(87, 140);
+            this.playerHeroImgContainer.TabIndex = 25;
+            this.playerHeroImgContainer.TabStop = false;
             // 
             // labGame13
             // 
@@ -311,12 +311,12 @@
             this.tabPage1.Controls.Add(this.labGame16);
             this.tabPage1.Controls.Add(this.labGame15);
             this.tabPage1.Controls.Add(this.labGame14);
-            this.tabPage1.Controls.Add(this.imgContainer6);
-            this.tabPage1.Controls.Add(this.imgContainer5);
-            this.tabPage1.Controls.Add(this.imgContainer4);
-            this.tabPage1.Controls.Add(this.imgContHero3);
-            this.tabPage1.Controls.Add(this.imgContHero2);
-            this.tabPage1.Controls.Add(this.imgContHero1);
+            this.tabPage1.Controls.Add(this.weaponImgContainer3);
+            this.tabPage1.Controls.Add(this.weaponImgContainer2);
+            this.tabPage1.Controls.Add(this.weaponImgContainer1);
+            this.tabPage1.Controls.Add(this.heroImgContainer3);
+            this.tabPage1.Controls.Add(this.heroImgContainer2);
+            this.tabPage1.Controls.Add(this.heroImgContainer1);
             this.tabPage1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -379,80 +379,80 @@
             this.labGame14.TabIndex = 19;
             this.labGame14.Text = "Card items";
             // 
-            // imgContainer6
+            // weaponImgContainer3
             // 
-            this.imgContainer6.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContainer6.Location = new System.Drawing.Point(381, 319);
-            this.imgContainer6.Name = "imgContainer6";
-            this.imgContainer6.Size = new System.Drawing.Size(173, 280);
-            this.imgContainer6.TabIndex = 5;
-            this.imgContainer6.TabStop = false;
-            this.imgContainer6.Click += new System.EventHandler(this.imgContainer6_Click);
+            this.weaponImgContainer3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.weaponImgContainer3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.weaponImgContainer3.Location = new System.Drawing.Point(381, 319);
+            this.weaponImgContainer3.Name = "weaponImgContainer3";
+            this.weaponImgContainer3.Size = new System.Drawing.Size(173, 280);
+            this.weaponImgContainer3.TabIndex = 5;
+            this.weaponImgContainer3.TabStop = false;
+            this.weaponImgContainer3.Click += new System.EventHandler(this.weaponImgContainer3_Click);
             // 
-            // imgContainer5
+            // weaponImgContainer2
             // 
-            this.imgContainer5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContainer5.Location = new System.Drawing.Point(202, 319);
-            this.imgContainer5.Name = "imgContainer5";
-            this.imgContainer5.Size = new System.Drawing.Size(173, 280);
-            this.imgContainer5.TabIndex = 4;
-            this.imgContainer5.TabStop = false;
-            this.imgContainer5.Click += new System.EventHandler(this.imgContainer5_Click);
+            this.weaponImgContainer2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.weaponImgContainer2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.weaponImgContainer2.Location = new System.Drawing.Point(202, 319);
+            this.weaponImgContainer2.Name = "weaponImgContainer2";
+            this.weaponImgContainer2.Size = new System.Drawing.Size(173, 280);
+            this.weaponImgContainer2.TabIndex = 4;
+            this.weaponImgContainer2.TabStop = false;
+            this.weaponImgContainer2.Click += new System.EventHandler(this.weaponImgContainer2_Click);
             // 
-            // imgContainer4
+            // weaponImgContainer1
             // 
-            this.imgContainer4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContainer4.Location = new System.Drawing.Point(23, 319);
-            this.imgContainer4.Name = "imgContainer4";
-            this.imgContainer4.Size = new System.Drawing.Size(173, 280);
-            this.imgContainer4.TabIndex = 3;
-            this.imgContainer4.TabStop = false;
-            this.imgContainer4.Click += new System.EventHandler(this.imgContainer4_Click);
+            this.weaponImgContainer1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.weaponImgContainer1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.weaponImgContainer1.Location = new System.Drawing.Point(23, 319);
+            this.weaponImgContainer1.Name = "weaponImgContainer1";
+            this.weaponImgContainer1.Size = new System.Drawing.Size(173, 280);
+            this.weaponImgContainer1.TabIndex = 3;
+            this.weaponImgContainer1.TabStop = false;
+            this.weaponImgContainer1.Click += new System.EventHandler(this.weaponImgContainer1_Click);
             // 
-            // imgContHero3
+            // heroImgContainer3
             // 
-            this.imgContHero3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContHero3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContHero3.Location = new System.Drawing.Point(381, 6);
-            this.imgContHero3.Name = "imgContHero3";
-            this.imgContHero3.Size = new System.Drawing.Size(173, 280);
-            this.imgContHero3.TabIndex = 2;
-            this.imgContHero3.TabStop = false;
-            this.imgContHero3.Click += new System.EventHandler(this.imgContHero3_Click);
+            this.heroImgContainer3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.heroImgContainer3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.heroImgContainer3.Location = new System.Drawing.Point(381, 6);
+            this.heroImgContainer3.Name = "heroImgContainer3";
+            this.heroImgContainer3.Size = new System.Drawing.Size(173, 280);
+            this.heroImgContainer3.TabIndex = 2;
+            this.heroImgContainer3.TabStop = false;
+            this.heroImgContainer3.Click += new System.EventHandler(this.heroImgContainer3_Click);
             // 
-            // imgContHero2
+            // heroImgContainer2
             // 
-            this.imgContHero2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContHero2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContHero2.Location = new System.Drawing.Point(202, 6);
-            this.imgContHero2.Name = "imgContHero2";
-            this.imgContHero2.Size = new System.Drawing.Size(173, 280);
-            this.imgContHero2.TabIndex = 1;
-            this.imgContHero2.TabStop = false;
-            this.imgContHero2.Click += new System.EventHandler(this.imgContHero2_Click);
+            this.heroImgContainer2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.heroImgContainer2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.heroImgContainer2.Location = new System.Drawing.Point(202, 6);
+            this.heroImgContainer2.Name = "heroImgContainer2";
+            this.heroImgContainer2.Size = new System.Drawing.Size(173, 280);
+            this.heroImgContainer2.TabIndex = 1;
+            this.heroImgContainer2.TabStop = false;
+            this.heroImgContainer2.Click += new System.EventHandler(this.heroImgContainer2_Click);
             // 
-            // imgContHero1
+            // heroImgContainer1
             // 
-            this.imgContHero1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContHero1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContHero1.Location = new System.Drawing.Point(23, 6);
-            this.imgContHero1.Name = "imgContHero1";
-            this.imgContHero1.Size = new System.Drawing.Size(173, 280);
-            this.imgContHero1.TabIndex = 0;
-            this.imgContHero1.TabStop = false;
-            this.imgContHero1.Click += new System.EventHandler(this.imgContHero1_Click);
+            this.heroImgContainer1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.heroImgContainer1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.heroImgContainer1.Location = new System.Drawing.Point(23, 6);
+            this.heroImgContainer1.Name = "heroImgContainer1";
+            this.heroImgContainer1.Size = new System.Drawing.Size(173, 280);
+            this.heroImgContainer1.TabIndex = 0;
+            this.heroImgContainer1.TabStop = false;
+            this.heroImgContainer1.Click += new System.EventHandler(this.heroImgContainer1_Click);
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.btnGame4);
-            this.tabPage2.Controls.Add(this.btnGame3);
-            this.tabPage2.Controls.Add(this.btnGame2);
-            this.tabPage2.Controls.Add(this.imgContainer2);
-            this.tabPage2.Controls.Add(this.imgContainer1);
+            this.tabPage2.Controls.Add(this.ContinueButton);
+            this.tabPage2.Controls.Add(this.FightButton);
+            this.tabPage2.Controls.Add(this.SpecialButton);
+            this.tabPage2.Controls.Add(this.encounterImgContainer);
+            this.tabPage2.Controls.Add(this.encounterBackImgContainer);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -460,57 +460,59 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
-            // btnGame4
+            // ContinueButton
             // 
-            this.btnGame4.BackColor = System.Drawing.Color.Red;
-            this.btnGame4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGame4.Location = new System.Drawing.Point(93, 548);
-            this.btnGame4.Name = "btnGame4";
-            this.btnGame4.Size = new System.Drawing.Size(390, 27);
-            this.btnGame4.TabIndex = 4;
-            this.btnGame4.Text = "Continue";
-            this.btnGame4.UseVisualStyleBackColor = false;
+            this.ContinueButton.BackColor = System.Drawing.Color.Red;
+            this.ContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContinueButton.Location = new System.Drawing.Point(93, 548);
+            this.ContinueButton.Name = "ContinueButton";
+            this.ContinueButton.Size = new System.Drawing.Size(390, 27);
+            this.ContinueButton.TabIndex = 4;
+            this.ContinueButton.Text = "Continue";
+            this.ContinueButton.UseVisualStyleBackColor = false;
+            this.ContinueButton.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
-            // btnGame3
+            // FightButton
             // 
-            this.btnGame3.BackColor = System.Drawing.Color.Red;
-            this.btnGame3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGame3.Location = new System.Drawing.Point(192, 394);
-            this.btnGame3.Name = "btnGame3";
-            this.btnGame3.Size = new System.Drawing.Size(187, 66);
-            this.btnGame3.TabIndex = 3;
-            this.btnGame3.Text = "Fight!";
-            this.btnGame3.UseVisualStyleBackColor = false;
-            this.btnGame3.Click += new System.EventHandler(this.btnGame3_Click);
+            this.FightButton.BackColor = System.Drawing.Color.Red;
+            this.FightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FightButton.Location = new System.Drawing.Point(192, 463);
+            this.FightButton.Name = "FightButton";
+            this.FightButton.Size = new System.Drawing.Size(187, 66);
+            this.FightButton.TabIndex = 3;
+            this.FightButton.Text = "Fight!";
+            this.FightButton.UseVisualStyleBackColor = false;
+            this.FightButton.Click += new System.EventHandler(this.FightButton_Click);
             // 
-            // btnGame2
+            // SpecialButton
             // 
-            this.btnGame2.BackColor = System.Drawing.Color.Red;
-            this.btnGame2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGame2.Location = new System.Drawing.Point(192, 466);
-            this.btnGame2.Name = "btnGame2";
-            this.btnGame2.Size = new System.Drawing.Size(187, 66);
-            this.btnGame2.TabIndex = 2;
-            this.btnGame2.Text = "Use special ability!";
-            this.btnGame2.UseVisualStyleBackColor = false;
+            this.SpecialButton.BackColor = System.Drawing.Color.Red;
+            this.SpecialButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SpecialButton.Location = new System.Drawing.Point(207, 408);
+            this.SpecialButton.Name = "SpecialButton";
+            this.SpecialButton.Size = new System.Drawing.Size(159, 36);
+            this.SpecialButton.TabIndex = 2;
+            this.SpecialButton.Text = "Use special ability!";
+            this.SpecialButton.UseVisualStyleBackColor = false;
+            this.SpecialButton.Click += new System.EventHandler(this.SpecialButton_Click);
             // 
             // imgContainer2
             // 
-            this.imgContainer2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer2.Location = new System.Drawing.Point(310, 98);
-            this.imgContainer2.Name = "imgContainer2";
-            this.imgContainer2.Size = new System.Drawing.Size(173, 280);
-            this.imgContainer2.TabIndex = 1;
-            this.imgContainer2.TabStop = false;
+            this.encounterImgContainer.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.encounterImgContainer.Location = new System.Drawing.Point(310, 98);
+            this.encounterImgContainer.Name = "imgContainer2";
+            this.encounterImgContainer.Size = new System.Drawing.Size(173, 280);
+            this.encounterImgContainer.TabIndex = 1;
+            this.encounterImgContainer.TabStop = false;
             // 
             // imgContainer1
             // 
-            this.imgContainer1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.imgContainer1.Location = new System.Drawing.Point(93, 98);
-            this.imgContainer1.Name = "imgContainer1";
-            this.imgContainer1.Size = new System.Drawing.Size(173, 280);
-            this.imgContainer1.TabIndex = 0;
-            this.imgContainer1.TabStop = false;
+            this.encounterBackImgContainer.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.encounterBackImgContainer.Location = new System.Drawing.Point(93, 98);
+            this.encounterBackImgContainer.Name = "imgContainer1";
+            this.encounterBackImgContainer.Size = new System.Drawing.Size(173, 280);
+            this.encounterBackImgContainer.TabIndex = 0;
+            this.encounterBackImgContainer.TabStop = false;
             // 
             // tabPage3
             // 
@@ -536,20 +538,20 @@
             this.Text = "Gountlet Of Fools";
             this.PnlPlayerData.ResumeLayout(false);
             this.PnlPlayerData.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerHeroImgContainer)).EndInit();
             this.PnlPlay.ResumeLayout(false);
             this.tabCtrlGame1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContHero3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContHero2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContHero1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponImgContainer3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponImgContainer2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponImgContainer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgContainer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -582,20 +584,20 @@
         private labGame labGame16;
         private labGame labGame15;
         private labGame labGame14;
-        private ImgContainer imgContainer6;
-        private ImgContainer imgContainer5;
-        private ImgContainer imgContainer4;
-        private ImgContainer imgContHero3;
-        private ImgContainer imgContHero2;
-        private ImgContainer imgContHero1;
-        private ImgContainer imgContainer8;
-        private ImgContainer imgContainer7;
-        private btnGame btnGame1;
-        private btnGame btnGame4;
-        private btnGame btnGame3;
-        private btnGame btnGame2;
-        private ImgContainer imgContainer2;
-        private ImgContainer imgContainer1;
+        private ImgContainer weaponImgContainer3;
+        private ImgContainer weaponImgContainer2;
+        private ImgContainer weaponImgContainer1;
+        private ImgContainer heroImgContainer3;
+        private ImgContainer heroImgContainer2;
+        private ImgContainer heroImgContainer1;
+        private ImgContainer playerWeaponImgContainer;
+        private ImgContainer playerHeroImgContainer;
+        private btnGame PlayButton;
+        private btnGame ContinueButton;
+        private btnGame FightButton;
+        private btnGame SpecialButton;
+        private ImgContainer encounterImgContainer;
+        private ImgContainer encounterBackImgContainer;
 
     }
 }
