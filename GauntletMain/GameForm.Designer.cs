@@ -491,7 +491,7 @@
             this.btnGame2.Name = "btnGame2";
             this.btnGame2.Size = new System.Drawing.Size(187, 66);
             this.btnGame2.TabIndex = 2;
-            this.btnGame2.Text = "Defend\nyourself!";
+            this.btnGame2.Text = "Use special ability!";
             this.btnGame2.UseVisualStyleBackColor = false;
             // 
             // imgContainer2

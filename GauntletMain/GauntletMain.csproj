@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssetsMonsters.resx</DependentUpon>
     </Compile>
+    <Compile Include="AssetsUI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetsUI.resx</DependentUpon>
+    </Compile>
     <Compile Include="AssetsWeapons.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,6 +111,10 @@
     <EmbeddedResource Include="AssetsMonsters.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AssetsMonsters.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetsUI.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssetsUI.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="AssetsWeapons.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -16,8 +16,8 @@ namespace GauntletMain
 
     public partial class GameForm
     {
-        //Here begins the game
-        public void BeginNewGame()
+        //Game begins here
+        public void  BeginNewGame()
         {
 
             //play Background music
@@ -83,7 +83,7 @@ namespace GauntletMain
             return atk;
         }
 
-        public static void Attack(Player player, MonsterCard monster)
+        public void Attack(Player player, MonsterCard monster)
         {
             int currentRoll = RollDice(player.Dice);
             int totalAtk = currentRoll + player.TotalAttackPoints;
@@ -103,9 +103,11 @@ namespace GauntletMain
                     string.Format("You rolled {0} for a total of {1} attack!\nUnfortunately you did not manage to defeat {2}!",
                         currentRoll, totalAtk, monster.Name));
             }
+
+            UpdateInformation(Player.ActivePlayer);
         }
 
-        public static void Defend(Player player, MonsterCard monster)
+        public void Defend(Player player, MonsterCard monster)
         {
             if (monster.Stats.AttackPoints > player.TotalDefensePoints)
             {
@@ -116,8 +118,11 @@ namespace GauntletMain
             {
                 MessageBox.Show(string.Format("You successfully dodged {0}'s attack!", monster.Name));
             }
+
+            UpdateInformation(Player.ActivePlayer);
         }
 
+        //TODO: Complete method
         public void DetermineEncounter(Encounter card)
         {
             if (card.GetType().ToString().TrimStart("GauntletMain.Classes.".ToCharArray()) == "MonsterCard")
@@ -132,8 +137,10 @@ namespace GauntletMain
                 btnGame3.Hide();
                 StaticResources.CurrentFightPhase = StaticResources.FightPhase.NA;
                 ActivateModifier(Player.ActivePlayer, (ModifierCard)card);
+
+                UpdateInformation(Player.ActivePlayer);
+                btnGame4.Hide();
                 //Replace "FIGHT!" button with "Continue!"
-                //call method of the relevant modifier card through switch case
             }
         }
 
@@ -164,6 +171,15 @@ namespace GauntletMain
             }
         }
 
+        public void UpdateInformation(Player player)
+        {
+            labGame8.Text = (Player.ActivePlayer.TotalHealthPoints).ToString();
+            labGame9.Text = (Player.ActivePlayer.Dice).ToString();
+            labGame10.Text = (Player.ActivePlayer.TotalAttackPoints).ToString();
+            labGame11.Text = (Player.ActivePlayer.TotalDefensePoints).ToString();
+            labGame12.Text = (Player.ActivePlayer.TotalActionPoints).ToString();
+            labGame13.Text = (Player.ActivePlayer.TotalCoins).ToString();
+        }
         
     }
 }
