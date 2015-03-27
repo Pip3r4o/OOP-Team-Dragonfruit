@@ -27,48 +27,36 @@ namespace GauntletMain
 
         private void imgContHero1_Click(object sender, EventArgs e)
         {
-            var heroCard = CardGenerator.ListOfHeroes;
-
             UpdateInfoHero((HeroCard)imgContHero1.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
         private void imgContHero2_Click(object sender, EventArgs e)
         {
-            var heroCard = CardGenerator.ListOfHeroes;
-
             UpdateInfoHero((HeroCard)imgContHero2.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
         private void imgContHero3_Click(object sender, EventArgs e)
         {
-            var heroCard = CardGenerator.ListOfHeroes;
-
             UpdateInfoHero((HeroCard)imgContHero3.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
         private void imgContainer4_Click(object sender, EventArgs e)
         {
-            var weaponCard = CardGenerator.ListOfWeapons;
-
             UpdateInfoWeapon((WeaponCard)imgContainer4.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
         private void imgContainer5_Click(object sender, EventArgs e)
         {
-            var weaponCard = CardGenerator.ListOfWeapons;
-
             UpdateInfoWeapon((WeaponCard)imgContainer5.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
 
         private void imgContainer6_Click(object sender, EventArgs e)
         {
-            var weaponCard = CardGenerator.ListOfWeapons;
-
             UpdateInfoWeapon((WeaponCard)imgContainer6.Card);
             UpdateTotalInfo((HeroCard)imgContainer7.PlayerCard, (WeaponCard)imgContainer8.PlayerCard);
         }
