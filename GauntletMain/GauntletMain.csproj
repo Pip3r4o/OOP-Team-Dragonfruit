@@ -70,7 +70,6 @@
     <Compile Include="Classes\Ability.cs" />
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\Encounter.cs" />
-    <Compile Include="Classes\EncounterEngine.cs" />
     <Compile Include="Classes\EntityStats.cs" />
     <Compile Include="Classes\CardGenerator.cs" />
     <Compile Include="Classes\HighScore.cs" />
@@ -78,7 +77,7 @@
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
     <Compile Include="Classes\MonsterCard.cs" />
-    <Compile Include="Classes\PlayerCards.cs" />
+    <Compile Include="Classes\PlayerCard.cs" />
     <Compile Include="Classes\PlayerNameValidation.cs" />
     <Compile Include="Classes\WeaponCard.cs" />
     <Compile Include="GameForm.cs">

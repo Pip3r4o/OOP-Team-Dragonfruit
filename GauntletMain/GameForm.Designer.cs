@@ -121,6 +121,7 @@
             this.btnGame1.TabIndex = 25;
             this.btnGame1.Text = "PLAY";
             this.btnGame1.UseVisualStyleBackColor = false;
+            this.btnGame1.Click += new System.EventHandler(this.btnGame1_Click);
             // 
             // imgContainer8
             // 
@@ -387,6 +388,7 @@
             this.imgContainer6.Size = new System.Drawing.Size(173, 280);
             this.imgContainer6.TabIndex = 5;
             this.imgContainer6.TabStop = false;
+            this.imgContainer6.Click += new System.EventHandler(this.imgContainer6_Click);
             // 
             // imgContainer5
             // 
@@ -397,6 +399,7 @@
             this.imgContainer5.Size = new System.Drawing.Size(173, 280);
             this.imgContainer5.TabIndex = 4;
             this.imgContainer5.TabStop = false;
+            this.imgContainer5.Click += new System.EventHandler(this.imgContainer5_Click);
             // 
             // imgContainer4
             // 
@@ -407,6 +410,7 @@
             this.imgContainer4.Size = new System.Drawing.Size(173, 280);
             this.imgContainer4.TabIndex = 3;
             this.imgContainer4.TabStop = false;
+            this.imgContainer4.Click += new System.EventHandler(this.imgContainer4_Click);
             // 
             // imgContHero3
             // 
@@ -417,6 +421,7 @@
             this.imgContHero3.Size = new System.Drawing.Size(173, 280);
             this.imgContHero3.TabIndex = 2;
             this.imgContHero3.TabStop = false;
+            this.imgContHero3.Click += new System.EventHandler(this.imgContHero3_Click);
             // 
             // imgContHero2
             // 
@@ -427,6 +432,7 @@
             this.imgContHero2.Size = new System.Drawing.Size(173, 280);
             this.imgContHero2.TabIndex = 1;
             this.imgContHero2.TabStop = false;
+            this.imgContHero2.Click += new System.EventHandler(this.imgContHero2_Click);
             // 
             // imgContHero1
             // 
@@ -437,6 +443,7 @@
             this.imgContHero1.Size = new System.Drawing.Size(173, 280);
             this.imgContHero1.TabIndex = 0;
             this.imgContHero1.TabStop = false;
+            this.imgContHero1.Click += new System.EventHandler(this.imgContHero1_Click);
             // 
             // tabPage2
             // 
@@ -468,12 +475,13 @@
             // 
             this.btnGame3.BackColor = System.Drawing.Color.Red;
             this.btnGame3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGame3.Location = new System.Drawing.Point(192, 466);
+            this.btnGame3.Location = new System.Drawing.Point(192, 394);
             this.btnGame3.Name = "btnGame3";
             this.btnGame3.Size = new System.Drawing.Size(187, 66);
             this.btnGame3.TabIndex = 3;
             this.btnGame3.Text = "Fight!";
             this.btnGame3.UseVisualStyleBackColor = false;
+            this.btnGame3.Click += new System.EventHandler(this.btnGame3_Click);
             // 
             // btnGame2
             // 

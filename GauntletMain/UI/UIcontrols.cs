@@ -56,11 +56,18 @@ namespace GauntletMain
         }
 
         public Card Card = null;
+        public PlayerCard PlayerCard = null;
 
         public void ShowCard(Card card)
         {
             this.Card = card;
             this.Image = Card.ArtImage;  
+        }
+
+        public void ShowMiniCard(PlayerCard card)
+        {
+            this.PlayerCard = card;
+            this.Image = card.MiniArtImage;
         }
     }
 

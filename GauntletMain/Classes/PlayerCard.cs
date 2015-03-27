@@ -2,9 +2,9 @@
 
 namespace GauntletMain.Classes
 {
-    public abstract class PlayerCards : Card
+    public abstract class PlayerCard : Card
     {
-        protected PlayerCards(string name, Image artImage, Image miniArtImage, EntityStats stats)
+        protected PlayerCard(string name, Image artImage, Image miniArtImage, EntityStats stats)
             : base(name, artImage)
         {
             this.MiniArtImage = miniArtImage;

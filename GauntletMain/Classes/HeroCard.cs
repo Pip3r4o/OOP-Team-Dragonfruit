@@ -2,7 +2,7 @@
 
 namespace GauntletMain.Classes
 {
-    public class HeroCard : PlayerCards
+    public class HeroCard : PlayerCard
     {
         public HeroCard(string name, Image artImage, Image miniArtImage, int healthPoints, int actionPoints, EntityStats stats)
             : base(name, artImage, miniArtImage, stats)
