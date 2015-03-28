@@ -59,11 +59,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssetsMonsters.resx</DependentUpon>
     </Compile>
-    <Compile Include="AssetsUI.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetsUI.resx</DependentUpon>
-    </Compile>
     <Compile Include="AssetsWeapons.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,7 +118,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AssetsUI.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AssetsUI.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="AssetsWeapons.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -299,6 +293,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SPRINGTRAP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartCardsField.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttackButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttackButtonPushed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeffendButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeffendButtonPushed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FightScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerPannel.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
