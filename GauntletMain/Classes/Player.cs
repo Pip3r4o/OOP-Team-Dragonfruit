@@ -21,6 +21,7 @@ namespace GauntletMain.Classes
             this.TotalActionPoints = totalActionPoints;
             this.TotalCoins = totalCoins;
             this.Turn = turn;
+            this.UsedAbility = false;
         }
 
         static Player() 
@@ -39,6 +40,6 @@ namespace GauntletMain.Classes
         public int TotalActionPoints { get; set; }
         public int TotalCoins { get; set; }
         public int Turn { get; set; }
-
+        public bool UsedAbility { get; set; }
     }
 }

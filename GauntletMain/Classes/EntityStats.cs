@@ -11,7 +11,7 @@ namespace GauntletMain.Classes
             this.DefensePoints = defensePoints;
         }
 
-        public EntityStats(int attackPoints, int defensePoints, Ability specialAbility)
+        public EntityStats(int attackPoints, int defensePoints, AbilityEnum specialAbility)
             : this(attackPoints, defensePoints)
         {
             this.SpecialAbility = specialAbility;
@@ -22,6 +22,6 @@ namespace GauntletMain.Classes
 
         public int DefensePoints { get; set; }
 
-        public Ability SpecialAbility { get; set; }
+        public AbilityEnum SpecialAbility { get; set; }
     }
 }
