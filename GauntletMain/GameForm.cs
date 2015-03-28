@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Windows.Forms;
 using GauntletMain.Classes;
+using GauntletMain.Utilities;
 
 namespace GauntletMain
 {
     public partial class GameForm : GameUIForm
     {
-
         public GameForm()
         {
             InitializeComponent();
+
+            int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
+            style |= NativeWinAPI.WS_EX_COMPOSITED;
+            NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
+
             BeginNewGame();
         }
 
@@ -174,7 +179,7 @@ namespace GauntletMain
                     case AbilityEnum.SummonSkeleton:
                         {
                             Ability.SummonSkeleton(Player.ActivePlayer);
-                            MessageBox.Show("You summon a bony minion to protect you, thus granting you 5 Defence Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("You summon a bony minion to protect you, thus granting you 4 Defence Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         break;
                 }
