@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssetsMonsters.resx</DependentUpon>
     </Compile>
+    <Compile Include="AssetsUI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetsUI.resx</DependentUpon>
+    </Compile>
     <Compile Include="AssetsWeapons.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -118,6 +123,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AssetsUI.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssetsUI.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="AssetsWeapons.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -305,9 +311,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DeffendButton.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DeffendButtonPushed.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FightScreen.jpg" />

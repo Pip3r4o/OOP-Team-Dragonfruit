@@ -107,7 +107,7 @@ namespace GauntletMain
                     {
                         StaticResources.CurrentFightPhase = StaticResources.FightPhase.Defend;
                         Attack(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
-                        //btnGame3.BackgroundImage =;
+                        FightButton.BackgroundImage = AssetsUI.DeffendButton;
                         SpecialButton.Hide();
                     }
                     break;
@@ -115,7 +115,7 @@ namespace GauntletMain
                     {
                         StaticResources.CurrentFightPhase = StaticResources.FightPhase.NA;
                         Defend(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
-                        //btnGame3.BackgroundImage =;
+                        FightButton.BackgroundImage = AssetsUI.AttackButton;
                         FightButton.Hide();
                         ContinueButton.Show();
                     }
@@ -234,6 +234,7 @@ namespace GauntletMain
                         }
                         break;
                 }
+                player.UsedAbility = false;
                 UpdateInformation();
             }
         }
