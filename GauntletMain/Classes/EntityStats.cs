@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace GauntletMain.Classes
+﻿namespace GauntletMain.Classes
 {
-    [Serializable]
     public class EntityStats
     {
         public EntityStats(int attackPoints, int defensePoints)

@@ -58,10 +58,10 @@ namespace GauntletMain
         {
             if (!PlayerNameValidation.IsHostnameValid(tbxName1.Text))
             {
-                MessageBox.Show("Invalid name!");
+                MessageBox.Show("Invalid name!", "Invalid Name!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-
             }
+
             else
             {
                 Player.ActivePlayer.Name = tbxName1.Text;
@@ -69,7 +69,7 @@ namespace GauntletMain
 
             if (playerHeroImgContainer.Image == null || playerWeaponImgContainer.Image == null)
             {
-                MessageBox.Show("You must first choose a Hero and a Weapon to play with!", "Invalid Choice!");
+                MessageBox.Show("You must first choose a Hero and a Weapon to play with!", "Invalid Choice!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -127,12 +127,84 @@ namespace GauntletMain
         {
             if (encounterImgContainer.Card is MonsterCard)
             {
-                SpecialFade(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);    
+                SpecialFade(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
             }
-            
+
             ContinueButton.Hide();
             DrawCard();
             DetermineEncounter();
+        }
+
+        private void SpecialButton_Click(object sender, EventArgs e)
+        {
+            if (Player.ActivePlayer.TotalActionPoints > 0)
+            {
+                switch (Player.ActivePlayer.CurrentHero.Stats.SpecialAbility)
+                {
+                    case AbilityEnum.Charge:
+                        {
+                            Ability.Charge(Player.ActivePlayer);
+                            MessageBox.Show("You feel empowered and gain 5 Attack Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        break;
+                    case AbilityEnum.BushSkull:
+                        {
+                            Ability.BashSkull(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
+                            MessageBox.Show(string.Format("You swing your {0} and break {1}'s skull.\nYou find {2} coins!", Player.ActivePlayer.CurrentWeapon.Name, ((MonsterCard)encounterImgContainer.Card).Name, ((MonsterCard)encounterImgContainer.Card).CoinsAwarded), "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        break;
+                    case AbilityEnum.EvasiveFire:
+                        {
+                            Ability.EvasiveFire(Player.ActivePlayer);
+                            MessageBox.Show("You feel threatened and decide to not encounter the monster!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        break;
+                    case AbilityEnum.GoldRush:
+                        {
+                            Ability.GoldRush(Player.ActivePlayer);
+                            MessageBox.Show("You are feeling lucky!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        break;
+                    case AbilityEnum.NatureCall:
+                        {
+                            Ability.NatureCall(Player.ActivePlayer);
+                            MessageBox.Show("You channel nature's power and gain 4 Attack Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        break;
+                    case AbilityEnum.SummonSkeleton:
+                        {
+                            Ability.SummonSkeleton(Player.ActivePlayer);
+                            MessageBox.Show("You summon a bony minion to protect you, thus granting you 5 Defence Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        break;
+                }
+
+                UpdateInformation();
+
+                switch (StaticResources.CurrentFightPhase)
+                {
+                    case StaticResources.FightPhase.NA:
+                        {
+                            SpecialButton.Hide();
+                            FightButton.Hide();
+                            ContinueButton.Show();
+                        }
+                        break;
+                    case StaticResources.FightPhase.Fight:
+                        {
+                            SpecialButton.Hide();
+                            FightButton.Show();
+                            ContinueButton.Hide();
+                        }
+                        break;
+                    case StaticResources.FightPhase.Defend:
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Insufficient amount of Action Points!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SpecialFade(Player player, MonsterCard card)
@@ -163,78 +235,6 @@ namespace GauntletMain
                         break;
                 }
                 UpdateInformation();
-            }
-        }
-
-        private void SpecialButton_Click(object sender, EventArgs e)
-        {
-            if (Player.ActivePlayer.TotalActionPoints > 0)
-            {
-                switch (Player.ActivePlayer.CurrentHero.Stats.SpecialAbility)
-                {
-                    case AbilityEnum.Charge:
-                        {
-                            Ability.Charge(Player.ActivePlayer);
-                            MessageBox.Show("You feel empowered and gain 5 Attack Points for the duration of this turn!");
-                        }
-                        break;
-                    case AbilityEnum.BushSkull:
-                        {
-                            Ability.BashSkull(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
-                            //MessageBox.Show(string.Format("You swing your {0} and break {1}'s skull. You find {2} coins!", Player.ActivePlayer.CurrentWeapon.Name));
-                        }
-                        break;
-                    case AbilityEnum.EvasiveFire:
-                        {
-                            Ability.EvasiveFire(Player.ActivePlayer);
-                            MessageBox.Show("You feel threatened and decide to not encounter the monster!");
-                        }
-                        break;
-                    case AbilityEnum.GoldRush:
-                        {
-                            Ability.GoldRush(Player.ActivePlayer);
-                            MessageBox.Show("You are feeling lucky!");
-                        }
-                        break;
-                    case AbilityEnum.NatureCall:
-                        {
-                            Ability.NatureCall(Player.ActivePlayer);
-                            MessageBox.Show("You channel nature's power and gain 4 Attack Points for the duration of this turn!");
-                        }
-                        break;
-                    case AbilityEnum.SummonSkeleton:
-                        {
-                            Ability.SummonSkeleton(Player.ActivePlayer);
-                            MessageBox.Show("You summon a bony minion to protect you, thus granting you 5 Defence Points for the duration of this turn!");
-                        }
-                        break;
-                }
-
-                UpdateInformation();
-
-                switch (StaticResources.CurrentFightPhase)
-                {
-                    case StaticResources.FightPhase.NA:
-                        {
-                            SpecialButton.Hide();
-                            FightButton.Hide();
-                            ContinueButton.Show();
-                        }
-                        break;
-                    case StaticResources.FightPhase.Fight:
-                        {
-                            SpecialButton.Hide();
-                            FightButton.Show();
-                            ContinueButton.Hide();
-                        }
-                        break;
-                    case StaticResources.FightPhase.Defend:
-                        break;
-                }
-            }
-            else
-            {
-                MessageBox.Show("Insufficient amount of Action Points!");
             }
         }
 

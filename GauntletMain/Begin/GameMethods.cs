@@ -86,7 +86,7 @@ namespace GauntletMain
             if (totalAtk >= monster.Stats.DefensePoints)
             {
                 MessageBox.Show(
-                    string.Format("You rolled {0} for a total of {1} attack!\nYou vanquished {2} and won {3} coins!",
+                    string.Format("You rolled {0} for a total of {1} attack!\n\nYou vanquished {2} and won {3} coins!",
                         currentRoll, totalAtk, monster.Name, monster.CoinsAwarded));
 
                 player.TotalCoins += monster.CoinsAwarded;
@@ -95,7 +95,7 @@ namespace GauntletMain
             else
             {
                 MessageBox.Show(
-                    string.Format("You rolled {0} for a total of {1} attack!\nUnfortunately you did not manage to defeat {2}!",
+                    string.Format("You rolled {0} for a total of {1} attack!\n\nUnfortunately you did not manage to defeat {2}!",
                         currentRoll, totalAtk, monster.Name));
             }
 
@@ -146,23 +146,23 @@ namespace GauntletMain
             {
                 case ModifierEventEnum.SpringTrap: ModifierEvent.SpringTrap(player);
                     MessageBox.Show(
-                        string.Format("You sprung an arrow trap!\nYou are debilitated and thus lose 1 Attack point!"), card.Name);
+                        string.Format("You sprung an arrow trap!\n\nYou are debilitated and thus lose 1 Attack point!"), card.Name, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
                 case ModifierEventEnum.HealingSpring: ModifierEvent.HealingSpring(player);
                     MessageBox.Show(
-                        string.Format("You found a pond of fresh water!\nYou are restored 1 Health point!"), card.Name);
+                        string.Format("You found a pond of fresh water!\n\nYou are restored 1 Health point!"), card.Name, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
                 case ModifierEventEnum.TearSatchel: ModifierEvent.TearSatchel(player);
                     MessageBox.Show(
-                        string.Format("You find out that your pouch has been torn!\nYou have lost 3 coins!"), card.Name);
+                        string.Format("You find out that your pouch has been torn!\n\nYou have lost 3 coins!"), card.Name, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
                 case ModifierEventEnum.GoodFortune: ModifierEvent.GoodFortune(player);
                     MessageBox.Show(
-                        string.Format("It's your lucky day!\nYou find 4 coins laying by a long-dead adventurer!"), card.Name);
+                        string.Format("It's your lucky day!\n\nYou find 4 coins laying by a long-dead adventurer!"), card.Name, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
                 case ModifierEventEnum.BearTrap: ModifierEvent.BearTrap(player);
                     MessageBox.Show(
-                        string.Format("You step into a bear trap!\nYou are crippled and thus lose 1 Defense point!"), card.Name);
+                        string.Format("You step into a bear trap!\n\nYou are crippled and thus lose 1 Defense point!"), card.Name, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
             }
         }

@@ -1,13 +1,9 @@
-﻿using System.Drawing;
-using System.Runtime.CompilerServices;
-
-namespace GauntletMain.Classes
+﻿namespace GauntletMain.Classes
 {
     public class Player : GameObject
     {
         private const int InitialDice = 2;
         private const int InitialHealthPoints = 4;
-        public static Player activePlayer;
 
         public Player(string name, HeroCard hero, WeaponCard weapon, int totalAttackPoints, int totalDefensePoints, int totalActionPoints, int totalCoins, int turn) 
             : base(name)
