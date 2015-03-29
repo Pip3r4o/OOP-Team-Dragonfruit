@@ -13,7 +13,7 @@
 
         public Highscore(string data)
         {
-            var dataArr = data.Split('-');
+            var dataArr = data.Split(' ');
             this.Name = dataArr[0];
             this.Score = int.Parse(dataArr[1]);
         }
