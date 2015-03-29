@@ -1,6 +1,5 @@
 ﻿namespace GauntletMain.Classes
 {
-    ///Vely still works here
     using System;
     using System.Collections.Generic;
     using System.IO;
