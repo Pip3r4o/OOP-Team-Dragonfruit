@@ -474,7 +474,7 @@
             this.ClientSize = new System.Drawing.Size(784, 662);
             this.Controls.Add(this.PnlPlay);
             this.Controls.Add(this.PnlPlayerData);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gountlet Of Fools";

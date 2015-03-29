@@ -11,9 +11,9 @@ namespace GauntletMain
         {
             InitializeComponent();
 
-            int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
-            style |= NativeWinAPI.WS_EX_COMPOSITED;
-            NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
+            //int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
+            //style |= NativeWinAPI.WS_EX_COMPOSITED;
+            //NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
 
             BeginNewGame();
         }
@@ -290,6 +290,9 @@ namespace GauntletMain
 
         private void GameOver()
         {
+            Highscore score = new Highscore( Player.ActivePlayer.Name, Player.ActivePlayer.TotalCoins);
+            Highscore.ReadScoresFromFile("..//..//scores.txt");
+
             tabCtrlGame1.TabPages.Clear();
             tabCtrlGame1.TabPages.Add(tabPage3);
         }

@@ -1,4 +1,6 @@
-﻿namespace GauntletMain.Classes
+﻿using System.Windows.Forms;
+
+namespace GauntletMain.Classes
 {
     using System;
     using System.Collections.Generic;
@@ -7,41 +9,57 @@
 
     public class Highscore
     {
+        public struct Record
+        {
+            public Record(string nam, int scores)
+            {
+                Name = nam;
+                Score = scores;
+            }
+
+            public string Name;
+            public int Score;
+        }
+
+        private Record PlayerScore ;
+
         public string Name { get; set; }
         public int Position { get; set; }
         public int Score { get; set; }
 
-        public Highscore(string data)
+        public Highscore(string name, int coinss)
         {
-            var dataArr = data.Split(' ');
-            this.Name = dataArr[0];
-            this.Score = int.Parse(dataArr[1]);
+            PlayerScore = new Record(name, coinss);
         }
 
         public override string ToString()
         {
-            return String.Format("{0}. {1}: {2}", this.Position, this.Name, this.Score);
+            return String.Format("{0}: {1}", PlayerScore.Name, PlayerScore.Score);
         }
 
-        static List<Highscore> ReadScoresFromFile(string path, Highscore score)
-        {
-            var scores = new List<Highscore>();
-            string lineScore = score.ToString();
 
-            using (StreamWriter writer = new StreamWriter(path))
+        public void WriteScore(string path)
+        {
+            
+            using (StreamWriter sw = new StreamWriter(path ))
             {
-                writer.WriteLine(lineScore);
+                MessageBox.Show("to do.....");
             }
 
+        }
+
+        public static List<Record> ReadScoresFromFile(string path)
+        {
+            List<Record> returnVal = new List<Record>();
             using (StreamReader reader = new StreamReader(path))
             {
                 while (!reader.EndOfStream)
                 {
-                    string line = reader.ReadLine();
-                    scores.Add(new Highscore(line));
+                    string[] line = reader.ReadLine().Split(' ');
+                    returnVal.Add( new Record(line[0], Convert.ToInt32(line[1])));
                 }
             }
-            return SortAndPositionHighscores(scores);
+            return returnVal;
         }
 
         static List<Highscore> SortAndPositionHighscores(List<Highscore> scores)
