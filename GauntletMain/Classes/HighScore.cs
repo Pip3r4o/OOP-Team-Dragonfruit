@@ -27,13 +27,18 @@
         static List<Highscore> ReadScoresFromFile(string path, Highscore score)
         {
             var scores = new List<Highscore>();
-            string line = score.ToString();
+            string lineScore = score.ToString();
+
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                writer.WriteLine(lineScore);
+            }
 
             using (StreamReader reader = new StreamReader(path))
             {
                 while (!reader.EndOfStream)
                 {
-                    line = reader.ReadLine();
+                    string line = reader.ReadLine();
                     scores.Add(new Highscore(line));
                 }
             }
