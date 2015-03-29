@@ -17,6 +17,14 @@ namespace GauntletMain
             //style |= NativeWinAPI.WS_EX_COMPOSITED;
             //NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
 
+            heroImgContainer1.click += PlayOnClick;
+            heroImgContainer2.click += PlayOnClick;
+            heroImgContainer3.click += PlayOnClick;
+
+            weaponImgContainer1.click += PlayOnClick;
+            weaponImgContainer2.click += PlayOnClick;
+            weaponImgContainer3.click += PlayOnClick;
+
             BeginNewGame();
         }
 
@@ -296,13 +304,13 @@ namespace GauntletMain
 
             score.WriteScore("..//..//scores.txt");
             List<Highscore.Record> results =  score.ReadScoresFromFile("..//..//scores.txt");
-            results.OrderByDescending(x => x.Score);
+            results = results.OrderByDescending(x => x.Score).ToList();
 
             Form f = new Form();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Text = "GAME OVER! High Scores";
-            ListBox lis = new ListBox();
-            
+
+            ListBox lis = new ListBox();            
             lis.Dock = DockStyle.Fill;
             foreach (var x in results) lis.Items.Add("Player: "+x.Name + " Score: " + x.Score);
             f.Controls.Add(lis);

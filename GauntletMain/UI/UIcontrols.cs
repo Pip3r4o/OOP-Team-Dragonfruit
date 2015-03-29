@@ -49,6 +49,9 @@ namespace GauntletMain
 
     public class ImgContainer : PictureBox
     {
+        public delegate void OnClick();
+        public event OnClick click;
+
         public ImgContainer()
         {
             this.BackColor = Color.DeepSkyBlue;
@@ -68,6 +71,15 @@ namespace GauntletMain
         {
             this.PlayerCard = card;
             this.Image = card.MiniArtImage;
+        }
+
+        protected override void OnMouseClick(MouseEventArgs e)
+        {
+            if(StaticResources.CurrentFightPhase == StaticResources.FightPhase.NA &&
+                this.Card!=null &&
+                this.Card.ArtImage!= null &&
+                this.Card.ArtImage.Size.Height > 140
+                ) click();
         }
     }
 

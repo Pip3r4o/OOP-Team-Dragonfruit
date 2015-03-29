@@ -167,6 +167,11 @@ namespace GauntletMain
             }
         }
 
+        public void PlayOnClick()
+        {
+            StaticResources.sp = new System.Media.SoundPlayer(AssetsSounds.ChooseCard);
+            StaticResources.sp.Play();
+        }
         
     }
 }
