@@ -108,6 +108,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Utilities\Extensions.cs" />
+    <Compile Include="Utilities\NativeWinAPI.cs" />
     <Compile Include="Utilities\ThreadSafeRandom.cs" />
     <EmbeddedResource Include="AssetsHeroes.resx">
       <Generator>ResXFileCodeGenerator</Generator>
