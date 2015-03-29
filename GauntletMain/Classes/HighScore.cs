@@ -40,15 +40,16 @@ namespace GauntletMain.Classes
 
         public void WriteScore(string path)
         {
-            
-            using (StreamWriter sw = new StreamWriter(path ))
+            FileStream fs = new FileStream(path, FileMode.Append);
+
+            using (StreamWriter sw = new StreamWriter(fs ))
             {
-                MessageBox.Show("to do.....");
+                sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString());
             }
 
         }
 
-        public static List<Record> ReadScoresFromFile(string path)
+        public  List<Record> ReadScoresFromFile(string path)
         {
             List<Record> returnVal = new List<Record>();
             using (StreamReader reader = new StreamReader(path))

@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using GauntletMain.Classes;
 using GauntletMain.Utilities;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GauntletMain
 {
@@ -291,7 +293,20 @@ namespace GauntletMain
         private void GameOver()
         {
             Highscore score = new Highscore( Player.ActivePlayer.Name, Player.ActivePlayer.TotalCoins);
-            Highscore.ReadScoresFromFile("..//..//scores.txt");
+
+            score.WriteScore("..//..//scores.txt");
+            List<Highscore.Record> results =  score.ReadScoresFromFile("..//..//scores.txt");
+            results.OrderByDescending(x => x.Score);
+
+            Form f = new Form();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Text = "GAME OVER! High Scores";
+            ListBox lis = new ListBox();
+            
+            lis.Dock = DockStyle.Fill;
+            foreach (var x in results) lis.Items.Add("Player: "+x.Name + " Score: " + x.Score);
+            f.Controls.Add(lis);
+            f.ShowDialog();
 
             tabCtrlGame1.TabPages.Clear();
             tabCtrlGame1.TabPages.Add(tabPage3);
