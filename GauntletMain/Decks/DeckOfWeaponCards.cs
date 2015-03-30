@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using GauntletMain.Classes;
+using TrialOfFortune.Classes;
 
-namespace GauntletMain.Decks
+namespace TrialOfFortune.Decks
 {
     class DeckOfWeaponCards : Deck<WeaponCard>
     {

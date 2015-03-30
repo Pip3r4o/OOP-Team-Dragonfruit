@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using GauntletMain.Classes;
+using TrialOfFortune.Classes;
 
-namespace GauntletMain
+namespace TrialOfFortune
 {
     static class Program
     {

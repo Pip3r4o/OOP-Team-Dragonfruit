@@ -1,10 +1,10 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
-using GauntletMain.Classes;
-using GauntletMain.Decks;
-using GauntletMain.Utilities;
+using TrialOfFortune.Classes;
+using TrialOfFortune.Decks;
+using TrialOfFortune.Utilities;
 
-namespace GauntletMain
+namespace TrialOfFortune
 {
     public partial class GameForm
     {
@@ -21,6 +21,14 @@ namespace GauntletMain
             //StaticResources.wmp.controls.play();
             //StaticResources.wmp.settings.volume = 50;
 
+            heroImgContainer1.click += PlayOnClick;
+            heroImgContainer2.click += PlayOnClick;
+            heroImgContainer3.click += PlayOnClick;
+
+            weaponImgContainer1.click += PlayOnClick;
+            weaponImgContainer2.click += PlayOnClick;
+            weaponImgContainer3.click += PlayOnClick;
+
             //Hides the tab headers
             tabCtrlGame1.Appearance = TabAppearance.FlatButtons;
             tabCtrlGame1.ItemSize = new Size(0, 1);
@@ -35,6 +43,9 @@ namespace GauntletMain
             deckOfHeroCards.Shuffle();
             deckOfWeaponCards.Shuffle();
             deckOfEncounterCards.Shuffle();
+
+            //Resets the player statistics
+            Player.ActivePlayer = new Player(null, null, null, 0, 0, 0, 0, 0);
 
             //Show the last three Hero Cards in the choices positions
             heroImgContainer1.ShowCard(deckOfHeroCards[deckOfHeroCards.Count() - 1]);
@@ -127,7 +138,6 @@ namespace GauntletMain
                 FightButton.Show();
                 SpecialButton.Show();
                 StaticResources.CurrentFightPhase = StaticResources.FightPhase.Fight;
-                //btnGame3.BackgroundImage =;
             }
             else
             {

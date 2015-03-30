@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using GauntletMain.Utilities;
+using TrialOfFortune.Utilities;
 
-namespace GauntletMain.Decks
+namespace TrialOfFortune.Decks
 {
     class Deck<T> : IShuffle
     {

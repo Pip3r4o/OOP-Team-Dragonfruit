@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace GauntletMain.Utilities
+namespace TrialOfFortune.Utilities
 {
     class ThreadSafeRandom
     {

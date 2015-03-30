@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
-using GauntletMain.Classes;
+using TrialOfFortune.Classes;
 
-namespace GauntletMain
+namespace TrialOfFortune
 {
 
     public partial class GameUIForm : Form

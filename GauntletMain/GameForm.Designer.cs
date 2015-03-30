@@ -1,4 +1,4 @@
-﻿namespace GauntletMain
+﻿namespace TrialOfFortune
 {
     partial class GameForm
     {
@@ -28,40 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PnlPlayerData = new System.Windows.Forms.Panel();
-            this.PlayButton = new GauntletMain.btnGame();
-            this.playerWeaponImgContainer = new GauntletMain.ImgContainer();
-            this.playerHeroImgContainer = new GauntletMain.ImgContainer();
-            this.labGame13 = new GauntletMain.labGame();
-            this.labGame12 = new GauntletMain.labGame();
-            this.labGame11 = new GauntletMain.labGame();
-            this.labGame10 = new GauntletMain.labGame();
-            this.labGame9 = new GauntletMain.labGame();
-            this.labGame8 = new GauntletMain.labGame();
-            this.tbxName1 = new GauntletMain.tbxName();
+            this.PlayButton = new TrialOfFortune.btnGame();
+            this.playerWeaponImgContainer = new TrialOfFortune.ImgContainer();
+            this.playerHeroImgContainer = new TrialOfFortune.ImgContainer();
+            this.labGame13 = new TrialOfFortune.labGame();
+            this.labGame12 = new TrialOfFortune.labGame();
+            this.labGame11 = new TrialOfFortune.labGame();
+            this.labGame10 = new TrialOfFortune.labGame();
+            this.labGame9 = new TrialOfFortune.labGame();
+            this.labGame8 = new TrialOfFortune.labGame();
+            this.tbxName1 = new TrialOfFortune.tbxName();
             this.PnlPlay = new System.Windows.Forms.Panel();
-            this.tabCtrlGame1 = new GauntletMain.TabCtrlGame();
+            this.tabCtrlGame1 = new TrialOfFortune.TabCtrlGame();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.labGame19 = new GauntletMain.labGame();
-            this.labGame18 = new GauntletMain.labGame();
-            this.labGame17 = new GauntletMain.labGame();
-            this.labGame16 = new GauntletMain.labGame();
-            this.labGame15 = new GauntletMain.labGame();
-            this.labGame14 = new GauntletMain.labGame();
-            this.weaponImgContainer3 = new GauntletMain.ImgContainer();
-            this.weaponImgContainer2 = new GauntletMain.ImgContainer();
-            this.weaponImgContainer1 = new GauntletMain.ImgContainer();
-            this.heroImgContainer3 = new GauntletMain.ImgContainer();
-            this.heroImgContainer2 = new GauntletMain.ImgContainer();
-            this.heroImgContainer1 = new GauntletMain.ImgContainer();
+            this.labGame19 = new TrialOfFortune.labGame();
+            this.labGame18 = new TrialOfFortune.labGame();
+            this.labGame17 = new TrialOfFortune.labGame();
+            this.labGame16 = new TrialOfFortune.labGame();
+            this.labGame15 = new TrialOfFortune.labGame();
+            this.labGame14 = new TrialOfFortune.labGame();
+            this.weaponImgContainer3 = new TrialOfFortune.ImgContainer();
+            this.weaponImgContainer2 = new TrialOfFortune.ImgContainer();
+            this.weaponImgContainer1 = new TrialOfFortune.ImgContainer();
+            this.heroImgContainer3 = new TrialOfFortune.ImgContainer();
+            this.heroImgContainer2 = new TrialOfFortune.ImgContainer();
+            this.heroImgContainer1 = new TrialOfFortune.ImgContainer();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.ContinueButton = new GauntletMain.btnGame();
-            this.FightButton = new GauntletMain.btnGame();
-            this.SpecialButton = new GauntletMain.btnGame();
-            this.QuitButton = new GauntletMain.btnGame();
-            this.encounterImgContainer = new GauntletMain.ImgContainer();
-            this.encounterBackImgContainer = new GauntletMain.ImgContainer();
+            this.ContinueButton = new TrialOfFortune.btnGame();
+            this.FightButton = new TrialOfFortune.btnGame();
+            this.SpecialButton = new TrialOfFortune.btnGame();
+            this.QuitButton = new TrialOfFortune.btnGame();
+            this.encounterImgContainer = new TrialOfFortune.ImgContainer();
+            this.encounterBackImgContainer = new TrialOfFortune.ImgContainer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.GameOverview = new System.Windows.Forms.Button();
+            this.QuitButton2 = new TrialOfFortune.btnGame();
+            this.ReplayButton = new System.Windows.Forms.Button();
+            this.HeroToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.PnlPlayerData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerHeroImgContainer)).BeginInit();
@@ -77,12 +82,13 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlPlayerData
             // 
             this.PnlPlayerData.BackColor = System.Drawing.Color.Transparent;
-            this.PnlPlayerData.BackgroundImage = global::GauntletMain.AssetsUI.PlayerPannel;
+            this.PnlPlayerData.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayerPannel;
             this.PnlPlayerData.Controls.Add(this.PlayButton);
             this.PnlPlayerData.Controls.Add(this.playerWeaponImgContainer);
             this.PnlPlayerData.Controls.Add(this.playerHeroImgContainer);
@@ -102,13 +108,13 @@
             // PlayButton
             // 
             this.PlayButton.BackColor = System.Drawing.Color.Red;
-            this.PlayButton.BackgroundImage = global::GauntletMain.AssetsUI.PlayButton;
+            this.PlayButton.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayButton;
             this.PlayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PlayButton.FlatAppearance.BorderSize = 0;
             this.PlayButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayButton.ForeColor = System.Drawing.Color.Transparent;
-            this.PlayButton.Image = global::GauntletMain.AssetsUI.PlayButton;
+            this.PlayButton.Image = global::TrialOfFortune.AssetsUI.PlayButton;
             this.PlayButton.Location = new System.Drawing.Point(7, 578);
             this.PlayButton.Name = "PlayButton";
             this.PlayButton.Size = new System.Drawing.Size(180, 57);
@@ -237,7 +243,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage1.BackgroundImage = global::GauntletMain.AssetsUI.StartCardsField;
+            this.tabPage1.BackgroundImage = global::TrialOfFortune.AssetsUI.StartCardsField;
             this.tabPage1.Controls.Add(this.labGame19);
             this.tabPage1.Controls.Add(this.labGame18);
             this.tabPage1.Controls.Add(this.labGame17);
@@ -387,7 +393,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.BackgroundImage = global::GauntletMain.AssetsUI.FightScreen;
+            this.tabPage2.BackgroundImage = global::TrialOfFortune.AssetsUI.FightScreen;
             this.tabPage2.Controls.Add(this.ContinueButton);
             this.tabPage2.Controls.Add(this.FightButton);
             this.tabPage2.Controls.Add(this.SpecialButton);
@@ -416,7 +422,7 @@
             // FightButton
             // 
             this.FightButton.BackColor = System.Drawing.Color.Red;
-            this.FightButton.BackgroundImage = global::GauntletMain.AssetsUI.AttackButton;
+            this.FightButton.BackgroundImage = global::TrialOfFortune.AssetsUI.AttackButton;
             this.FightButton.FlatAppearance.BorderSize = 0;
             this.FightButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.FightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -439,9 +445,9 @@
             this.SpecialButton.Text = "Use special ability!";
             this.SpecialButton.UseVisualStyleBackColor = false;
             this.SpecialButton.Click += new System.EventHandler(this.SpecialButton_Click);
-            //
+            // 
             // QuitButton
-            //
+            // 
             this.QuitButton.BackColor = System.Drawing.Color.Red;
             this.QuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuitButton.Location = new System.Drawing.Point(500, 620);
@@ -473,12 +479,56 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.GameOverview);
+            this.tabPage3.Controls.Add(this.QuitButton2);
+            this.tabPage3.Controls.Add(this.ReplayButton);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(576, 636);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
+            // 
+            // GameOverview
+            // 
+            this.GameOverview.BackColor = System.Drawing.Color.Transparent;
+            this.GameOverview.Enabled = false;
+            this.GameOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GameOverview.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameOverview.Location = new System.Drawing.Point(69, 227);
+            this.GameOverview.Name = "GameOverview";
+            this.GameOverview.Size = new System.Drawing.Size(447, 181);
+            this.GameOverview.TabIndex = 4;
+            this.GameOverview.Text = "Some glorifying text";
+            this.GameOverview.UseVisualStyleBackColor = false;
+            // 
+            // QuitButton2
+            // 
+            this.QuitButton2.BackColor = System.Drawing.Color.Red;
+            this.QuitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.QuitButton2.Location = new System.Drawing.Point(245, 508);
+            this.QuitButton2.Name = "QuitButton2";
+            this.QuitButton2.Size = new System.Drawing.Size(70, 30);
+            this.QuitButton2.TabIndex = 3;
+            this.QuitButton2.Text = "Quit";
+            this.QuitButton2.UseVisualStyleBackColor = false;
+            this.QuitButton2.Click += new System.EventHandler(this.QuitButton2_Click);
+            // 
+            // ReplayButton
+            // 
+            this.ReplayButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ReplayButton.Location = new System.Drawing.Point(155, 433);
+            this.ReplayButton.Name = "ReplayButton";
+            this.ReplayButton.Size = new System.Drawing.Size(255, 55);
+            this.ReplayButton.TabIndex = 1;
+            this.ReplayButton.Text = "Play Again!";
+            this.ReplayButton.UseVisualStyleBackColor = true;
+            this.ReplayButton.Click += new System.EventHandler(this.ReplayButton_Click);
+            // 
+            // HeroToolTip
+            // 
+            this.HeroToolTip.ShowAlways = true;
+            this.HeroToolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // GameForm
             // 
@@ -508,6 +558,7 @@
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -548,6 +599,10 @@
         private btnGame QuitButton;
         private ImgContainer encounterImgContainer;
         private ImgContainer encounterBackImgContainer;
+        private btnGame QuitButton2;
+        private System.Windows.Forms.Button ReplayButton;
+        private System.Windows.Forms.Button GameOverview;
+        private System.Windows.Forms.ToolTip HeroToolTip;
 
     }
 }

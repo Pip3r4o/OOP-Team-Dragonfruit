@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace GauntletMain.Classes
+namespace TrialOfFortune.Classes
 {
     using System;
     using System.Collections.Generic;

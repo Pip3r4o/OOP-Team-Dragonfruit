@@ -1,4 +1,4 @@
-﻿namespace GauntletMain.Classes
+﻿namespace TrialOfFortune.Classes
 {
     public class EntityStats
     {

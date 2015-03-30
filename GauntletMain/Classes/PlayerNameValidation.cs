@@ -1,4 +1,4 @@
-﻿namespace GauntletMain.Classes
+﻿namespace TrialOfFortune.Classes
 {
     using System.Text.RegularExpressions;
 

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GauntletMain.Classes;
+using TrialOfFortune.Classes;
 using WMPLib;
 using System.Media;
 
-namespace GauntletMain
+namespace TrialOfFortune
 {
     public class StaticResources
     {

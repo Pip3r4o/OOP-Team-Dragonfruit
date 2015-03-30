@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
-using GauntletMain.Classes;
-using GauntletMain.Utilities;
+using TrialOfFortune.Classes;
+using TrialOfFortune.Utilities;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
-namespace GauntletMain
+namespace TrialOfFortune
 {
     public partial class GameForm : GameUIForm
     {
@@ -17,13 +18,7 @@ namespace GauntletMain
             //style |= NativeWinAPI.WS_EX_COMPOSITED;
             //NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
 
-            heroImgContainer1.click += PlayOnClick;
-            heroImgContainer2.click += PlayOnClick;
-            heroImgContainer3.click += PlayOnClick;
 
-            weaponImgContainer1.click += PlayOnClick;
-            weaponImgContainer2.click += PlayOnClick;
-            weaponImgContainer3.click += PlayOnClick;
 
             BeginNewGame();
         }
@@ -107,10 +102,12 @@ namespace GauntletMain
             tabCtrlGame1.TabPages.Add(tabPage2);
             PlayButton.Hide();
             tbxName1.Enabled = false;
+            SetToolTips();
 
             DrawCard();
             DetermineEncounter();
         }
+
 
         private void FightButton_Click(object sender, EventArgs e)
         {
@@ -189,7 +186,7 @@ namespace GauntletMain
                     case AbilityEnum.SummonSkeleton:
                         {
                             Ability.SummonSkeleton(Player.ActivePlayer);
-                            MessageBox.Show("You summon a bony minion to protect you, thus granting you 4 Defence Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("You summon a bony minion to protect you, thus granting you 4 Defense Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         break;
                 }
@@ -224,11 +221,21 @@ namespace GauntletMain
 
         private void QuitButton_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to quit the game?\nYour progress will be lost.", "You clicked on Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to quit the game?\nYour progress will be lost.", "Quit game?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
                 Application.Exit();
             }
+        }
+
+        private void QuitButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ReplayButton_Click(object sender, EventArgs e)
+        {
+            BeginNewGame();
         }
 
         private void SpecialFade(Player player, MonsterCard card)
@@ -261,6 +268,43 @@ namespace GauntletMain
                 player.UsedAbility = false;
                 UpdateInformation();
             }
+        }
+
+        private void SetToolTips()
+        {
+            var tooltip = new StringBuilder();
+
+            
+            tooltip.Append(string.Format("{0} Overview\n\nAttack: {1}\nDefense: {2}\n\nSpecial Ability: ",
+                Player.ActivePlayer.CurrentHero.Name,
+                Player.ActivePlayer.CurrentHero.Stats.AttackPoints,
+                Player.ActivePlayer.CurrentHero.Stats.DefensePoints));
+
+            switch (Player.ActivePlayer.CurrentHero.Name)
+            {
+
+                case "Miner":
+                    tooltip.Append("Gold Rush: You gain double the amount of coins the monster awards, if you defeat it and survive");
+                    break;
+                case "Ranger":
+                    tooltip.Append("Evasive Fire: You feel threatened and decide to not encounter the monster!");
+                    break;
+                case "Necromancer":
+                    tooltip.Append("Summon Skeleton: You summon a bony minion to protect you, thus granting you 4 Defense Points for the duration of this turn!");
+                    break;
+                case "Berserker":
+                    tooltip.Append("Bash Skull: You swing your weapon and instantly kill the enemy!");
+                    break;
+                case "Juggernaut":
+                    tooltip.Append("Charge: You feel empowered and gain 5 Attack Points for the duration of this turn!");
+                    break;
+                case "Druid":
+                    tooltip.Append("Nature Call: You channel nature's power and gain 4 Attack Points for the duration of this turn!");
+                    break;
+            }
+
+            HeroToolTip.ToolTipTitle = string.Format("{0}", Player.ActivePlayer.CurrentHero.Name);
+            HeroToolTip.SetToolTip(playerHeroImgContainer, tooltip.ToString());
         }
 
         private void UpdateInfoHero(HeroCard card)
@@ -309,25 +353,37 @@ namespace GauntletMain
 
         private void GameOver()
         {
-            Highscore score = new Highscore( Player.ActivePlayer.Name, Player.ActivePlayer.TotalCoins);
+            Highscore score = new Highscore(Player.ActivePlayer.Name, Player.ActivePlayer.TotalCoins);
 
             score.WriteScore("..//..//scores.txt");
-            List<Highscore.Record> results =  score.ReadScoresFromFile("..//..//scores.txt");
+            List<Highscore.Record> results = score.ReadScoresFromFile("..//..//scores.txt");
             results = results.OrderByDescending(x => x.Score).ToList();
 
             Form f = new Form();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Text = "GAME OVER! High Scores";
 
-            ListBox lis = new ListBox();            
+            ListBox lis = new ListBox();
             lis.Dock = DockStyle.Fill;
-            foreach (var x in results) lis.Items.Add("Player: "+x.Name + " Score: " + x.Score);
+            foreach (var x in results) lis.Items.Add("Player: " + x.Name + " Score: " + x.Score);
             f.Controls.Add(lis);
             f.ShowDialog();
 
             tabCtrlGame1.TabPages.Clear();
             tabCtrlGame1.TabPages.Add(tabPage3);
+
+            string overview = string.Format("{0}, your {1} who fought fiercely with a {2} found {3} coins before dying at the hands of a {4} on floor {5} of the dungeon.\n\nDo you dare venture once more into the \nEndless Dungeon?",
+                Player.ActivePlayer.Name,
+                Player.ActivePlayer.CurrentHero.Name,
+                Player.ActivePlayer.CurrentWeapon.Name,
+                Player.ActivePlayer.TotalCoins,
+                encounterImgContainer.Card.Name,
+                Player.ActivePlayer.Turn);
+
+            GameOverview.Text = overview;
         }
+
+
 
 
     }

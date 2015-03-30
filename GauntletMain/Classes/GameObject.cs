@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace GauntletMain.Classes
+namespace TrialOfFortune.Classes
 {
     public abstract class GameObject
     {

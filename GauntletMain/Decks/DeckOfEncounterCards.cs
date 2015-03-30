@@ -1,6 +1,6 @@
-﻿using GauntletMain.Classes;
+﻿using TrialOfFortune.Classes;
 
-namespace GauntletMain.Decks
+namespace TrialOfFortune.Decks
 {
     class DeckOfEncounterCards : Deck<Encounter>
     {

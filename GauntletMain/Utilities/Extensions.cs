@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GauntletMain.Utilities
+namespace TrialOfFortune.Utilities
 {
     static class Extensions
     {

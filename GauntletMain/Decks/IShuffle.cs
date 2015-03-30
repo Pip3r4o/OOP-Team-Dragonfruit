@@ -1,4 +1,4 @@
-﻿namespace GauntletMain.Decks
+﻿namespace TrialOfFortune.Decks
 {
     interface IShuffle
     {

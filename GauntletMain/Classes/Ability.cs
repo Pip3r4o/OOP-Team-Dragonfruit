@@ -1,7 +1,7 @@
-﻿using GauntletMain.Classes;
+﻿using TrialOfFortune.Classes;
 using System;
 
-namespace GauntletMain
+namespace TrialOfFortune
 {
     [Serializable]
     public class Ability

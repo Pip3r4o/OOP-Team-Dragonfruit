@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace GauntletMain.Utilities
+namespace TrialOfFortune.Utilities
 {
     /// <summary>
     /// The following, when loaded through the GameForm constructor reduces flickering, at the cost of performance
