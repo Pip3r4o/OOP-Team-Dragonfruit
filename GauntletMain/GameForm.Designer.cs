@@ -63,6 +63,7 @@
             this.encounterImgContainer = new TrialOfFortune.ImgContainer();
             this.encounterBackImgContainer = new TrialOfFortune.ImgContainer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ScoresButton = new TrialOfFortune.btnGame();
             this.GameOverview = new System.Windows.Forms.Button();
             this.QuitButton2 = new TrialOfFortune.btnGame();
             this.ReplayButton = new System.Windows.Forms.Button();
@@ -479,6 +480,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.ScoresButton);
             this.tabPage3.Controls.Add(this.GameOverview);
             this.tabPage3.Controls.Add(this.QuitButton2);
             this.tabPage3.Controls.Add(this.ReplayButton);
@@ -488,6 +490,18 @@
             this.tabPage3.Size = new System.Drawing.Size(576, 636);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
+            // 
+            // ScoresButton
+            // 
+            this.ScoresButton.BackColor = System.Drawing.Color.Red;
+            this.ScoresButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ScoresButton.Location = new System.Drawing.Point(185, 504);
+            this.ScoresButton.Name = "ScoresButton";
+            this.ScoresButton.Size = new System.Drawing.Size(194, 30);
+            this.ScoresButton.TabIndex = 5;
+            this.ScoresButton.Text = "High Scores";
+            this.ScoresButton.UseVisualStyleBackColor = false;
+            this.ScoresButton.Click += new System.EventHandler(this.ScoresButton_Click);
             // 
             // GameOverview
             // 
@@ -506,7 +520,7 @@
             // 
             this.QuitButton2.BackColor = System.Drawing.Color.Red;
             this.QuitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.QuitButton2.Location = new System.Drawing.Point(245, 508);
+            this.QuitButton2.Location = new System.Drawing.Point(245, 546);
             this.QuitButton2.Name = "QuitButton2";
             this.QuitButton2.Size = new System.Drawing.Size(70, 30);
             this.QuitButton2.TabIndex = 3;
@@ -534,14 +548,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(784, 662);
             this.Controls.Add(this.PnlPlay);
             this.Controls.Add(this.PnlPlayerData);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximumSize = new System.Drawing.Size(794, 692);
+            this.MinimumSize = new System.Drawing.Size(794, 692);
             this.Name = "GameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gountlet Of Fools";
+            this.Text = "Trial Of Fortune";
             this.PnlPlayerData.ResumeLayout(false);
             this.PnlPlayerData.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).EndInit();
@@ -603,6 +619,7 @@
         private System.Windows.Forms.Button ReplayButton;
         private System.Windows.Forms.Button GameOverview;
         private System.Windows.Forms.ToolTip HeroToolTip;
+        private btnGame ScoresButton;
 
     }
 }

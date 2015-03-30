@@ -238,6 +238,12 @@ namespace TrialOfFortune
             BeginNewGame();
         }
 
+        private void ScoresButton_Click(object sender, EventArgs e)
+        {
+            Highscore score = new Highscore(null, 0);
+            ShowScore(score);
+        }
+
         private void SpecialFade(Player player, MonsterCard card)
         {
             if (player.UsedAbility)
@@ -274,7 +280,7 @@ namespace TrialOfFortune
         {
             var tooltip = new StringBuilder();
 
-            
+
             tooltip.Append(string.Format("{0} Overview\n\nAttack: {1}\nDefense: {2}\n\nSpecial Ability: ",
                 Player.ActivePlayer.CurrentHero.Name,
                 Player.ActivePlayer.CurrentHero.Stats.AttackPoints,
@@ -351,11 +357,8 @@ namespace TrialOfFortune
             }
         }
 
-        private void GameOver()
+        private void ShowScore(Highscore score)
         {
-            Highscore score = new Highscore(Player.ActivePlayer.Name, Player.ActivePlayer.TotalCoins);
-
-            score.WriteScore("..//..//scores.txt");
             List<Highscore.Record> results = score.ReadScoresFromFile("..//..//scores.txt");
             results = results.OrderByDescending(x => x.Score).ToList();
 
@@ -368,6 +371,14 @@ namespace TrialOfFortune
             foreach (var x in results) lis.Items.Add("Player: " + x.Name + " Score: " + x.Score);
             f.Controls.Add(lis);
             f.ShowDialog();
+        }
+
+        private void GameOver()
+        {
+            Highscore score = new Highscore(Player.ActivePlayer.Name, Player.ActivePlayer.TotalCoins);
+
+            score.WriteScore("..//..//scores.txt");
+            ShowScore(score);
 
             tabCtrlGame1.TabPages.Clear();
             tabCtrlGame1.TabPages.Add(tabPage3);
@@ -382,6 +393,10 @@ namespace TrialOfFortune
 
             GameOverview.Text = overview;
         }
+
+
+
+
 
 
 
