@@ -58,6 +58,7 @@
             this.ContinueButton = new GauntletMain.btnGame();
             this.FightButton = new GauntletMain.btnGame();
             this.SpecialButton = new GauntletMain.btnGame();
+            this.QuitButton = new GauntletMain.btnGame();
             this.encounterImgContainer = new GauntletMain.ImgContainer();
             this.encounterBackImgContainer = new GauntletMain.ImgContainer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -390,6 +391,7 @@
             this.tabPage2.Controls.Add(this.ContinueButton);
             this.tabPage2.Controls.Add(this.FightButton);
             this.tabPage2.Controls.Add(this.SpecialButton);
+            this.tabPage2.Controls.Add(this.QuitButton);
             this.tabPage2.Controls.Add(this.encounterImgContainer);
             this.tabPage2.Controls.Add(this.encounterBackImgContainer);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -437,6 +439,18 @@
             this.SpecialButton.Text = "Use special ability!";
             this.SpecialButton.UseVisualStyleBackColor = false;
             this.SpecialButton.Click += new System.EventHandler(this.SpecialButton_Click);
+            //
+            // QuitButton
+            //
+            this.QuitButton.BackColor = System.Drawing.Color.Red;
+            this.QuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.QuitButton.Location = new System.Drawing.Point(500, 620);
+            this.QuitButton.Name = "QuitButton";
+            this.QuitButton.Size = new System.Drawing.Size(70, 30);
+            this.QuitButton.TabIndex = 2;
+            this.QuitButton.Text = "Quit";
+            this.QuitButton.UseVisualStyleBackColor = false;
+            this.QuitButton.Click += new System.EventHandler(this.QuitButton_Click);
             // 
             // encounterImgContainer
             // 
@@ -531,6 +545,7 @@
         private btnGame ContinueButton;
         private btnGame FightButton;
         private btnGame SpecialButton;
+        private btnGame QuitButton;
         private ImgContainer encounterImgContainer;
         private ImgContainer encounterBackImgContainer;
 

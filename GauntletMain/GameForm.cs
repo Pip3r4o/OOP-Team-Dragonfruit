@@ -222,6 +222,15 @@ namespace GauntletMain
             }
         }
 
+        private void QuitButton_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to quit the game?\nYour progress will be lost.", "You clicked on Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
         private void SpecialFade(Player player, MonsterCard card)
         {
             if (player.UsedAbility)
