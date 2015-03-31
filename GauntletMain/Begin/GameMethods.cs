@@ -96,7 +96,7 @@ namespace TrialOfFortune
 
             if (totalAtk >= monster.Stats.DefensePoints)
             {
-                MessageBox.Show(
+                MyMessageBox.Show(tbxName1.Text+", ",
                     string.Format("You rolled {0} for a total of {1} attack!\n\nYou vanquished {2} and won {3} coins!",
                         currentRoll, totalAtk, monster.Name, monster.CoinsAwarded));
 
@@ -105,7 +105,7 @@ namespace TrialOfFortune
             }
             else
             {
-                MessageBox.Show(
+                MyMessageBox.Show(tbxName1.Text + ", ",
                     string.Format("You rolled {0} for a total of {1} attack!\n\nUnfortunately you did not manage to defeat {2}!",
                         currentRoll, totalAtk, monster.Name));
             }
@@ -117,12 +117,12 @@ namespace TrialOfFortune
         {
             if (monster.Stats.AttackPoints > player.TotalDefensePoints)
             {
-                MessageBox.Show(string.Format("{0} hit you! You lose {1} health point(s)!", monster.Name, monster.Damage));
+                MyMessageBox.Show(tbxName1.Text + ", ", string.Format("{0} hit you! You lose {1} health point(s)!", monster.Name, monster.Damage));
                 player.TotalHealthPoints -= monster.Damage;
             }
             else
             {
-                MessageBox.Show(string.Format("Your defense is greater than {0}'s attack.\n\nYou successfully dodged {0}'s attempt to strike you!", monster.Name));
+                MyMessageBox.Show(tbxName1.Text + ", ", string.Format("Your defense is greater than {0}'s attack.\n\nYou successfully dodged {0}'s attempt to strike you!", monster.Name));
             }
 
             UpdateInformation();
