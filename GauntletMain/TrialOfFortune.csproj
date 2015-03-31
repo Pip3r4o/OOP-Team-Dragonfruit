@@ -335,6 +335,24 @@
   <ItemGroup>
     <None Include="Resources\ChooseCard.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbilityButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbilityButtonPushed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinueButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinueButtonPushed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuitButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuitButtonPushed.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
