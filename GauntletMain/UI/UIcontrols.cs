@@ -109,7 +109,7 @@ namespace TrialOfFortune
 
         protected override void OnCreateControl()
         {
-            this.BackColor = Color.Red;
+            this.BackColor = Color.Transparent;
             base.OnCreateControl();
         }
     }

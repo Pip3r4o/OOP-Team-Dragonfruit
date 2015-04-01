@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.PnlPlayerData = new System.Windows.Forms.Panel();
-            this.PlayButton = new TrialOfFortune.btnGame();
-            this.playerWeaponImgContainer = new TrialOfFortune.ImgContainer();
-            this.playerHeroImgContainer = new TrialOfFortune.ImgContainer();
-            this.labGame13 = new TrialOfFortune.labGame();
-            this.labGame12 = new TrialOfFortune.labGame();
-            this.labGame11 = new TrialOfFortune.labGame();
-            this.labGame10 = new TrialOfFortune.labGame();
-            this.labGame9 = new TrialOfFortune.labGame();
-            this.labGame8 = new TrialOfFortune.labGame();
-            this.tbxName1 = new TrialOfFortune.tbxName();
             this.PnlPlay = new System.Windows.Forms.Panel();
             this.tabCtrlGame1 = new TrialOfFortune.TabCtrlGame();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -68,9 +57,17 @@
             this.QuitButton2 = new TrialOfFortune.btnGame();
             this.ReplayButton = new System.Windows.Forms.Button();
             this.HeroToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.PnlPlayerData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerHeroImgContainer)).BeginInit();
+            this.PnlPlayerData = new System.Windows.Forms.Panel();
+            this.PlayButton = new TrialOfFortune.btnGame();
+            this.playerWeaponImgContainer = new TrialOfFortune.ImgContainer();
+            this.playerHeroImgContainer = new TrialOfFortune.ImgContainer();
+            this.labGame13 = new TrialOfFortune.labGame();
+            this.labGame12 = new TrialOfFortune.labGame();
+            this.labGame11 = new TrialOfFortune.labGame();
+            this.labGame10 = new TrialOfFortune.labGame();
+            this.labGame9 = new TrialOfFortune.labGame();
+            this.labGame8 = new TrialOfFortune.labGame();
+            this.tbxName1 = new TrialOfFortune.tbxName();
             this.PnlPlay.SuspendLayout();
             this.tabCtrlGame1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -84,141 +81,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).BeginInit();
             this.tabPage3.SuspendLayout();
+            this.PnlPlayerData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerHeroImgContainer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PnlPlayerData
-            // 
-            this.PnlPlayerData.BackColor = System.Drawing.Color.Transparent;
-            this.PnlPlayerData.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayerPannel;
-            this.PnlPlayerData.Controls.Add(this.PlayButton);
-            this.PnlPlayerData.Controls.Add(this.playerWeaponImgContainer);
-            this.PnlPlayerData.Controls.Add(this.playerHeroImgContainer);
-            this.PnlPlayerData.Controls.Add(this.labGame13);
-            this.PnlPlayerData.Controls.Add(this.labGame12);
-            this.PnlPlayerData.Controls.Add(this.labGame11);
-            this.PnlPlayerData.Controls.Add(this.labGame10);
-            this.PnlPlayerData.Controls.Add(this.labGame9);
-            this.PnlPlayerData.Controls.Add(this.labGame8);
-            this.PnlPlayerData.Controls.Add(this.tbxName1);
-            this.PnlPlayerData.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlPlayerData.Location = new System.Drawing.Point(0, 0);
-            this.PnlPlayerData.Name = "PnlPlayerData";
-            this.PnlPlayerData.Size = new System.Drawing.Size(200, 662);
-            this.PnlPlayerData.TabIndex = 0;
-            // 
-            // PlayButton
-            // 
-            this.PlayButton.BackColor = System.Drawing.Color.Red;
-            this.PlayButton.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayButton;
-            this.PlayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.PlayButton.FlatAppearance.BorderSize = 0;
-            this.PlayButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PlayButton.ForeColor = System.Drawing.Color.Transparent;
-            this.PlayButton.Image = global::TrialOfFortune.AssetsUI.PlayButton;
-            this.PlayButton.Location = new System.Drawing.Point(7, 578);
-            this.PlayButton.Name = "PlayButton";
-            this.PlayButton.Size = new System.Drawing.Size(180, 57);
-            this.PlayButton.TabIndex = 25;
-            this.PlayButton.UseVisualStyleBackColor = false;
-            this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
-            // 
-            // playerWeaponImgContainer
-            // 
-            this.playerWeaponImgContainer.BackColor = System.Drawing.Color.Transparent;
-            this.playerWeaponImgContainer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playerWeaponImgContainer.Location = new System.Drawing.Point(100, 420);
-            this.playerWeaponImgContainer.Name = "playerWeaponImgContainer";
-            this.playerWeaponImgContainer.Size = new System.Drawing.Size(87, 140);
-            this.playerWeaponImgContainer.TabIndex = 26;
-            this.playerWeaponImgContainer.TabStop = false;
-            // 
-            // playerHeroImgContainer
-            // 
-            this.playerHeroImgContainer.BackColor = System.Drawing.Color.Transparent;
-            this.playerHeroImgContainer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playerHeroImgContainer.Location = new System.Drawing.Point(7, 420);
-            this.playerHeroImgContainer.Name = "playerHeroImgContainer";
-            this.playerHeroImgContainer.Size = new System.Drawing.Size(87, 140);
-            this.playerHeroImgContainer.TabIndex = 25;
-            this.playerHeroImgContainer.TabStop = false;
-            // 
-            // labGame13
-            // 
-            this.labGame13.AutoSize = true;
-            this.labGame13.Font = new System.Drawing.Font("Kristen ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame13.ForeColor = System.Drawing.Color.Transparent;
-            this.labGame13.Location = new System.Drawing.Point(133, 362);
-            this.labGame13.Name = "labGame13";
-            this.labGame13.Size = new System.Drawing.Size(49, 33);
-            this.labGame13.TabIndex = 18;
-            this.labGame13.Text = "123";
-            // 
-            // labGame12
-            // 
-            this.labGame12.AutoSize = true;
-            this.labGame12.Font = new System.Drawing.Font("Kristen ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame12.ForeColor = System.Drawing.Color.White;
-            this.labGame12.Location = new System.Drawing.Point(133, 305);
-            this.labGame12.Name = "labGame12";
-            this.labGame12.Size = new System.Drawing.Size(49, 33);
-            this.labGame12.TabIndex = 17;
-            this.labGame12.Text = "123";
-            // 
-            // labGame11
-            // 
-            this.labGame11.AutoSize = true;
-            this.labGame11.Font = new System.Drawing.Font("Kristen ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame11.ForeColor = System.Drawing.Color.White;
-            this.labGame11.Location = new System.Drawing.Point(133, 249);
-            this.labGame11.Name = "labGame11";
-            this.labGame11.Size = new System.Drawing.Size(49, 33);
-            this.labGame11.TabIndex = 16;
-            this.labGame11.Text = "123";
-            // 
-            // labGame10
-            // 
-            this.labGame10.AutoSize = true;
-            this.labGame10.Font = new System.Drawing.Font("Kristen ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame10.ForeColor = System.Drawing.Color.White;
-            this.labGame10.Location = new System.Drawing.Point(133, 192);
-            this.labGame10.Name = "labGame10";
-            this.labGame10.Size = new System.Drawing.Size(49, 33);
-            this.labGame10.TabIndex = 15;
-            this.labGame10.Text = "123";
-            // 
-            // labGame9
-            // 
-            this.labGame9.AutoSize = true;
-            this.labGame9.Font = new System.Drawing.Font("Kristen ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame9.ForeColor = System.Drawing.Color.White;
-            this.labGame9.Location = new System.Drawing.Point(133, 134);
-            this.labGame9.Name = "labGame9";
-            this.labGame9.Size = new System.Drawing.Size(49, 33);
-            this.labGame9.TabIndex = 14;
-            this.labGame9.Text = "123";
-            // 
-            // labGame8
-            // 
-            this.labGame8.AutoSize = true;
-            this.labGame8.Font = new System.Drawing.Font("Kristen ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame8.ForeColor = System.Drawing.Color.White;
-            this.labGame8.Location = new System.Drawing.Point(133, 77);
-            this.labGame8.Name = "labGame8";
-            this.labGame8.Size = new System.Drawing.Size(49, 33);
-            this.labGame8.TabIndex = 13;
-            this.labGame8.Text = "123";
-            // 
-            // tbxName1
-            // 
-            this.tbxName1.BackColor = System.Drawing.Color.Maroon;
-            this.tbxName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbxName1.Font = new System.Drawing.Font("Kristen ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxName1.ForeColor = System.Drawing.Color.White;
-            this.tbxName1.Location = new System.Drawing.Point(25, 18);
-            this.tbxName1.Name = "tbxName1";
-            this.tbxName1.Size = new System.Drawing.Size(146, 29);
-            this.tbxName1.TabIndex = 6;
             // 
             // PnlPlay
             // 
@@ -226,7 +92,7 @@
             this.PnlPlay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlPlay.Location = new System.Drawing.Point(200, 0);
             this.PnlPlay.Name = "PnlPlay";
-            this.PnlPlay.Size = new System.Drawing.Size(584, 662);
+            this.PnlPlay.Size = new System.Drawing.Size(578, 658);
             this.PnlPlay.TabIndex = 1;
             // 
             // tabCtrlGame1
@@ -238,7 +104,7 @@
             this.tabCtrlGame1.Location = new System.Drawing.Point(0, 0);
             this.tabCtrlGame1.Name = "tabCtrlGame1";
             this.tabCtrlGame1.SelectedIndex = 0;
-            this.tabCtrlGame1.Size = new System.Drawing.Size(584, 662);
+            this.tabCtrlGame1.Size = new System.Drawing.Size(578, 658);
             this.tabCtrlGame1.TabIndex = 0;
             // 
             // tabPage1
@@ -261,24 +127,25 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(576, 636);
+            this.tabPage1.Size = new System.Drawing.Size(570, 632);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
             // labGame19
             // 
-            this.labGame19.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame19.ForeColor = System.Drawing.Color.White;
+            this.labGame19.Font = new System.Drawing.Font("OblivionFont", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labGame19.ForeColor = System.Drawing.Color.Black;
             this.labGame19.Location = new System.Drawing.Point(381, 610);
             this.labGame19.Name = "labGame19";
             this.labGame19.Size = new System.Drawing.Size(173, 23);
             this.labGame19.TabIndex = 24;
             this.labGame19.Text = "Card items";
+            this.labGame19.Click += new System.EventHandler(this.labGame19_Click);
             // 
             // labGame18
             // 
-            this.labGame18.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame18.ForeColor = System.Drawing.Color.White;
+            this.labGame18.Font = new System.Drawing.Font("OblivionFont", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labGame18.ForeColor = System.Drawing.Color.Black;
             this.labGame18.Location = new System.Drawing.Point(202, 610);
             this.labGame18.Name = "labGame18";
             this.labGame18.Size = new System.Drawing.Size(173, 23);
@@ -287,28 +154,30 @@
             // 
             // labGame17
             // 
-            this.labGame17.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame17.ForeColor = System.Drawing.Color.White;
+            this.labGame17.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame17.ForeColor = System.Drawing.Color.Black;
             this.labGame17.Location = new System.Drawing.Point(23, 610);
             this.labGame17.Name = "labGame17";
             this.labGame17.Size = new System.Drawing.Size(173, 23);
             this.labGame17.TabIndex = 22;
             this.labGame17.Text = "Card items";
+            this.labGame17.Click += new System.EventHandler(this.labGame17_Click);
             // 
             // labGame16
             // 
-            this.labGame16.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame16.ForeColor = System.Drawing.Color.White;
+            this.labGame16.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame16.ForeColor = System.Drawing.Color.Black;
             this.labGame16.Location = new System.Drawing.Point(381, 293);
             this.labGame16.Name = "labGame16";
             this.labGame16.Size = new System.Drawing.Size(173, 23);
             this.labGame16.TabIndex = 21;
             this.labGame16.Text = "Card items";
+            this.labGame16.Click += new System.EventHandler(this.labGame16_Click);
             // 
             // labGame15
             // 
-            this.labGame15.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame15.ForeColor = System.Drawing.Color.White;
+            this.labGame15.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame15.ForeColor = System.Drawing.Color.Black;
             this.labGame15.Location = new System.Drawing.Point(202, 293);
             this.labGame15.Name = "labGame15";
             this.labGame15.Size = new System.Drawing.Size(173, 23);
@@ -317,8 +186,8 @@
             // 
             // labGame14
             // 
-            this.labGame14.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame14.ForeColor = System.Drawing.Color.White;
+            this.labGame14.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame14.ForeColor = System.Drawing.Color.Black;
             this.labGame14.Location = new System.Drawing.Point(23, 293);
             this.labGame14.Name = "labGame14";
             this.labGame14.Size = new System.Drawing.Size(173, 23);
@@ -404,25 +273,25 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(576, 636);
+            this.tabPage2.Size = new System.Drawing.Size(570, 632);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
             // ContinueButton
             // 
-            this.ContinueButton.BackColor = System.Drawing.Color.Red;
+            this.ContinueButton.BackColor = System.Drawing.Color.Transparent;
+            this.ContinueButton.BackgroundImage = global::TrialOfFortune.AssetsUI.ContinueButton;
             this.ContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContinueButton.Location = new System.Drawing.Point(183, 570);
             this.ContinueButton.Name = "ContinueButton";
             this.ContinueButton.Size = new System.Drawing.Size(214, 27);
             this.ContinueButton.TabIndex = 4;
-            this.ContinueButton.Text = "Continue";
             this.ContinueButton.UseVisualStyleBackColor = false;
             this.ContinueButton.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
             // FightButton
             // 
-            this.FightButton.BackColor = System.Drawing.Color.Red;
+            this.FightButton.BackColor = System.Drawing.Color.Transparent;
             this.FightButton.BackgroundImage = global::TrialOfFortune.AssetsUI.AttackButton;
             this.FightButton.FlatAppearance.BorderSize = 0;
             this.FightButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -437,25 +306,25 @@
             // 
             // SpecialButton
             // 
-            this.SpecialButton.BackColor = System.Drawing.Color.Red;
+            this.SpecialButton.BackColor = System.Drawing.Color.Transparent;
+            this.SpecialButton.BackgroundImage = global::TrialOfFortune.AssetsUI.AbilityButton;
             this.SpecialButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SpecialButton.Location = new System.Drawing.Point(210, 414);
             this.SpecialButton.Name = "SpecialButton";
             this.SpecialButton.Size = new System.Drawing.Size(159, 36);
             this.SpecialButton.TabIndex = 2;
-            this.SpecialButton.Text = "Use special ability!";
             this.SpecialButton.UseVisualStyleBackColor = false;
             this.SpecialButton.Click += new System.EventHandler(this.SpecialButton_Click);
             // 
             // QuitButton
             // 
-            this.QuitButton.BackColor = System.Drawing.Color.Red;
+            this.QuitButton.BackColor = System.Drawing.Color.Transparent;
+            this.QuitButton.BackgroundImage = global::TrialOfFortune.AssetsUI.QuitButtonTransparent;
             this.QuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuitButton.Location = new System.Drawing.Point(500, 620);
             this.QuitButton.Name = "QuitButton";
             this.QuitButton.Size = new System.Drawing.Size(70, 30);
             this.QuitButton.TabIndex = 2;
-            this.QuitButton.Text = "Quit";
             this.QuitButton.UseVisualStyleBackColor = false;
             this.QuitButton.Click += new System.EventHandler(this.QuitButton_Click);
             // 
@@ -484,31 +353,33 @@
             this.tabPage3.Controls.Add(this.GameOverview);
             this.tabPage3.Controls.Add(this.QuitButton2);
             this.tabPage3.Controls.Add(this.ReplayButton);
+            this.tabPage3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(576, 636);
+            this.tabPage3.Size = new System.Drawing.Size(570, 632);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
             // ScoresButton
             // 
-            this.ScoresButton.BackColor = System.Drawing.Color.Red;
+            this.ScoresButton.BackColor = System.Drawing.Color.Transparent;
+            this.ScoresButton.BackgroundImage = global::TrialOfFortune.AssetsUI.HighScoresPNG;
             this.ScoresButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ScoresButton.Location = new System.Drawing.Point(185, 504);
             this.ScoresButton.Name = "ScoresButton";
             this.ScoresButton.Size = new System.Drawing.Size(194, 30);
             this.ScoresButton.TabIndex = 5;
-            this.ScoresButton.Text = "High Scores";
             this.ScoresButton.UseVisualStyleBackColor = false;
             this.ScoresButton.Click += new System.EventHandler(this.ScoresButton_Click);
             // 
             // GameOverview
             // 
             this.GameOverview.BackColor = System.Drawing.Color.Transparent;
+            this.GameOverview.BackgroundImage = global::TrialOfFortune.AssetsUI.FinalText;
             this.GameOverview.Enabled = false;
             this.GameOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GameOverview.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameOverview.Font = new System.Drawing.Font("OblivionFont", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GameOverview.Location = new System.Drawing.Point(69, 227);
             this.GameOverview.Name = "GameOverview";
             this.GameOverview.Size = new System.Drawing.Size(447, 181);
@@ -518,25 +389,26 @@
             // 
             // QuitButton2
             // 
-            this.QuitButton2.BackColor = System.Drawing.Color.Red;
+            this.QuitButton2.BackColor = System.Drawing.Color.Transparent;
+            this.QuitButton2.BackgroundImage = global::TrialOfFortune.AssetsUI.QuitButtonTransparent;
             this.QuitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuitButton2.Location = new System.Drawing.Point(245, 546);
             this.QuitButton2.Name = "QuitButton2";
             this.QuitButton2.Size = new System.Drawing.Size(70, 30);
             this.QuitButton2.TabIndex = 3;
-            this.QuitButton2.Text = "Quit";
             this.QuitButton2.UseVisualStyleBackColor = false;
             this.QuitButton2.Click += new System.EventHandler(this.QuitButton2_Click);
             // 
             // ReplayButton
             // 
+            this.ReplayButton.BackColor = System.Drawing.Color.Transparent;
+            this.ReplayButton.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayAgainButtonPNG;
             this.ReplayButton.Cursor = System.Windows.Forms.Cursors.Default;
             this.ReplayButton.Location = new System.Drawing.Point(155, 433);
             this.ReplayButton.Name = "ReplayButton";
             this.ReplayButton.Size = new System.Drawing.Size(255, 55);
             this.ReplayButton.TabIndex = 1;
-            this.ReplayButton.Text = "Play Again!";
-            this.ReplayButton.UseVisualStyleBackColor = true;
+            this.ReplayButton.UseVisualStyleBackColor = false;
             this.ReplayButton.Click += new System.EventHandler(this.ReplayButton_Click);
             // 
             // HeroToolTip
@@ -544,12 +416,149 @@
             this.HeroToolTip.ShowAlways = true;
             this.HeroToolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
+            // PnlPlayerData
+            // 
+            this.PnlPlayerData.BackColor = System.Drawing.Color.Transparent;
+            this.PnlPlayerData.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayerPannel;
+            this.PnlPlayerData.Controls.Add(this.PlayButton);
+            this.PnlPlayerData.Controls.Add(this.playerWeaponImgContainer);
+            this.PnlPlayerData.Controls.Add(this.playerHeroImgContainer);
+            this.PnlPlayerData.Controls.Add(this.labGame13);
+            this.PnlPlayerData.Controls.Add(this.labGame12);
+            this.PnlPlayerData.Controls.Add(this.labGame11);
+            this.PnlPlayerData.Controls.Add(this.labGame10);
+            this.PnlPlayerData.Controls.Add(this.labGame9);
+            this.PnlPlayerData.Controls.Add(this.labGame8);
+            this.PnlPlayerData.Controls.Add(this.tbxName1);
+            this.PnlPlayerData.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnlPlayerData.Location = new System.Drawing.Point(0, 0);
+            this.PnlPlayerData.Name = "PnlPlayerData";
+            this.PnlPlayerData.Size = new System.Drawing.Size(200, 658);
+            this.PnlPlayerData.TabIndex = 0;
+            // 
+            // PlayButton
+            // 
+            this.PlayButton.BackColor = System.Drawing.Color.Transparent;
+            this.PlayButton.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayButton;
+            this.PlayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.PlayButton.FlatAppearance.BorderSize = 0;
+            this.PlayButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PlayButton.ForeColor = System.Drawing.Color.Transparent;
+            this.PlayButton.Image = global::TrialOfFortune.AssetsUI.PlayButton;
+            this.PlayButton.Location = new System.Drawing.Point(7, 578);
+            this.PlayButton.Name = "PlayButton";
+            this.PlayButton.Size = new System.Drawing.Size(180, 57);
+            this.PlayButton.TabIndex = 25;
+            this.PlayButton.UseVisualStyleBackColor = false;
+            this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
+            // 
+            // playerWeaponImgContainer
+            // 
+            this.playerWeaponImgContainer.BackColor = System.Drawing.Color.Transparent;
+            this.playerWeaponImgContainer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.playerWeaponImgContainer.Location = new System.Drawing.Point(100, 420);
+            this.playerWeaponImgContainer.Name = "playerWeaponImgContainer";
+            this.playerWeaponImgContainer.Size = new System.Drawing.Size(87, 140);
+            this.playerWeaponImgContainer.TabIndex = 26;
+            this.playerWeaponImgContainer.TabStop = false;
+            // 
+            // playerHeroImgContainer
+            // 
+            this.playerHeroImgContainer.BackColor = System.Drawing.Color.Transparent;
+            this.playerHeroImgContainer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.playerHeroImgContainer.Location = new System.Drawing.Point(7, 420);
+            this.playerHeroImgContainer.Name = "playerHeroImgContainer";
+            this.playerHeroImgContainer.Size = new System.Drawing.Size(87, 140);
+            this.playerHeroImgContainer.TabIndex = 25;
+            this.playerHeroImgContainer.TabStop = false;
+            // 
+            // labGame13
+            // 
+            this.labGame13.AutoSize = true;
+            this.labGame13.Font = new System.Drawing.Font("Gigi", 18F, System.Drawing.FontStyle.Bold);
+            this.labGame13.ForeColor = System.Drawing.Color.Transparent;
+            this.labGame13.Location = new System.Drawing.Point(133, 362);
+            this.labGame13.Name = "labGame13";
+            this.labGame13.Size = new System.Drawing.Size(47, 33);
+            this.labGame13.TabIndex = 18;
+            this.labGame13.Text = "123";
+            // 
+            // labGame12
+            // 
+            this.labGame12.AutoSize = true;
+            this.labGame12.Font = new System.Drawing.Font("Gigi", 18F, System.Drawing.FontStyle.Bold);
+            this.labGame12.ForeColor = System.Drawing.Color.White;
+            this.labGame12.Location = new System.Drawing.Point(133, 305);
+            this.labGame12.Name = "labGame12";
+            this.labGame12.Size = new System.Drawing.Size(47, 33);
+            this.labGame12.TabIndex = 17;
+            this.labGame12.Text = "123";
+            // 
+            // labGame11
+            // 
+            this.labGame11.AutoSize = true;
+            this.labGame11.Font = new System.Drawing.Font("Gigi", 18F, System.Drawing.FontStyle.Bold);
+            this.labGame11.ForeColor = System.Drawing.Color.White;
+            this.labGame11.Location = new System.Drawing.Point(133, 249);
+            this.labGame11.Name = "labGame11";
+            this.labGame11.Size = new System.Drawing.Size(47, 33);
+            this.labGame11.TabIndex = 16;
+            this.labGame11.Text = "123";
+            this.labGame11.Click += new System.EventHandler(this.labGame11_Click);
+            // 
+            // labGame10
+            // 
+            this.labGame10.AutoSize = true;
+            this.labGame10.Font = new System.Drawing.Font("Gigi", 18F, System.Drawing.FontStyle.Bold);
+            this.labGame10.ForeColor = System.Drawing.Color.White;
+            this.labGame10.Location = new System.Drawing.Point(133, 192);
+            this.labGame10.Name = "labGame10";
+            this.labGame10.Size = new System.Drawing.Size(47, 33);
+            this.labGame10.TabIndex = 15;
+            this.labGame10.Text = "123";
+            // 
+            // labGame9
+            // 
+            this.labGame9.AutoSize = true;
+            this.labGame9.Font = new System.Drawing.Font("Gigi", 18F, System.Drawing.FontStyle.Bold);
+            this.labGame9.ForeColor = System.Drawing.Color.White;
+            this.labGame9.Location = new System.Drawing.Point(133, 134);
+            this.labGame9.Name = "labGame9";
+            this.labGame9.Size = new System.Drawing.Size(47, 33);
+            this.labGame9.TabIndex = 14;
+            this.labGame9.Text = "123";
+            this.labGame9.Click += new System.EventHandler(this.labGame9_Click);
+            // 
+            // labGame8
+            // 
+            this.labGame8.AutoSize = true;
+            this.labGame8.Font = new System.Drawing.Font("Gigi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labGame8.ForeColor = System.Drawing.Color.White;
+            this.labGame8.Location = new System.Drawing.Point(133, 77);
+            this.labGame8.Name = "labGame8";
+            this.labGame8.Size = new System.Drawing.Size(47, 33);
+            this.labGame8.TabIndex = 13;
+            this.labGame8.Text = "123";
+            this.labGame8.Click += new System.EventHandler(this.labGame8_Click);
+            // 
+            // tbxName1
+            // 
+            this.tbxName1.BackColor = System.Drawing.Color.Maroon;
+            this.tbxName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxName1.Font = new System.Drawing.Font("OblivionFont", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxName1.ForeColor = System.Drawing.Color.White;
+            this.tbxName1.Location = new System.Drawing.Point(25, 18);
+            this.tbxName1.Name = "tbxName1";
+            this.tbxName1.Size = new System.Drawing.Size(146, 25);
+            this.tbxName1.TabIndex = 6;
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
-            this.ClientSize = new System.Drawing.Size(784, 662);
+            this.ClientSize = new System.Drawing.Size(778, 658);
             this.Controls.Add(this.PnlPlay);
             this.Controls.Add(this.PnlPlayerData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -558,10 +567,6 @@
             this.Name = "GameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trial Of Fortune";
-            this.PnlPlayerData.ResumeLayout(false);
-            this.PnlPlayerData.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerHeroImgContainer)).EndInit();
             this.PnlPlay.ResumeLayout(false);
             this.tabCtrlGame1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -575,6 +580,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            this.PnlPlayerData.ResumeLayout(false);
+            this.PnlPlayerData.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerHeroImgContainer)).EndInit();
             this.ResumeLayout(false);
 
         }

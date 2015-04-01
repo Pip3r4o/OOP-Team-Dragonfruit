@@ -148,6 +148,9 @@
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox.resx">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -358,6 +361,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\QuitButtonPushed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuitButtonTransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OkButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OkButtonPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MyList1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MyListPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayAgainButtonPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HighScoresPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalText.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

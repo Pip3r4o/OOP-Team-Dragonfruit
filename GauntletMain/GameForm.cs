@@ -394,6 +394,36 @@ namespace TrialOfFortune
             GameOverview.Text = overview;
         }
 
+        private void labGame8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labGame9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labGame11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labGame16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labGame17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labGame19_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
