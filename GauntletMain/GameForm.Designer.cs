@@ -50,7 +50,6 @@
             this.SpecialButton = new TrialOfFortune.btnGame();
             this.QuitButton = new TrialOfFortune.btnGame();
             this.encounterImgContainer = new TrialOfFortune.ImgContainer();
-            this.encounterBackImgContainer = new TrialOfFortune.ImgContainer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.ScoresButton = new TrialOfFortune.btnGame();
             this.GameOverview = new System.Windows.Forms.Button();
@@ -79,7 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.PnlPlayerData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playerWeaponImgContainer)).BeginInit();
@@ -133,18 +131,17 @@
             // 
             // labGame19
             // 
-            this.labGame19.Font = new System.Drawing.Font("OblivionFont", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labGame19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labGame19.ForeColor = System.Drawing.Color.Black;
             this.labGame19.Location = new System.Drawing.Point(381, 610);
             this.labGame19.Name = "labGame19";
             this.labGame19.Size = new System.Drawing.Size(173, 23);
             this.labGame19.TabIndex = 24;
             this.labGame19.Text = "Card items";
-            this.labGame19.Click += new System.EventHandler(this.labGame19_Click);
             // 
             // labGame18
             // 
-            this.labGame18.Font = new System.Drawing.Font("OblivionFont", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labGame18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labGame18.ForeColor = System.Drawing.Color.Black;
             this.labGame18.Location = new System.Drawing.Point(202, 610);
             this.labGame18.Name = "labGame18";
@@ -154,29 +151,27 @@
             // 
             // labGame17
             // 
-            this.labGame17.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.labGame17.ForeColor = System.Drawing.Color.Black;
             this.labGame17.Location = new System.Drawing.Point(23, 610);
             this.labGame17.Name = "labGame17";
             this.labGame17.Size = new System.Drawing.Size(173, 23);
             this.labGame17.TabIndex = 22;
             this.labGame17.Text = "Card items";
-            this.labGame17.Click += new System.EventHandler(this.labGame17_Click);
             // 
             // labGame16
             // 
-            this.labGame16.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.labGame16.ForeColor = System.Drawing.Color.Black;
             this.labGame16.Location = new System.Drawing.Point(381, 293);
             this.labGame16.Name = "labGame16";
             this.labGame16.Size = new System.Drawing.Size(173, 23);
             this.labGame16.TabIndex = 21;
             this.labGame16.Text = "Card items";
-            this.labGame16.Click += new System.EventHandler(this.labGame16_Click);
             // 
             // labGame15
             // 
-            this.labGame15.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.labGame15.ForeColor = System.Drawing.Color.Black;
             this.labGame15.Location = new System.Drawing.Point(202, 293);
             this.labGame15.Name = "labGame15";
@@ -186,7 +181,7 @@
             // 
             // labGame14
             // 
-            this.labGame14.Font = new System.Drawing.Font("OblivionFont", 11.25F);
+            this.labGame14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.labGame14.ForeColor = System.Drawing.Color.Black;
             this.labGame14.Location = new System.Drawing.Point(23, 293);
             this.labGame14.Name = "labGame14";
@@ -269,7 +264,6 @@
             this.tabPage2.Controls.Add(this.SpecialButton);
             this.tabPage2.Controls.Add(this.QuitButton);
             this.tabPage2.Controls.Add(this.encounterImgContainer);
-            this.tabPage2.Controls.Add(this.encounterBackImgContainer);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -281,6 +275,9 @@
             // 
             this.ContinueButton.BackColor = System.Drawing.Color.Transparent;
             this.ContinueButton.BackgroundImage = global::TrialOfFortune.AssetsUI.ContinueButton;
+            this.ContinueButton.FlatAppearance.BorderSize = 0;
+            this.ContinueButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ContinueButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContinueButton.Location = new System.Drawing.Point(183, 570);
             this.ContinueButton.Name = "ContinueButton";
@@ -293,8 +290,10 @@
             // 
             this.FightButton.BackColor = System.Drawing.Color.Transparent;
             this.FightButton.BackgroundImage = global::TrialOfFortune.AssetsUI.AttackButton;
+            this.FightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.FightButton.FlatAppearance.BorderSize = 0;
             this.FightButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.FightButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.FightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FightButton.ForeColor = System.Drawing.Color.Transparent;
             this.FightButton.Location = new System.Drawing.Point(197, 469);
@@ -308,6 +307,10 @@
             // 
             this.SpecialButton.BackColor = System.Drawing.Color.Transparent;
             this.SpecialButton.BackgroundImage = global::TrialOfFortune.AssetsUI.AbilityButton;
+            this.SpecialButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SpecialButton.FlatAppearance.BorderSize = 0;
+            this.SpecialButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.SpecialButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.SpecialButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SpecialButton.Location = new System.Drawing.Point(210, 414);
             this.SpecialButton.Name = "SpecialButton";
@@ -320,6 +323,9 @@
             // 
             this.QuitButton.BackColor = System.Drawing.Color.Transparent;
             this.QuitButton.BackgroundImage = global::TrialOfFortune.AssetsUI.QuitButtonTransparent;
+            this.QuitButton.FlatAppearance.BorderSize = 0;
+            this.QuitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.QuitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.QuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuitButton.Location = new System.Drawing.Point(500, 620);
             this.QuitButton.Name = "QuitButton";
@@ -337,18 +343,10 @@
             this.encounterImgContainer.TabIndex = 1;
             this.encounterImgContainer.TabStop = false;
             // 
-            // encounterBackImgContainer
-            // 
-            this.encounterBackImgContainer.BackColor = System.Drawing.Color.Transparent;
-            this.encounterBackImgContainer.Location = new System.Drawing.Point(93, 98);
-            this.encounterBackImgContainer.Name = "encounterBackImgContainer";
-            this.encounterBackImgContainer.Size = new System.Drawing.Size(173, 280);
-            this.encounterBackImgContainer.TabIndex = 0;
-            this.encounterBackImgContainer.TabStop = false;
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.BackgroundImage = global::TrialOfFortune.AssetsUI.GameOver;
             this.tabPage3.Controls.Add(this.ScoresButton);
             this.tabPage3.Controls.Add(this.GameOverview);
             this.tabPage3.Controls.Add(this.QuitButton2);
@@ -365,6 +363,10 @@
             // 
             this.ScoresButton.BackColor = System.Drawing.Color.Transparent;
             this.ScoresButton.BackgroundImage = global::TrialOfFortune.AssetsUI.HighScoresPNG;
+            this.ScoresButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ScoresButton.FlatAppearance.BorderSize = 0;
+            this.ScoresButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ScoresButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ScoresButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ScoresButton.Location = new System.Drawing.Point(185, 504);
             this.ScoresButton.Name = "ScoresButton";
@@ -376,10 +378,14 @@
             // GameOverview
             // 
             this.GameOverview.BackColor = System.Drawing.Color.Transparent;
-            this.GameOverview.BackgroundImage = global::TrialOfFortune.AssetsUI.FinalText;
+            this.GameOverview.BackgroundImage = global::TrialOfFortune.AssetsUI.FinalTextPNG;
+            this.GameOverview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.GameOverview.Enabled = false;
+            this.GameOverview.FlatAppearance.BorderSize = 0;
             this.GameOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GameOverview.Font = new System.Drawing.Font("OblivionFont", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameOverview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameOverview.ForeColor = System.Drawing.Color.Black;
+            this.GameOverview.Image = global::TrialOfFortune.AssetsUI.FinalTextPNG;
             this.GameOverview.Location = new System.Drawing.Point(69, 227);
             this.GameOverview.Name = "GameOverview";
             this.GameOverview.Size = new System.Drawing.Size(447, 181);
@@ -391,6 +397,9 @@
             // 
             this.QuitButton2.BackColor = System.Drawing.Color.Transparent;
             this.QuitButton2.BackgroundImage = global::TrialOfFortune.AssetsUI.QuitButtonTransparent;
+            this.QuitButton2.FlatAppearance.BorderSize = 0;
+            this.QuitButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.QuitButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.QuitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuitButton2.Location = new System.Drawing.Point(245, 546);
             this.QuitButton2.Name = "QuitButton2";
@@ -403,7 +412,12 @@
             // 
             this.ReplayButton.BackColor = System.Drawing.Color.Transparent;
             this.ReplayButton.BackgroundImage = global::TrialOfFortune.AssetsUI.PlayAgainButtonPNG;
+            this.ReplayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ReplayButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ReplayButton.FlatAppearance.BorderSize = 0;
+            this.ReplayButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ReplayButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ReplayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReplayButton.Location = new System.Drawing.Point(155, 433);
             this.ReplayButton.Name = "ReplayButton";
             this.ReplayButton.Size = new System.Drawing.Size(255, 55);
@@ -443,6 +457,7 @@
             this.PlayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PlayButton.FlatAppearance.BorderSize = 0;
             this.PlayButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.PlayButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayButton.ForeColor = System.Drawing.Color.Transparent;
             this.PlayButton.Image = global::TrialOfFortune.AssetsUI.PlayButton;
@@ -505,7 +520,6 @@
             this.labGame11.Size = new System.Drawing.Size(47, 33);
             this.labGame11.TabIndex = 16;
             this.labGame11.Text = "123";
-            this.labGame11.Click += new System.EventHandler(this.labGame11_Click);
             // 
             // labGame10
             // 
@@ -528,7 +542,6 @@
             this.labGame9.Size = new System.Drawing.Size(47, 33);
             this.labGame9.TabIndex = 14;
             this.labGame9.Text = "123";
-            this.labGame9.Click += new System.EventHandler(this.labGame9_Click);
             // 
             // labGame8
             // 
@@ -540,17 +553,16 @@
             this.labGame8.Size = new System.Drawing.Size(47, 33);
             this.labGame8.TabIndex = 13;
             this.labGame8.Text = "123";
-            this.labGame8.Click += new System.EventHandler(this.labGame8_Click);
             // 
             // tbxName1
             // 
             this.tbxName1.BackColor = System.Drawing.Color.Maroon;
             this.tbxName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbxName1.Font = new System.Drawing.Font("OblivionFont", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxName1.ForeColor = System.Drawing.Color.White;
-            this.tbxName1.Location = new System.Drawing.Point(25, 18);
+            this.tbxName1.Location = new System.Drawing.Point(25, 21);
             this.tbxName1.Name = "tbxName1";
-            this.tbxName1.Size = new System.Drawing.Size(146, 25);
+            this.tbxName1.Size = new System.Drawing.Size(146, 24);
             this.tbxName1.TabIndex = 6;
             // 
             // GameForm
@@ -578,7 +590,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.heroImgContainer1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.encounterImgContainer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.encounterBackImgContainer)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.PnlPlayerData.ResumeLayout(false);
             this.PnlPlayerData.PerformLayout();
@@ -623,7 +634,6 @@
         private btnGame SpecialButton;
         private btnGame QuitButton;
         private ImgContainer encounterImgContainer;
-        private ImgContainer encounterBackImgContainer;
         private btnGame QuitButton2;
         private System.Windows.Forms.Button ReplayButton;
         private System.Windows.Forms.Button GameOverview;

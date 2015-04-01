@@ -185,9 +185,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sounds\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\MINER.jpg" />
   </ItemGroup>
@@ -388,6 +386,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GameOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalTextPNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

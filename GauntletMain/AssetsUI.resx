@@ -145,6 +145,9 @@
   <data name="FinalText" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\FinalText.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FinalTextPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FinalTextPNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GameOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GameOver.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

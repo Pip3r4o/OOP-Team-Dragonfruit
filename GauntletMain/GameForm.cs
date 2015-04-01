@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using TrialOfFortune.Classes;
 using TrialOfFortune.Utilities;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -68,7 +69,7 @@ namespace TrialOfFortune
         {
             if (!PlayerNameValidation.IsHostnameValid(tbxName1.Text))
             {
-                MessageBox.Show("Invalid name!", "Invalid Name!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MyMessageBox.Show("", "Invalid Name!");
                 return;
             }
 
@@ -79,7 +80,7 @@ namespace TrialOfFortune
 
             if (playerHeroImgContainer.Image == null || playerWeaponImgContainer.Image == null)
             {
-                MessageBox.Show("You must first choose a Hero and a Weapon to play with!", "Invalid Choice!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("Invalid Choice!", "You must first choose a Hero and a Weapon to play with!");
                 return;
             }
 
@@ -156,37 +157,37 @@ namespace TrialOfFortune
                     case AbilityEnum.Charge:
                         {
                             Ability.Charge(Player.ActivePlayer);
-                            MessageBox.Show("You feel empowered and gain 5 Attack Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MyMessageBox.Show("","You feel empowered and gain 5 Attack Points for the duration of this turn!");
                         }
                         break;
                     case AbilityEnum.BushSkull:
                         {
                             Ability.BashSkull(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
-                            MessageBox.Show(string.Format("You swing your {0} and break {1}'s skull.\nYou find {2} coins!", Player.ActivePlayer.CurrentWeapon.Name, ((MonsterCard)encounterImgContainer.Card).Name, ((MonsterCard)encounterImgContainer.Card).CoinsAwarded), "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MyMessageBox.Show("", string.Format("You swing your {0} and break {1}'s skull.\nYou find {2} coins!", Player.ActivePlayer.CurrentWeapon.Name, ((MonsterCard)encounterImgContainer.Card).Name, ((MonsterCard)encounterImgContainer.Card).CoinsAwarded));
                         }
                         break;
                     case AbilityEnum.EvasiveFire:
                         {
                             Ability.EvasiveFire(Player.ActivePlayer);
-                            MessageBox.Show("You feel threatened and decide to not encounter the monster!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MyMessageBox.Show("","You feel threatened and decide to not encounter the monster!");
                         }
                         break;
                     case AbilityEnum.GoldRush:
                         {
                             Ability.GoldRush(Player.ActivePlayer);
-                            MessageBox.Show("You are feeling lucky!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MyMessageBox.Show("", "You are feeling lucky!");
                         }
                         break;
                     case AbilityEnum.NatureCall:
                         {
                             Ability.NatureCall(Player.ActivePlayer);
-                            MessageBox.Show("You channel nature's power and gain 4 Attack Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MyMessageBox.Show("", "You channel nature's power and gain 4 Attack Points for the duration of this turn!");
                         }
                         break;
                     case AbilityEnum.SummonSkeleton:
                         {
                             Ability.SummonSkeleton(Player.ActivePlayer);
-                            MessageBox.Show("You summon a bony minion to protect you, thus granting you 4 Defense Points for the duration of this turn!", "Used special ability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MyMessageBox.Show("", "You summon a bony minion to protect you, thus granting you 4 Defense Points for the duration of this turn!");
                         }
                         break;
                 }
@@ -215,7 +216,7 @@ namespace TrialOfFortune
             }
             else
             {
-                MessageBox.Show("Insufficient amount of Action Points!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("Unable to execute skill!", "Insufficient amount of Action Points!");
             }
         }
 
@@ -391,45 +392,9 @@ namespace TrialOfFortune
                 encounterImgContainer.Card.Name,
                 Player.ActivePlayer.Turn);
 
+            GameOverview.ForeColor = Color.Black;
             GameOverview.Text = overview;
         }
-
-        private void labGame8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labGame9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labGame11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labGame16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labGame17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labGame19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-
-
-
 
     }
 }
