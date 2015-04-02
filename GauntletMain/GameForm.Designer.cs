@@ -132,7 +132,7 @@
             // labGame19
             // 
             this.labGame19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame19.ForeColor = System.Drawing.Color.Black;
+            this.labGame19.ForeColor = System.Drawing.Color.White;
             this.labGame19.Location = new System.Drawing.Point(381, 610);
             this.labGame19.Name = "labGame19";
             this.labGame19.Size = new System.Drawing.Size(173, 23);
@@ -142,7 +142,7 @@
             // labGame18
             // 
             this.labGame18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labGame18.ForeColor = System.Drawing.Color.Black;
+            this.labGame18.ForeColor = System.Drawing.Color.White;
             this.labGame18.Location = new System.Drawing.Point(202, 610);
             this.labGame18.Name = "labGame18";
             this.labGame18.Size = new System.Drawing.Size(173, 23);
@@ -152,7 +152,7 @@
             // labGame17
             // 
             this.labGame17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.labGame17.ForeColor = System.Drawing.Color.Black;
+            this.labGame17.ForeColor = System.Drawing.Color.White;
             this.labGame17.Location = new System.Drawing.Point(23, 610);
             this.labGame17.Name = "labGame17";
             this.labGame17.Size = new System.Drawing.Size(173, 23);
@@ -162,7 +162,7 @@
             // labGame16
             // 
             this.labGame16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.labGame16.ForeColor = System.Drawing.Color.Black;
+            this.labGame16.ForeColor = System.Drawing.Color.White;
             this.labGame16.Location = new System.Drawing.Point(381, 293);
             this.labGame16.Name = "labGame16";
             this.labGame16.Size = new System.Drawing.Size(173, 23);
@@ -172,7 +172,7 @@
             // labGame15
             // 
             this.labGame15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.labGame15.ForeColor = System.Drawing.Color.Black;
+            this.labGame15.ForeColor = System.Drawing.Color.White;
             this.labGame15.Location = new System.Drawing.Point(202, 293);
             this.labGame15.Name = "labGame15";
             this.labGame15.Size = new System.Drawing.Size(173, 23);
@@ -182,7 +182,7 @@
             // labGame14
             // 
             this.labGame14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.labGame14.ForeColor = System.Drawing.Color.Black;
+            this.labGame14.ForeColor = System.Drawing.Color.White;
             this.labGame14.Location = new System.Drawing.Point(23, 293);
             this.labGame14.Name = "labGame14";
             this.labGame14.Size = new System.Drawing.Size(173, 23);
@@ -337,6 +337,7 @@
             // encounterImgContainer
             // 
             this.encounterImgContainer.BackColor = System.Drawing.Color.Transparent;
+            this.encounterImgContainer.Enabled = false;
             this.encounterImgContainer.Location = new System.Drawing.Point(315, 103);
             this.encounterImgContainer.Name = "encounterImgContainer";
             this.encounterImgContainer.Size = new System.Drawing.Size(173, 280);
