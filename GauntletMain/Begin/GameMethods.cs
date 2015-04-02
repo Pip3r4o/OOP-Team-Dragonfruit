@@ -15,7 +15,7 @@ namespace TrialOfFortune
         //Game begins here
         public void  BeginNewGame()
         {
-
+           
             //play Background music
             //StaticResources.wmp.URL = @"C:\Users\lachkov\Desktop\DragonFruit\oop-team-dragonfruit\GauntletMain\Sounds\Du Hast.mp3";
             //StaticResources.wmp.controls.play();

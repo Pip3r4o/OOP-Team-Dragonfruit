@@ -360,18 +360,7 @@ namespace TrialOfFortune
 
         private void ShowScore(Highscore score)
         {
-            List<Highscore.Record> results = score.ReadScoresFromFile("..//..//scores.txt");
-            results = results.OrderByDescending(x => x.Score).ToList();
-
-            Form f = new Form();
-            f.StartPosition = FormStartPosition.CenterScreen;
-            f.Text = "GAME OVER! High Scores";
-
-            ListBox lis = new ListBox();
-            lis.Dock = DockStyle.Fill;
-            foreach (var x in results) lis.Items.Add("Player: " + x.Name + " Score: " + x.Score);
-            f.Controls.Add(lis);
-            f.ShowDialog();
+            ResultsForm.ShowResults(score);
         }
 
         private void GameOver()

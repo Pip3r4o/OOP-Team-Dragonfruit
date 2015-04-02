@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using System.Globalization;
 
 namespace TrialOfFortune.Classes
 {
@@ -11,17 +12,21 @@ namespace TrialOfFortune.Classes
     {
         public struct Record
         {
-            public Record(string nam, int scores)
+            public Record(string nam, int scores, string uid , DateTime dat )
             {
                 Name = nam;
                 Score = scores;
+                UID = uid;
+                Date = dat;
             }
 
+            public string UID;
+            public DateTime Date;
             public string Name;
             public int Score;
         }
 
-        private Record PlayerScore ;
+        public  Record PlayerScore{get; private set;}
 
         public string Name { get; set; }
         public int Position { get; set; }
@@ -29,7 +34,7 @@ namespace TrialOfFortune.Classes
 
         public Highscore(string name, int coinss)
         {
-            PlayerScore = new Record(name, coinss);
+            PlayerScore = new Record(name, coinss, Guid.NewGuid ().ToString (), DateTime.Today );
         }
 
         public override string ToString()
@@ -44,7 +49,7 @@ namespace TrialOfFortune.Classes
 
             using (StreamWriter sw = new StreamWriter(fs ))
             {
-                sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString());
+                sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString() + " " + PlayerScore .UID + " " +PlayerScore.Date.ToString("dd.MM.yyyy"));
             }
 
         }
@@ -57,7 +62,7 @@ namespace TrialOfFortune.Classes
                 while (!reader.EndOfStream)
                 {
                     string[] line = reader.ReadLine().Split(' ');
-                    returnVal.Add( new Record(line[0], Convert.ToInt32(line[1])));
+                    returnVal.Add(new Record(line[0], Convert.ToInt32(line[1]), line[2], DateTime.ParseExact(line[3], "dd.MM.yyyy",CultureInfo.InvariantCulture)));
                 }
             }
             return returnVal;
