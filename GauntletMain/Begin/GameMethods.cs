@@ -47,7 +47,7 @@ namespace TrialOfFortune
             deckOfEncounterCards.Shuffle();
 
             //Resets the player statistics
-            Player.ActivePlayer = new Player(null, null, null, 0, 0, 0, 0, 0);
+            Player.ActivePlayer = new Player(null, null, null, 0, 0, 0, 0);
 
             //Show the last three Hero Cards in the choices positions
             heroImgContainer1.ShowCard(deckOfHeroCards[deckOfHeroCards.Count() - 1]);
@@ -104,7 +104,7 @@ namespace TrialOfFortune
             {
                 MyMessageBox.Show(tbxName1.Text + ", ",
                     string.Format(
-                        "You rolled {0} for a total of {1} attack!\n\nYou vanquished {2} and won {3} coin(s)!",
+                        "You rolled {0} for a total of {1} attack!\nYou vanquished {2} and won {3} coin(s)!",
                         currentRoll, totalAtk, monster.Name, monster.CoinsAwarded));
 
                 player.TotalCoins += monster.CoinsAwarded;
@@ -114,7 +114,7 @@ namespace TrialOfFortune
             {
                 MyMessageBox.Show(tbxName1.Text + ", ",
                     string.Format(
-                        "You rolled {0} for a total of {1} attack!\n\nUnfortunately you did not manage to defeat {2}!",
+                        "You rolled {0} for a total of {1} attack!\nUnfortunately you did not manage to defeat {2}!",
                         currentRoll, totalAtk, monster.Name));
             }
 
@@ -133,7 +133,7 @@ namespace TrialOfFortune
             {
                 MyMessageBox.Show(tbxName1.Text + ", ",
                     string.Format(
-                        "Your defense is greater than {0}'s attack.\n\nYou successfully dodged {0}'s attempt to strike you!",
+                        "Your defense is greater than {0}'s attack.\nYou successfully dodged {0}'s attempt to strike you!",
                         monster.Name));
             }
 

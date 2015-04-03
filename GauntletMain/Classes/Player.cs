@@ -6,8 +6,9 @@ namespace TrialOfFortune.Classes
     {
         private const int InitialDice = 2;
         private const int InitialHealthPoints = 4;
+        private const int StartingTurn = 0;
 
-        public Player(string name, HeroCard hero, WeaponCard weapon, int totalAttackPoints, int totalDefensePoints, int totalActionPoints, int totalCoins, int turn) 
+        public Player(string name, HeroCard hero, WeaponCard weapon, int totalAttackPoints, int totalDefensePoints, int totalActionPoints, int totalCoins) 
             : base(name)
         {
             this.CurrentHero = hero;
@@ -18,13 +19,13 @@ namespace TrialOfFortune.Classes
             this.TotalDefensePoints = totalDefensePoints;
             this.TotalActionPoints = totalActionPoints;
             this.TotalCoins = totalCoins;
-            this.Turn = 16;
+            this.Turn = StartingTurn;
             this.UsedAbility = false;
         }
 
         static Player() 
         {
-            ActivePlayer = new Player(null, null, null, 0, 0, 0, 0, 0);
+            ActivePlayer = new Player(null, null, null, 0, 0, 0, 0);
         }
 
         public static Player ActivePlayer { get; set; }
