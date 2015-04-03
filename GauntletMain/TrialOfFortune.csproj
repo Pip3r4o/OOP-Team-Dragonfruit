@@ -79,19 +79,19 @@
     </Compile>
     <Compile Include="Classes\Ability.cs" />
     <Compile Include="Classes\AbilityEnum.cs" />
-    <Compile Include="Classes\Card.cs" />
-    <Compile Include="Classes\Encounter.cs" />
+    <Compile Include="Cards\Card.cs" />
+    <Compile Include="Cards\EncounterCard.cs" />
     <Compile Include="Classes\EntityStats.cs" />
     <Compile Include="Classes\HighScore.cs" />
-    <Compile Include="Classes\IFightable.cs" />
-    <Compile Include="Classes\ModifierCard.cs" />
+    <Compile Include="Cards\IFightable.cs" />
+    <Compile Include="Cards\ModifierCard.cs" />
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
-    <Compile Include="Classes\MonsterCard.cs" />
+    <Compile Include="Cards\MonsterCard.cs" />
     <Compile Include="Classes\MyException.cs" />
-    <Compile Include="Classes\PlayerCard.cs" />
+    <Compile Include="Cards\PlayerCard.cs" />
     <Compile Include="Classes\PlayerNameValidation.cs" />
-    <Compile Include="Classes\WeaponCard.cs" />
+    <Compile Include="Cards\WeaponCard.cs" />
     <Compile Include="Decks\Deck.cs" />
     <Compile Include="Decks\DeckOfEncounterCards.cs" />
     <Compile Include="Decks\DeckOfHeroCards.cs" />
@@ -106,7 +106,7 @@
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\GameObject.cs" />
-    <Compile Include="Classes\HeroCard.cs" />
+    <Compile Include="Cards\HeroCard.cs" />
     <Compile Include="Classes\Player.cs" />
     <Compile Include="MyMessageBox.cs">
       <SubType>Form</SubType>
