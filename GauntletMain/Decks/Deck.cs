@@ -4,7 +4,7 @@ using TrialOfFortune.Classes;
 
 namespace TrialOfFortune.Decks
 {
-    abstract class Deck<T> : GameObject, IShuffle
+    abstract class Deck<T> : GameObject, IDeck
     {
         protected List<T> listOfCards = new List<T>();
 
