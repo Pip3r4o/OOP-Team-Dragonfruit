@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace TrialOfFortune.Classes
+namespace TrialOfFortune.Cards
 {
     public abstract class PlayerCard : Card, IFightable
     {

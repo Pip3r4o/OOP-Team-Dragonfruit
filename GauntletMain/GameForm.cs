@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using TrialOfFortune.Cards;
 
 namespace TrialOfFortune
 {
@@ -151,43 +152,44 @@ namespace TrialOfFortune
 
         private void SpecialButton_Click(object sender, EventArgs e)
         {
+            Ability abilitiesHandler = new Ability();
             if (Player.ActivePlayer.TotalActionPoints > 0)
             {
                 switch (Player.ActivePlayer.CurrentHero.Stats.SpecialAbility)
                 {
                     case AbilityEnum.Charge:
                         {
-                            Ability.Charge(Player.ActivePlayer);
+                            abilitiesHandler.Charge(Player.ActivePlayer);
                             MyMessageBox.Show("","You feel empowered and gain 5 Attack Points for the duration of this turn!");
                         }
                         break;
                     case AbilityEnum.BushSkull:
                         {
-                            Ability.BashSkull(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
+                            abilitiesHandler.BashSkull(Player.ActivePlayer, (MonsterCard)encounterImgContainer.Card);
                             MyMessageBox.Show("", string.Format("You swing your {0} and break {1}'s skull.\nYou find {2} coins!", Player.ActivePlayer.CurrentWeapon.Name, ((MonsterCard)encounterImgContainer.Card).Name, ((MonsterCard)encounterImgContainer.Card).CoinsAwarded));
                         }
                         break;
                     case AbilityEnum.EvasiveFire:
                         {
-                            Ability.EvasiveFire(Player.ActivePlayer);
+                            abilitiesHandler.EvasiveFire(Player.ActivePlayer);
                             MyMessageBox.Show("","You feel threatened and decide to not encounter the monster!");
                         }
                         break;
                     case AbilityEnum.GoldRush:
                         {
-                            Ability.GoldRush(Player.ActivePlayer);
+                            abilitiesHandler.GoldRush(Player.ActivePlayer);
                             MyMessageBox.Show("", "You are feeling lucky!");
                         }
                         break;
                     case AbilityEnum.NatureCall:
                         {
-                            Ability.NatureCall(Player.ActivePlayer);
+                            abilitiesHandler.NatureCall(Player.ActivePlayer);
                             MyMessageBox.Show("", "You channel nature's power and gain 4 Attack Points for the duration of this turn!");
                         }
                         break;
                     case AbilityEnum.SummonSkeleton:
                         {
-                            Ability.SummonSkeleton(Player.ActivePlayer);
+                            abilitiesHandler.SummonSkeleton(Player.ActivePlayer);
                             MyMessageBox.Show("", "You summon a bony minion to protect you, thus granting you 4 Defense Points for the duration of this turn!");
                         }
                         break;
@@ -250,28 +252,30 @@ namespace TrialOfFortune
 
         private void SpecialFade(Player player, MonsterCard card)
         {
+            Ability abilitiesHandler = new Ability();
+
             if (player.UsedAbility)
             {
                 switch (player.CurrentHero.Stats.SpecialAbility)
                 {
                     case AbilityEnum.Charge:
                         {
-                            Ability.ChargeFade(player);
+                            abilitiesHandler.ChargeFade(player);
                         }
                         break;
                     case AbilityEnum.SummonSkeleton:
                         {
-                            Ability.SummonSkeletonFade(player);
+                            abilitiesHandler.SummonSkeletonFade(player);
                         }
                         break;
                     case AbilityEnum.NatureCall:
                         {
-                            Ability.NatureCallFade(player);
+                            abilitiesHandler.NatureCallFade(player);
                         }
                         break;
                     case AbilityEnum.GoldRush:
                         {
-                            Ability.GoldRushFade(player, card);
+                            abilitiesHandler.GoldRushFade(player, card);
                         }
                         break;
                 }

@@ -77,11 +77,18 @@
     <Compile Include="Begin\GameMethods.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Classes\Ability.cs" />
-    <Compile Include="Classes\AbilityEnum.cs" />
+    <Compile Include="Cards\Ability.cs" />
+    <Compile Include="Cards\AbilityEnum.cs" />
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\EncounterCard.cs" />
-    <Compile Include="Classes\EntityStats.cs" />
+    <Compile Include="Cards\EntityStats.cs" />
+    <Compile Include="Cards\IAbilityBerserker.cs" />
+    <Compile Include="Cards\IAbilityDruid.cs" />
+    <Compile Include="Cards\IAbilityHero.cs" />
+    <Compile Include="Cards\IAbilityJuggernaut.cs" />
+    <Compile Include="Cards\IAbilityMiner.cs" />
+    <Compile Include="Cards\IAbilityNecromancer.cs" />
+    <Compile Include="Cards\IAbilityRanger.cs" />
     <Compile Include="Classes\HighScore.cs" />
     <Compile Include="Cards\IFightable.cs" />
     <Compile Include="Cards\ModifierCard.cs" />

@@ -1,4 +1,6 @@
-﻿namespace TrialOfFortune.Classes
+﻿using TrialOfFortune.Cards;
+
+namespace TrialOfFortune.Classes
 {
     public class Player : GameObject
     {

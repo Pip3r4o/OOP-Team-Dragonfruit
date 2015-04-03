@@ -1,4 +1,5 @@
 ﻿using TrialOfFortune.Classes;
+using TrialOfFortune.Cards;
 
 namespace TrialOfFortune.Decks
 {

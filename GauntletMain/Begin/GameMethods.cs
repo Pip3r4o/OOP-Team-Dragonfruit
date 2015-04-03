@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
+using TrialOfFortune.Cards;
 using TrialOfFortune.Classes;
 using TrialOfFortune.Decks;
 using TrialOfFortune.Utilities;

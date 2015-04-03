@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using TrialOfFortune.Classes;
+using TrialOfFortune.Cards;
 
 namespace TrialOfFortune
 {

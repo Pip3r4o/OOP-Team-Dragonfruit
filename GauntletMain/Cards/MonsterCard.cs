@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace TrialOfFortune.Classes
+namespace TrialOfFortune.Cards
 {
     public class MonsterCard : EncounterCard, IFightable
     {

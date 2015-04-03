@@ -1,4 +1,4 @@
-﻿namespace TrialOfFortune.Classes
+﻿namespace TrialOfFortune.Cards
 {
     interface IFightable
     {

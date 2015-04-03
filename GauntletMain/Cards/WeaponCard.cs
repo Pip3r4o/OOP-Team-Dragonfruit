@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
+using TrialOfFortune.Classes;
 
-namespace TrialOfFortune.Classes
+namespace TrialOfFortune.Cards
 {
     public class WeaponCard : PlayerCard
     {
