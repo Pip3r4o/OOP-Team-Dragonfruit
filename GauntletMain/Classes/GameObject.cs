@@ -4,6 +4,9 @@ namespace TrialOfFortune.Classes
 {
     public abstract class GameObject
     {
+        protected GameObject()
+        {
+        }
 
         protected GameObject(string name)
         {

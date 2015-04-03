@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using TrialOfFortune.Utilities;
+using TrialOfFortune.Classes;
 
 namespace TrialOfFortune.Decks
 {
-    class Deck<T> : IShuffle
+    abstract class Deck<T> : GameObject, IShuffle
     {
         protected List<T> listOfCards = new List<T>();
 
