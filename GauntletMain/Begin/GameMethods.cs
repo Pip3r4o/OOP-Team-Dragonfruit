@@ -130,7 +130,7 @@ namespace TrialOfFortune
 
         public void DetermineEncounter()
         {
-            Encounter card = (Encounter)encounterImgContainer.Card;
+            EncounterCard card = (EncounterCard)encounterImgContainer.Card;
 
             if (card is MonsterCard)
             {

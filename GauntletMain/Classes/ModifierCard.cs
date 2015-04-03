@@ -2,7 +2,7 @@
 
 namespace TrialOfFortune.Classes
 {
-    public class ModifierCard : Encounter
+    public class ModifierCard : EncounterCard
     {
 
         public ModifierCard(string name, Image artImage, ModifierEventEnum modifierEvent)

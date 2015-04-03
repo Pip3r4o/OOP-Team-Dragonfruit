@@ -2,9 +2,9 @@
 
 namespace TrialOfFortune.Classes
 {
-    public abstract class Encounter : Card
+    public abstract class EncounterCard : Card
     {
-        protected Encounter(string name, Image artImage)
+        protected EncounterCard(string name, Image artImage)
             : base(name, artImage)
         {
         }

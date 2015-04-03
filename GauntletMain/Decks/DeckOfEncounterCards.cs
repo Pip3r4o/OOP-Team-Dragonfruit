@@ -2,7 +2,7 @@
 
 namespace TrialOfFortune.Decks
 {
-    class DeckOfEncounterCards : Deck<Encounter>
+    class DeckOfEncounterCards : Deck<EncounterCard>
     {
         #region Constructors
         public DeckOfEncounterCards()
