@@ -83,6 +83,7 @@
     <Compile Include="Classes\Encounter.cs" />
     <Compile Include="Classes\EntityStats.cs" />
     <Compile Include="Classes\HighScore.cs" />
+    <Compile Include="Classes\IFightable.cs" />
     <Compile Include="Classes\ModifierCard.cs" />
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
@@ -171,6 +172,7 @@
     <EmbeddedResource Include="ResultsForm.resx">
       <DependentUpon>ResultsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
