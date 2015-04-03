@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using TrialOfFortune.Classes;
 using TrialOfFortune.Cards;
 
 namespace TrialOfFortune.Decks

@@ -21,7 +21,7 @@ namespace TrialOfFortune.Classes
 
         public string Name { get; set; }
 
-        public Image ArtImage { get; set; }
+        public Image ArtImage { get; private set; }
         
     }
 }

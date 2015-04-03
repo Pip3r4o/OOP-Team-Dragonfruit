@@ -1,40 +1,24 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
+using System.Linq;
 
 namespace TrialOfFortune.Classes
 {
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-
     public class Highscore
     {
-        public struct Record
-        {
-            public Record(string nam, int scores, string uid , DateTime dat )
-            {
-                Name = nam;
-                Score = scores;
-                UID = uid;
-                Date = dat;
-            }
 
-            public string UID;
-            public DateTime Date;
-            public string Name;
-            public int Score;
-        }
 
-        public  Record PlayerScore{get; private set;}
+        public Record PlayerScore { get; private set; }
 
         public string Name { get; set; }
         public int Position { get; set; }
         public int Score { get; set; }
 
-        public Highscore(string name, int coinss)
+        public Highscore(string name, int coins)
         {
-            PlayerScore = new Record(name, coinss, Guid.NewGuid ().ToString (), DateTime.Today );
+            PlayerScore = new Record(name, coins, Guid.NewGuid().ToString(), DateTime.Today);
         }
 
         public override string ToString()
@@ -48,9 +32,9 @@ namespace TrialOfFortune.Classes
             try
             {
                 FileStream fs = new FileStream(path, FileMode.Append);
-                using (StreamWriter sw = new StreamWriter(fs ))
+                using (StreamWriter sw = new StreamWriter(fs))
                 {
-                    sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString() + " " + PlayerScore .UID + " " +PlayerScore.Date.ToString("dd.MM.yyyy"));
+                    sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString() + " " + PlayerScore.UID + " " + PlayerScore.Date.ToString("dd.MM.yyyy"));
                 }
             }
             catch (Exception e)
@@ -59,7 +43,7 @@ namespace TrialOfFortune.Classes
             }
         }
 
-        public  List<Record> ReadScoresFromFile(string path)
+        public List<Record> ReadScoresFromFile(string path)
         {
             List<Record> returnVal = new List<Record>();
             try
@@ -78,14 +62,6 @@ namespace TrialOfFortune.Classes
                 throw new MyException(e, "There was a problew when reading the result!");
             }
             return returnVal;
-        }
-
-        static List<Highscore> SortAndPositionHighscores(List<Highscore> scores)
-        {
-            scores = scores.OrderByDescending(s => s.Score).ToList();
-            int pos = 1;
-            scores.ForEach(s => s.Position = pos++);
-            return scores.ToList();
         }
     }
 }

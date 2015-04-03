@@ -1,6 +1,8 @@
-﻿namespace TrialOfFortune.Cards
+﻿using TrialOfFortune.Classes;
+
+namespace TrialOfFortune.Cards
 {
-    public class EntityStats
+    public class EntityStats : IStats
     {
         public EntityStats(int attackPoints, int defensePoints)
         {
@@ -15,10 +17,10 @@
         }
 
 
-        public int AttackPoints { get; set; }
+        public int AttackPoints { get; private set; }
 
-        public int DefensePoints { get; set; }
+        public int DefensePoints { get; private set; }
 
-        public AbilityEnum SpecialAbility { get; set; }
+        public AbilityEnum SpecialAbility { get; private set; }
     }
 }

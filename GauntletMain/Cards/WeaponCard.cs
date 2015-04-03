@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-using TrialOfFortune.Classes;
 
 namespace TrialOfFortune.Cards
 {
@@ -11,7 +10,7 @@ namespace TrialOfFortune.Cards
             this.AdditionalDice = additionalDice;
         }
 
-        public int AdditionalDice { get; set; }
+        public int AdditionalDice { get; private set; }
 
     }
 }

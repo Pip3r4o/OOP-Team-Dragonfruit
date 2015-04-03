@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrialOfFortune.Classes;
 
@@ -17,13 +12,13 @@ namespace TrialOfFortune
         {
             InitializeComponent();
         }
-                
-        public static void  ShowResults(Highscore h)
+
+        public static void ShowResults(Highscore h)
         {
-            List<Highscore.Record> results = h.ReadScoresFromFile("..//..//scores.txt");
+            List<Record> results = h.ReadScoresFromFile("..//..//scores.txt");
             results = results.OrderByDescending(x => x.Score).ToList();
             ResultsForm f = new ResultsForm();
-            f.dgvResults1 .UpdateDgv(results);
+            f.dgvResults1.UpdateDgv(results);
             f.dgvResults1.FormatDgv(h);
             f.ShowDialog();
         }
@@ -34,32 +29,33 @@ namespace TrialOfFortune
         }
     }
 
-    public  class dgvResults : DataGridView
+    public class dgvResults : DataGridView
     {
-        public dgvResults(): base ()
+        public dgvResults()
+            : base()
         {
 
         }
 
-        public   void UpdateDgv(List<Highscore.Record> lis)
+        public void UpdateDgv(List<Record> lis)
         {
-            this.DataSource = new List <dgvline >();
-            
+            this.DataSource = new List<dgvline>();
+
             foreach (var x in lis) dgvList.Add(new dgvline(x));
-       
+
             this.DataSource = dgvList;
         }
 
         private class dgvline
         {
-            public dgvline(Highscore .Record rec )
+            public dgvline(Record rec)
             {
                 this.r = rec;
             }
 
-            public  Highscore.Record r ;
-            
-            public  string gameUID="";
+            public Record r;
+
+            public string gameUID = "";
 
             public string Player
             {
@@ -73,7 +69,7 @@ namespace TrialOfFortune
             {
                 get
                 {
-                    return r.Score.ToString ();
+                    return r.Score.ToString();
                 }
             }
             public string Date
@@ -96,7 +92,7 @@ namespace TrialOfFortune
         private List<dgvline> dgvList = new List<dgvline>();
 
 
-        public  void FormatDgv(Highscore currScore)
+        public void FormatDgv(Highscore currScore)
         {
             this.Columns[0].Width = 200;
             this.Columns[1].Width = 80;
@@ -117,13 +113,13 @@ namespace TrialOfFortune
                     continue;
                 }
             }
-            
 
-            int currPlayerRow= this.dgvList.FindIndex (x => x.r.UID == currScore.PlayerScore.UID);
 
-            if (currPlayerRow>=0) dgvList[currPlayerRow].gameUID = currScore.PlayerScore.UID;
+            int currPlayerRow = this.dgvList.FindIndex(x => x.r.UID == currScore.PlayerScore.UID);
 
-          //  if (currPlayerRow>=0) this.Rows[currPlayerRow].Cells[0].Style.BackColor  = Color.Yellow;
+            if (currPlayerRow >= 0) dgvList[currPlayerRow].gameUID = currScore.PlayerScore.UID;
+
+            //  if (currPlayerRow>=0) this.Rows[currPlayerRow].Cells[0].Style.BackColor  = Color.Yellow;
             this.Refresh();
         }
 

@@ -1,10 +1,8 @@
-﻿using TrialOfFortune.Cards;
-using TrialOfFortune.Classes;
-using System;
+﻿using TrialOfFortune.Classes;
 
 namespace TrialOfFortune.Cards
 {
-    [Serializable]
+
     public class Ability : IAbilityJuggernaut, IAbilityBerserker, IAbilityNecromancer, IAbilityMiner, IAbilityDruid, IAbilityRanger, IAbilityHero
     {
         

@@ -18,7 +18,7 @@ namespace TrialOfFortune.Classes
             this.TotalDefensePoints = totalDefensePoints;
             this.TotalActionPoints = totalActionPoints;
             this.TotalCoins = totalCoins;
-            this.Turn = turn;
+            this.Turn = 16;
             this.UsedAbility = false;
         }
 

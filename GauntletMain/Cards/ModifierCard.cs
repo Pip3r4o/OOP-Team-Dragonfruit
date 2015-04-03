@@ -3,7 +3,7 @@ using TrialOfFortune.Classes;
 
 namespace TrialOfFortune.Cards
 {
-    public class ModifierCard : EncounterCard
+    public class ModifierCard : EncounterCard, IModifier
     {
 
         public ModifierCard(string name, Image artImage, ModifierEventEnum modifierEvent)

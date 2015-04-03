@@ -2,7 +2,7 @@
 
 namespace TrialOfFortune.Cards
 {
-    public class MonsterCard : EncounterCard, IFightable
+    public class MonsterCard : EncounterCard
     {
 
         public MonsterCard(string name, Image artImage, int damage, EntityStats stats, bool alive, int coinsAwarded)
@@ -15,11 +15,13 @@ namespace TrialOfFortune.Cards
             this.CoinsAwarded = coinsAwarded;
         }
 
-        public EntityStats Stats { get; set; }
+        public EntityStats Stats { get; private set; }
 
-        public int Damage { get; set; }
+        public int Damage { get; private set; }
+
         public bool Alive { get; set; }
-        public int CoinsAwarded { get; set; }
+        
+        public int CoinsAwarded { get; private set; }
 
     }
 }

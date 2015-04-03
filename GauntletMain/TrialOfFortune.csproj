@@ -89,8 +89,9 @@
     <Compile Include="Cards\IAbilityMiner.cs" />
     <Compile Include="Cards\IAbilityNecromancer.cs" />
     <Compile Include="Cards\IAbilityRanger.cs" />
+    <Compile Include="Cards\IModifier.cs" />
+    <Compile Include="Cards\IStats.cs" />
     <Compile Include="Classes\HighScore.cs" />
-    <Compile Include="Cards\IFightable.cs" />
     <Compile Include="Cards\ModifierCard.cs" />
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Cards\PlayerCard.cs" />
     <Compile Include="Classes\PlayerNameValidation.cs" />
     <Compile Include="Cards\WeaponCard.cs" />
+    <Compile Include="Classes\Record.cs" />
     <Compile Include="Decks\Deck.cs" />
     <Compile Include="Decks\DeckOfEncounterCards.cs" />
     <Compile Include="Decks\DeckOfHeroCards.cs" />
@@ -179,7 +181,6 @@
     <EmbeddedResource Include="ResultsForm.resx">
       <DependentUpon>ResultsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

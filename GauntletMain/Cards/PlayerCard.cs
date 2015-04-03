@@ -2,7 +2,7 @@
 
 namespace TrialOfFortune.Cards
 {
-    public abstract class PlayerCard : Card, IFightable
+    public abstract class PlayerCard : Card
     {
         protected PlayerCard(string name, Image artImage, Image miniArtImage, EntityStats stats)
             : base(name, artImage)
@@ -12,8 +12,8 @@ namespace TrialOfFortune.Cards
             this.MiniArtImage = miniArtImage;
         }
 
-        public EntityStats Stats { get; set; }
+        public EntityStats Stats { get; private set; }
 
-        public Image MiniArtImage { get; set; }
+        public Image MiniArtImage { get; private set; }
     }
 }

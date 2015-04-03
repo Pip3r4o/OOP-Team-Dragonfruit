@@ -13,10 +13,11 @@ namespace TrialOfFortune
         DeckOfWeaponCards deckOfWeaponCards = new DeckOfWeaponCards();
         DeckOfEncounterCards deckOfEncounterCards = new DeckOfEncounterCards();
 
-        //Game begins here
-        public void  BeginNewGame()
+        #region Initialize Game, set default values, shuffle decks
+
+        public void BeginNewGame()
         {
-           
+
             //play Background music
             //StaticResources.wmp.URL = @"C:\Users\lachkov\Desktop\DragonFruit\oop-team-dragonfruit\GauntletMain\Sounds\Du Hast.mp3";
             //StaticResources.wmp.controls.play();
@@ -72,6 +73,10 @@ namespace TrialOfFortune
 
         }
 
+        #endregion
+
+        #region Card drawing, Dice rolling, Attacking, Defending, Modifier Triggering, Defining encounter type
+
         private void DrawCard()
         {
             ++Player.ActivePlayer.Turn;
@@ -97,8 +102,9 @@ namespace TrialOfFortune
 
             if (totalAtk >= monster.Stats.DefensePoints)
             {
-                MyMessageBox.Show(tbxName1.Text+", ",
-                    string.Format("You rolled {0} for a total of {1} attack!\n\nYou vanquished {2} and won {3} coin(s)!",
+                MyMessageBox.Show(tbxName1.Text + ", ",
+                    string.Format(
+                        "You rolled {0} for a total of {1} attack!\n\nYou vanquished {2} and won {3} coin(s)!",
                         currentRoll, totalAtk, monster.Name, monster.CoinsAwarded));
 
                 player.TotalCoins += monster.CoinsAwarded;
@@ -107,7 +113,8 @@ namespace TrialOfFortune
             else
             {
                 MyMessageBox.Show(tbxName1.Text + ", ",
-                    string.Format("You rolled {0} for a total of {1} attack!\n\nUnfortunately you did not manage to defeat {2}!",
+                    string.Format(
+                        "You rolled {0} for a total of {1} attack!\n\nUnfortunately you did not manage to defeat {2}!",
                         currentRoll, totalAtk, monster.Name));
             }
 
@@ -118,12 +125,16 @@ namespace TrialOfFortune
         {
             if (monster.Stats.AttackPoints > player.TotalDefensePoints)
             {
-                MyMessageBox.Show(tbxName1.Text + ", ", string.Format("{0} hit you! You lose {1} health point(s)!", monster.Name, monster.Damage));
+                MyMessageBox.Show(tbxName1.Text + ", ",
+                    string.Format("{0} hit you! You lose {1} health point(s)!", monster.Name, monster.Damage));
                 player.TotalHealthPoints -= monster.Damage;
             }
             else
             {
-                MyMessageBox.Show(tbxName1.Text + ", ", string.Format("Your defense is greater than {0}'s attack.\nYou successfully dodged {0}'s attempt to strike you!", monster.Name));
+                MyMessageBox.Show(tbxName1.Text + ", ",
+                    string.Format(
+                        "Your defense is greater than {0}'s attack.\n\nYou successfully dodged {0}'s attempt to strike you!",
+                        monster.Name));
             }
 
             UpdateInformation();
@@ -157,29 +168,36 @@ namespace TrialOfFortune
         {
             switch (card.Event)
             {
-                case ModifierEventEnum.SpringTrap: ModifierEvent.SpringTrap(player);
+                case ModifierEventEnum.SpringTrap:
+                    ModifierEvent.SpringTrap(player);
                     MyMessageBox.Show("You sprung an arrow trap!", "You are debilitated and thus lose 1 Attack point!");
                     break;
-                case ModifierEventEnum.HealingSpring: ModifierEvent.HealingSpring(player);
+                case ModifierEventEnum.HealingSpring:
+                    ModifierEvent.HealingSpring(player);
                     MyMessageBox.Show("You found a pond of fresh water!", "You are restored 1 Health point!");
                     break;
-                case ModifierEventEnum.TearSatchel: ModifierEvent.TearSatchel(player);
+                case ModifierEventEnum.TearSatchel:
+                    ModifierEvent.TearSatchel(player);
                     MyMessageBox.Show("You find out that your pouch has been torn!", "You have lost 3 coins!");
                     break;
-                case ModifierEventEnum.GoodFortune: ModifierEvent.GoodFortune(player);
+                case ModifierEventEnum.GoodFortune:
+                    ModifierEvent.GoodFortune(player);
                     MyMessageBox.Show("It's your lucky day!", "You find 4 coins laying by a long-dead adventurer!");
                     break;
-                case ModifierEventEnum.BearTrap: ModifierEvent.BearTrap(player);
+                case ModifierEventEnum.BearTrap:
+                    ModifierEvent.BearTrap(player);
                     MyMessageBox.Show("You step into a bear trap!", "You are crippled and thus lose 1 Defense point!");
                     break;
             }
         }
+
+        #endregion
 
         public void PlayOnClick()
         {
             StaticResources.sp = new System.Media.SoundPlayer(AssetsSounds.ChooseCard);
             StaticResources.sp.Play();
         }
-        
+
     }
 }
