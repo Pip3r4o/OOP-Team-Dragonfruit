@@ -87,6 +87,7 @@
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
     <Compile Include="Classes\MonsterCard.cs" />
+    <Compile Include="Classes\MyException.cs" />
     <Compile Include="Classes\PlayerCard.cs" />
     <Compile Include="Classes\PlayerNameValidation.cs" />
     <Compile Include="Classes\WeaponCard.cs" />

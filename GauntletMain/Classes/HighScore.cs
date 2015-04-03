@@ -45,25 +45,37 @@ namespace TrialOfFortune.Classes
 
         public void WriteScore(string path)
         {
-            FileStream fs = new FileStream(path, FileMode.Append);
-
-            using (StreamWriter sw = new StreamWriter(fs ))
+            try
             {
-                sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString() + " " + PlayerScore .UID + " " +PlayerScore.Date.ToString("dd.MM.yyyy"));
+                FileStream fs = new FileStream(path, FileMode.Append);
+                using (StreamWriter sw = new StreamWriter(fs ))
+                {
+                    sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString() + " " + PlayerScore .UID + " " +PlayerScore.Date.ToString("dd.MM.yyyy"));
+                }
             }
-
+            catch (Exception e)
+            {
+                throw new MyException(e, "There was a problew when saving the result!");
+            }
         }
 
         public  List<Record> ReadScoresFromFile(string path)
         {
             List<Record> returnVal = new List<Record>();
-            using (StreamReader reader = new StreamReader(path))
+            try
             {
-                while (!reader.EndOfStream)
+                using (StreamReader reader = new StreamReader(path))
                 {
-                    string[] line = reader.ReadLine().Split(' ');
-                    returnVal.Add(new Record(line[0], Convert.ToInt32(line[1]), line[2], DateTime.ParseExact(line[3], "dd.MM.yyyy",CultureInfo.InvariantCulture)));
+                    while (!reader.EndOfStream)
+                    {
+                        string[] line = reader.ReadLine().Split(' ');
+                        returnVal.Add(new Record(line[0], Convert.ToInt32(line[1]), line[2], DateTime.ParseExact(line[3], "dd.MM.yyyy", CultureInfo.InvariantCulture)));
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                throw new MyException(e, "There was a problew when reading the result!");
             }
             return returnVal;
         }

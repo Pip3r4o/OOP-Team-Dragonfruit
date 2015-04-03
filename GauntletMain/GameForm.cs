@@ -131,6 +131,7 @@ namespace TrialOfFortune
                         FightButton.BackgroundImage = AssetsUI.AttackButton;
                         FightButton.Hide();
                         ContinueButton.Show();
+                        ContinueButton.Select();
                     }
                     break;
             }
@@ -201,6 +202,7 @@ namespace TrialOfFortune
                             SpecialButton.Hide();
                             FightButton.Hide();
                             ContinueButton.Show();
+                            ContinueButton.Select();
                         }
                         break;
                     case StaticResources.FightPhase.Fight:
@@ -208,6 +210,7 @@ namespace TrialOfFortune
                             SpecialButton.Hide();
                             FightButton.Show();
                             ContinueButton.Hide();
+                            FightButton.Select();
                         }
                         break;
                     case StaticResources.FightPhase.Defend:

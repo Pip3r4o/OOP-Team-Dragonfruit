@@ -36,6 +36,11 @@ namespace TrialOfFortune
 
     public  class dgvResults : DataGridView
     {
+        public dgvResults(): base ()
+        {
+
+        }
+
         public   void UpdateDgv(List<Highscore.Record> lis)
         {
             this.DataSource = new List <dgvline >();
@@ -53,6 +58,8 @@ namespace TrialOfFortune
             }
 
             public  Highscore.Record r ;
+            
+            public  string gameUID="";
 
             public string Player
             {
@@ -76,25 +83,47 @@ namespace TrialOfFortune
                     return r.Date.ToString("dd.MM.yyyy");
                 }
             }
+
+            public string You
+            {
+                get
+                {
+                    return gameUID == r.UID ? "x" : "";
+                }
+            }
         }
 
         private List<dgvline> dgvList = new List<dgvline>();
 
+
         public  void FormatDgv(Highscore currScore)
         {
             this.Columns[0].Width = 200;
-            this.Columns[1].Width = 150;
+            this.Columns[1].Width = 80;
             this.Columns[2].Width = 130;
+            this.Columns[3].Width = 50;
 
             this.Columns[0].HeaderText = "Player";
             this.Columns[1].HeaderText = "Result";
             this.Columns[2].HeaderText = "Date";
+            this.Columns[3].HeaderText = "You";
 
+            for (int i = 0; i < dgvList.Count(); i++)
+            {
+                dgvline l = dgvList[i];
+                if (l.r.UID == currScore.PlayerScore.UID)
+                {
+                    l.gameUID = currScore.PlayerScore.UID;
+                    continue;
+                }
+            }
             
 
             int currPlayerRow= this.dgvList.FindIndex (x => x.r.UID == currScore.PlayerScore.UID);
 
-            if (currPlayerRow>=0) this.Rows[currPlayerRow].Cells[0].Style.BackColor  = Color.Yellow;
+            if (currPlayerRow>=0) dgvList[currPlayerRow].gameUID = currScore.PlayerScore.UID;
+
+          //  if (currPlayerRow>=0) this.Rows[currPlayerRow].Cells[0].Style.BackColor  = Color.Yellow;
             this.Refresh();
         }
 

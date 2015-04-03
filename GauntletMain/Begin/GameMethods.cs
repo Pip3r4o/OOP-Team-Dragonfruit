@@ -137,6 +137,7 @@ namespace TrialOfFortune
                 ContinueButton.Hide();
                 FightButton.Show();
                 SpecialButton.Show();
+                FightButton.Select();
                 StaticResources.CurrentFightPhase = StaticResources.FightPhase.Fight;
             }
             else
@@ -147,6 +148,7 @@ namespace TrialOfFortune
                 ActivateModifier(Player.ActivePlayer, (ModifierCard)card);
                 UpdateInformation();
                 ContinueButton.Show();
+                ContinueButton.Select();
             }
         }
 
