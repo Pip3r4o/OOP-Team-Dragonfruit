@@ -55,6 +55,7 @@ namespace TrialOfFortune
                 player.TotalCoins += card.CoinsAwarded;
             }            
         }
+
         public static void NatureCall(Player player) //Druid-specific ability
         {
             player.TotalAttackPoints += 4;
@@ -67,6 +68,7 @@ namespace TrialOfFortune
         {
             player.TotalAttackPoints -= 4;
         }
+
         public static void EvasiveFire(Player player) //Ranger-specific ability
         {
             --player.TotalActionPoints;
