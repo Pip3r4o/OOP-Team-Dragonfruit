@@ -23,12 +23,12 @@ namespace TrialOfFortune.Decks
             get
             {
                 // This indexer is very simple, and just returns or sets 
-                // the corresponding element from the internal array. 
-                return listOfCards[i];
+                // the corresponding element from the internal array.
+                return listOfCards[this.normalizeIndex(i)];
             }
             set
             {
-                listOfCards[i] = value;
+                listOfCards[this.normalizeIndex(i)] = value;
             }
         }
 
@@ -41,6 +41,21 @@ namespace TrialOfFortune.Decks
         public void Shuffle()
         {
             listOfCards.Shuffle<T>();
+        }
+
+        private int normalizeIndex(int i)
+        {
+            // To make it cyclic:
+            while (i < 0)
+            {
+                i += this.Count();
+            }
+            while (i >= this.Count())
+            {
+                i -= this.Count();
+            }
+
+            return i;
         }
         #endregion
     }
