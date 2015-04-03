@@ -1,5 +1,4 @@
-﻿using TrialOfFortune.Cards;
-using TrialOfFortune.Classes;
+﻿using TrialOfFortune.Classes;
 
 namespace TrialOfFortune.Cards
 {
