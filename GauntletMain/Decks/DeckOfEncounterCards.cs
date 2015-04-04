@@ -3,7 +3,7 @@ using TrialOfFortune.Cards;
 
 namespace TrialOfFortune.Decks
 {
-    class DeckOfEncounterCards : Deck<EncounterCard>
+    public class DeckOfEncounterCards : Deck<EncounterCard>
     {
         #region Constructors
         public DeckOfEncounterCards()

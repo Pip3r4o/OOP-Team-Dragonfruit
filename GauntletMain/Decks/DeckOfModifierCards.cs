@@ -4,7 +4,7 @@ using TrialOfFortune.Cards;
 
 namespace TrialOfFortune.Decks
 {
-    class DeckOfModifierCards : Deck<ModifierCard>
+    public class DeckOfModifierCards : Deck<ModifierCard>
     {
         #region Constructors
         public DeckOfModifierCards()

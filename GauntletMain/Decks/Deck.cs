@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using TrialOfFortune.Utilities;
 using TrialOfFortune.Classes;
+using TrialOfFortune.Cards;
 
 namespace TrialOfFortune.Decks
 {
-    abstract class Deck<T> : GameObject, IDeck
+    public abstract class Deck<T> : GameObject, IDeck where T : Card
     {
         protected List<T> listOfCards = new List<T>();
 

@@ -4,7 +4,7 @@ using TrialOfFortune.Cards;
 
 namespace TrialOfFortune.Decks
 {
-    class DeckOfWeaponCards : Deck<WeaponCard>
+    public class DeckOfWeaponCards : Deck<WeaponCard>
     {
         #region Constructors
         public DeckOfWeaponCards()

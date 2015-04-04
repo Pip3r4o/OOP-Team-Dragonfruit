@@ -102,12 +102,14 @@
     <Compile Include="Cards\WeaponCard.cs" />
     <Compile Include="Classes\Record.cs" />
     <Compile Include="Decks\Deck.cs" />
+    <Compile Include="Decks\DeckFactory.cs" />
     <Compile Include="Decks\DeckOfEncounterCards.cs" />
     <Compile Include="Decks\DeckOfHeroCards.cs" />
     <Compile Include="Decks\DeckOfModifierCards.cs" />
     <Compile Include="Decks\DeckOfMonsterCards.cs" />
     <Compile Include="Decks\DeckOfWeaponCards.cs" />
     <Compile Include="Decks\IDeck.cs" />
+    <Compile Include="Decks\IDeckFactory.cs" />
     <Compile Include="GameForm.cs">
       <SubType>Form</SubType>
     </Compile>

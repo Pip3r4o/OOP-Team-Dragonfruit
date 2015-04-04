@@ -9,14 +9,20 @@ namespace TrialOfFortune
 {
     public partial class GameForm
     {
-        DeckOfHeroCards deckOfHeroCards = new DeckOfHeroCards();
-        DeckOfWeaponCards deckOfWeaponCards = new DeckOfWeaponCards();
-        DeckOfEncounterCards deckOfEncounterCards = new DeckOfEncounterCards();
+        DeckFactory deckFactory;
+        DeckOfHeroCards deckOfHeroCards;
+        DeckOfWeaponCards deckOfWeaponCards;
+        DeckOfEncounterCards deckOfEncounterCards;
 
         #region Initialize Game, set default values, shuffle decks
 
         public void BeginNewGame()
         {
+            // Initialize decks
+            deckFactory = new DeckFactory();
+            deckOfHeroCards = deckFactory.CreateDeckOfHeroCards();
+            deckOfWeaponCards = deckFactory.CreateDeckOfWeaponCards();
+            deckOfEncounterCards = deckFactory.CreateDeckOfEncounterCards();
 
             //play Background music
             //StaticResources.wmp.URL = @"C:\Users\lachkov\Desktop\DragonFruit\oop-team-dragonfruit\GauntletMain\Sounds\Du Hast.mp3";
