@@ -1,28 +1,56 @@
 ﻿using System.Collections.Generic;
 using TrialOfFortune.Classes;
 using TrialOfFortune.Cards;
+using System.Drawing;
 
 namespace TrialOfFortune.Decks
 {
     public class DeckOfModifierCards : Deck<ModifierCard>
     {
+        private const int NUMBER_OF_MODIFIER_CARDS = 5;
+        private string[] names;
+        private Image[] artImages;
+        private ModifierEventEnum[] modifierEvents;
+
         #region Constructors
         public DeckOfModifierCards()
         {
-            ModifierCard modifier1 = new ModifierCard("Spring Trap", AssetsModifiers.SPRINGTRAP, ModifierEventEnum.SpringTrap);
-            ModifierCard modifier2 = new ModifierCard("Healing Spring", AssetsModifiers.HEALINGSPRING, ModifierEventEnum.HealingSpring);
-            ModifierCard modifier3 = new ModifierCard("Tear Satchel", AssetsModifiers.TEARSATCHEL, ModifierEventEnum.TearSatchel);
-            ModifierCard modifier4 = new ModifierCard("Good Fortune", AssetsModifiers.GOODFORTUNE, ModifierEventEnum.GoodFortune);
-            ModifierCard modifier5 = new ModifierCard("Bear Trap", AssetsModifiers.BEARTRAP, ModifierEventEnum.BearTrap);
+            names = new string[NUMBER_OF_MODIFIER_CARDS]
+            {
+                "Spring Trap",
+                "Healing Spring",
+                "Tear Satchel",
+                "Good Fortune",
+                "Bear Trap"
+            };
 
-            listOfCards.AddRange(new List<ModifierCard>
-                    {
-                        modifier1,
-                        modifier2,
-                        modifier3,
-                        modifier4,
-                        modifier5
-                    });
+            artImages = new Image[NUMBER_OF_MODIFIER_CARDS]
+            {
+                AssetsModifiers.SPRINGTRAP,
+                AssetsModifiers.HEALINGSPRING,
+                AssetsModifiers.TEARSATCHEL,
+                AssetsModifiers.GOODFORTUNE,
+                AssetsModifiers.BEARTRAP
+            };
+
+            modifierEvents = new ModifierEventEnum[NUMBER_OF_MODIFIER_CARDS]
+            {
+            
+              ModifierEventEnum.SpringTrap,
+              ModifierEventEnum.HealingSpring,
+              ModifierEventEnum.TearSatchel,
+              ModifierEventEnum.GoodFortune,
+              ModifierEventEnum.BearTrap
+            };
+
+            var modifierCards = new List<ModifierCard>();
+            CardFactory cardFactory = new CardFactory();
+            for (int i = 0; i < NUMBER_OF_MODIFIER_CARDS; i++)
+            {
+                modifierCards.Add(cardFactory.CreateModifierCard(names[i], artImages[i],modifierEvents[i]));
+            }
+
+            listOfCards.AddRange(modifierCards);
         }
         #endregion
     }
