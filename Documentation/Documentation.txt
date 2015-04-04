@@ -12,7 +12,7 @@ Team-Members:
 | dlachkov      |
 | alexizvely    |
 | krasi-totev   |
-| kborisov760   |
+| kborisov760   | borisov.kiril760 | Kiril Borisov |
 | bbojkov       |
 | DieEin        |
 | koko-9898     |
