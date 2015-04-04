@@ -10,7 +10,7 @@ General Requirements
 - At least 1 structure - 1 structure
 - At least 1 enumeration - 1 enumeration
 - At least 1 event (with subscribers) - 1 event
-- At least 1 design pattern (e.g. Composite, Singleton, Factory, Wrapper, Bridge, Command, etc.)
+- At least 1 design pattern (e.g. Composite, Singleton, Factory, Wrapper, Bridge, Command, etc.) - Factory (for Decks)
 
 Optional Requirements
 
