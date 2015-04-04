@@ -107,7 +107,7 @@
     <Compile Include="Decks\DeckOfModifierCards.cs" />
     <Compile Include="Decks\DeckOfMonsterCards.cs" />
     <Compile Include="Decks\DeckOfWeaponCards.cs" />
-    <Compile Include="Decks\IShuffle.cs" />
+    <Compile Include="Decks\IDeck.cs" />
     <Compile Include="GameForm.cs">
       <SubType>Form</SubType>
     </Compile>

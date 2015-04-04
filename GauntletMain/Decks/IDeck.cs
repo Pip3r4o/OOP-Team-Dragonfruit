@@ -1,6 +1,6 @@
 ﻿namespace TrialOfFortune.Decks
 {
-    interface IDeck
+    public interface IDeck
     {
         void Shuffle();
     }
