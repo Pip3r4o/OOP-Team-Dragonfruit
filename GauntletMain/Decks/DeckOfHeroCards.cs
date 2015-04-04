@@ -17,9 +17,36 @@ namespace TrialOfFortune.Decks
         #region Constructors
         public DeckOfHeroCards()
         {
-            names = new string[NUMBER_OF_HERO_CARDS] { "Ranger", "Druid", "Miner", "Necromancer", "Berserker", "Juggernaut" };
-            artImages = new Image[NUMBER_OF_HERO_CARDS] { AssetsHeroes.RANGER, AssetsHeroes.DRUID, AssetsHeroes.MINER, AssetsHeroes.NECROMANCER, AssetsHeroes.BERSERKER, AssetsHeroes.JUGGERNAUT };
-            miniArtImages = new Image[NUMBER_OF_HERO_CARDS] { AssetsHeroes.miniRANGER, AssetsHeroes.miniDRUID, AssetsHeroes.miniMINER, AssetsHeroes.miniNECROMANCER, AssetsHeroes.miniBERSERKER, AssetsHeroes.miniJUGGERNAUT };
+            names = new string[NUMBER_OF_HERO_CARDS]
+            {
+                "Ranger",
+                "Druid",
+                "Miner",
+                "Necromancer",
+                "Berserker",
+                "Juggernaut"
+            };
+
+            artImages = new Image[NUMBER_OF_HERO_CARDS]
+            {
+                AssetsHeroes.RANGER,
+                AssetsHeroes.DRUID,
+                AssetsHeroes.MINER,
+                AssetsHeroes.NECROMANCER,
+                AssetsHeroes.BERSERKER,
+                AssetsHeroes.JUGGERNAUT
+            };
+
+            miniArtImages = new Image[NUMBER_OF_HERO_CARDS]
+            {
+                AssetsHeroes.miniRANGER,
+                AssetsHeroes.miniDRUID,
+                AssetsHeroes.miniMINER,
+                AssetsHeroes.miniNECROMANCER,
+                AssetsHeroes.miniBERSERKER,
+                AssetsHeroes.miniJUGGERNAUT
+            };
+
             healthPoints = new int[NUMBER_OF_HERO_CARDS] { 1, 1, 2, 1, 1, 1 };
             actionPoints = new int[NUMBER_OF_HERO_CARDS] { 2, 2, 2, 3, 1, 2 };
             stats = new EntityStats[NUMBER_OF_HERO_CARDS]
