@@ -13,10 +13,11 @@ General Requirements
 - At least 1 design pattern (e.g. Composite, Singleton, Factory, Wrapper, Bridge, Command, etc.)
 
 Optional Requirements
-If you have a chance, time and a suitable situation, you might add some of the following to your project:
-- Static members (fields, properties, constructor, etc.)
+
+- Static members (fields, properties, constructor, etc.) - e.g. in the extension method
 - Constants, generic types, indexers, operators - generic class Deck with an indexer
 - Lambda expressions and LINQ - yes
 - Implementation of IEnumerable<T>, ICloneable, ToString() override
 - Namespaces - several
 - User interface (UI) – graphical
++ Extension method
