@@ -80,6 +80,7 @@
     <Compile Include="Cards\Ability.cs" />
     <Compile Include="Cards\AbilityEnum.cs" />
     <Compile Include="Cards\Card.cs" />
+    <Compile Include="Cards\CardFactory.cs" />
     <Compile Include="Cards\EncounterCard.cs" />
     <Compile Include="Cards\EntityStats.cs" />
     <Compile Include="Cards\IAbilityBerserker.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Cards\IAbilityMiner.cs" />
     <Compile Include="Cards\IAbilityNecromancer.cs" />
     <Compile Include="Cards\IAbilityRanger.cs" />
+    <Compile Include="Cards\ICardFactory.cs" />
     <Compile Include="Cards\IModifier.cs" />
     <Compile Include="Cards\IStats.cs" />
     <Compile Include="Classes\HighScore.cs" />

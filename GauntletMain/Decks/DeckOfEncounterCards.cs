@@ -8,8 +8,9 @@ namespace TrialOfFortune.Decks
         #region Constructors
         public DeckOfEncounterCards()
         {
-            DeckOfMonsterCards deckOfMonsterCards = new DeckOfMonsterCards();
-            DeckOfModifierCards deckOfModifierCards = new DeckOfModifierCards();
+            DeckFactory deckFactory = new DeckFactory();
+            DeckOfMonsterCards deckOfMonsterCards = deckFactory.CreateDeckOfMonsterCards();
+            DeckOfModifierCards deckOfModifierCards = deckFactory.CreateDeckOfModifierCards();
 
             listOfCards.AddRange(deckOfMonsterCards.ListOfCards);
             listOfCards.AddRange(deckOfModifierCards.ListOfCards);

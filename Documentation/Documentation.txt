@@ -1,16 +1,32 @@
+Team Dragonfruit
+
+Github:
+https://github.com/Pip3r4o/OOP-Team-Dragonfruit
+
+Team-Members:
+Github / Telerik / Name
+Pip3r4o
+elfoles
+dlachkov
+alexizvely
+krasi-totev
+kborisov760
+bbojkov
+DieEin
+koko-9898
 
 General Requirements
 
-- At least 5 interfaces (with one or more implementations) - 8 interfaces
-- At least 15 classes (implementing the application logic) - > 25 classes
+- At least 5 interfaces (with one or more implementations) - 11 interfaces
+- At least 15 classes (implementing the application logic) - more than 25 classes
 - At least 3 abstract classes (with inheritors) - 5 abstract classes
-- At least 1 custom exception class (with usage in your code) - 1
+- At least 1 custom exception class (with usage in your code) - 1 custom exception class
 - At least 3 levels of depth in inheritance - 3 levels
 - At least 1 polymorphism usage
 - At least 1 structure - 1 structure
 - At least 1 enumeration - 1 enumeration
 - At least 1 event (with subscribers) - 1 event
-- At least 1 design pattern (e.g. Composite, Singleton, Factory, Wrapper, Bridge, Command, etc.) - Factory (for Decks)
+- At least 1 design pattern - Factory (for Decks)
 
 Optional Requirements
 
