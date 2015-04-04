@@ -4,16 +4,19 @@ Github:
 https://github.com/Pip3r4o/OOP-Team-Dragonfruit
 
 Team-Members:
-Github / Telerik / Name
-Pip3r4o
-elfoles
-dlachkov
-alexizvely
-krasi-totev
-kborisov760
-bbojkov
-DieEin
-koko-9898
+---------------------------------------------
+| Github        | Telerik | Name
+---------------------------------------------
+| Pip3r4o       |
+| elfoles       | elfoles | Stefan Mirevski |
+| dlachkov      |
+| alexizvely    |
+| krasi-totev   |
+| kborisov760   |
+| bbojkov       |
+| DieEin        |
+| koko-9898     |
+---------------------------------------------
 
 General Requirements
 
@@ -26,7 +29,7 @@ General Requirements
 - At least 1 structure - 1 structure
 - At least 1 enumeration - 1 enumeration
 - At least 1 event (with subscribers) - 1 event
-- At least 1 design pattern - Factory (for Decks)
+- At least 1 design pattern - 2 Factories (for Decks and for Cards)
 
 Optional Requirements
 
