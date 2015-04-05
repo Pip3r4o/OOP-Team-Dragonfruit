@@ -7,7 +7,7 @@ Team-Members:
 ---------------------------------------------
 | Github        | Telerik | Name
 ---------------------------------------------
-| Pip3r4o       |
+| Pip3r4o       | Pip3r4o | Peter Kanev     |
 | elfoles       | elfoles | Stefan Mirevski |
 | dlachkov      |
 | alexizvely    |

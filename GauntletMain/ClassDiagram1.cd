@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TrialOfFortune.AssetsHeroes" Collapsed="true">
+    <Position X="14.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQIAAAKABAGAAAgBEAAAAQQAAAAAAAAAMAAAAKA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.AssetsModifiers" Collapsed="true">
+    <Position X="16.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAABAABEAAIAQAAAAAAAAAAAQABAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.AssetsMonsters" Collapsed="true">
+    <Position X="18.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAgACAQGAAQAAAAAAADEBAAAQAAEEAAAAIAAAACBIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.AssetsSounds" Collapsed="true">
+    <Position X="20" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAACAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.AssetsUI" Collapsed="true">
+    <Position X="21.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQoUAAgAACAQAAAAQDEAowAwgQAAAAMAAAADAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.AssetsWeapons" Collapsed="true">
+    <Position X="13" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAgIQAEAEgEBEAgAAQAAAAAAAAAEAAIBAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.GameForm" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BoCBpwAowCAEwRIAEQCgAQSCEogcQI2MEiJEFBdhWIA=</HashCode>
+      <FileName>Begin\GameMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.MyException" Collapsed="true">
+    <Position X="21.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\MyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.MyMessageBox" Collapsed="true">
+    <Position X="13" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAMAAAAAEAAAQAAAAA=</HashCode>
+      <FileName>MyMessageBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Program" Collapsed="true">
+    <Position X="18.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.ResultsForm" Collapsed="true">
+    <Position X="21.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAIABAAAACAAAACAAAIAIAAAEAAAQAAAAA=</HashCode>
+      <FileName>ResultsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.dgvResults" Collapsed="true">
+    <Position X="20" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAACQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ResultsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.StaticResources" Collapsed="true">
+    <Position X="14.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>UI\StaticResources.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.GameUIForm" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\UIcontrols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.TabCtrlGame" Collapsed="true">
+    <Position X="16.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\UIcontrols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.TabPageGame" Collapsed="true">
+    <Position X="18.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\UIcontrols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.ImgContainer" Collapsed="true">
+    <Position X="16.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAAAAAAAACAAAABAAAAAAAAAAAAAAAgACAAAAAAA=</HashCode>
+      <FileName>UI\UIcontrols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.tbxName" Collapsed="true">
+    <Position X="20" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\UIcontrols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.labGame" Collapsed="true">
+    <Position X="18.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\UIcontrols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.btnGame" Collapsed="true">
+    <Position X="14.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\UIcontrols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Cards.Ability" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAQAAACAQAAAAAAAAAkAAAACEAAEAACAAAA=</HashCode>
+      <FileName>Cards\Ability.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TrialOfFortune.Cards.Card" Collapsed="true">
+    <Position X="18.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Cards.CardFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAIAAAAAAEAA=</HashCode>
+      <FileName>Cards\CardFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TrialOfFortune.Cards.EncounterCard" Collapsed="true">
+    <Position X="16" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\EncounterCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Cards.EntityStats" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAIAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Cards\EntityStats.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TrialOfFortune.Cards.HeroCard" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\HeroCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Cards.ModifierCard" Collapsed="true">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\ModifierCard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrialOfFortune.Cards.MonsterCard" Collapsed="true">
+    <Position X="17.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAACAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAQAAA=</HashCode>
+      <FileName>Cards\MonsterCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Cards.PlayerCard" Collapsed="true">
+    <Position X="20.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\PlayerCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Cards.WeaponCard" Collapsed="true">
+    <Position X="21.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\WeaponCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Classes.GameObject" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Classes.Highscore" Collapsed="true">
+    <Position X="14.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAgkAAAAAAQAAAAAAAACAAAAAAAAAIA=</HashCode>
+      <FileName>Classes\HighScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Classes.ModifierEvent" Collapsed="true">
+    <Position X="20" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAABAAAAAAAAAAAAAQQAAAAkAAAAAAAA=</HashCode>
+      <FileName>Classes\ModifierEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Classes.Player" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAgAAQggAgAgCACAACAAAgAAAAAAAAACAABAEAAAA=</HashCode>
+      <FileName>Classes\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Classes.PlayerNameValidation" Collapsed="true">
+    <Position X="16.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Classes\PlayerNameValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Decks.Deck&lt;T&gt;" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAACAAAAAQAAAAAgAAAAIAAAAAAEAA=</HashCode>
+      <FileName>Decks\Deck.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrialOfFortune.Decks.DeckFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAEAAAIAAAAAAAAAAIAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Decks\DeckFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TrialOfFortune.Decks.DeckOfEncounterCards" Collapsed="true">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decks\DeckOfEncounterCards.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Decks.DeckOfHeroCards" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAQAAIAAEAAAAAAAAAAAAAAIAAAAAAAAAAAQIA=</HashCode>
+      <FileName>Decks\DeckOfHeroCards.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Decks.DeckOfModifierCards" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Decks\DeckOfModifierCards.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Decks.DeckOfMonsterCards" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAACAAQAAAAgAACAAAAAAAAAAAAAAAAAAAAAAEAAIA=</HashCode>
+      <FileName>Decks\DeckOfMonsterCards.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Decks.DeckOfWeaponCards" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAQAAAQAAAAAAACAAAAAAAAAAAAAAAAAAAAQIA=</HashCode>
+      <FileName>Decks\DeckOfWeaponCards.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Properties.Resources" Collapsed="true">
+    <Position X="20" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Properties.Settings" Collapsed="true">
+    <Position X="13" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Utilities.Extensions" Collapsed="true">
+    <Position X="13" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Utilities\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Utilities.NativeWinAPI" Collapsed="true">
+    <Position X="14.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACIAgAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Utilities\NativeWinAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrialOfFortune.Utilities.ThreadSafeRandom" Collapsed="true">
+    <Position X="21.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ThreadSafeRandom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TrialOfFortune.Classes.Record" Collapsed="true">
+    <Position X="9.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAQAAAAAAAABAAAAAAAAEAA=</HashCode>
+      <FileName>Classes\Record.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="TrialOfFortune.Cards.IAbilityBerserker" Collapsed="true">
+    <Position X="1.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\IAbilityBerserker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Cards.IAbilityDruid" Collapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Cards\IAbilityDruid.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Cards.IAbilityHero" Collapsed="true">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAEAACAAAA=</HashCode>
+      <FileName>Cards\IAbilityHero.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Cards.IAbilityJuggernaut" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\IAbilityJuggernaut.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Cards.IAbilityMiner" Collapsed="true">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\IAbilityMiner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Cards.IAbilityNecromancer" Collapsed="true">
+    <Position X="10" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\IAbilityNecromancer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Cards.IAbilityRanger" Collapsed="true">
+    <Position X="1.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\IAbilityRanger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Cards.ICardFactory" Collapsed="true">
+    <Position X="3" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAIAAAAAAEAA=</HashCode>
+      <FileName>Cards\ICardFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Classes.IModifier" Collapsed="true">
+    <Position X="8.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\IModifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Classes.IStats" Collapsed="true">
+    <Position X="10" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Cards\IStats.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Decks.IDeck" Collapsed="true">
+    <Position X="4.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Decks\IDeck.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrialOfFortune.Decks.IDeckFactory" Collapsed="true">
+    <Position X="6.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAEAAAIAAAAAAAAAAIAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Decks\IDeckFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TrialOfFortune.Cards.AbilityEnum" Collapsed="true">
+    <Position X="5.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAACAQAAAAAAAAAgAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Cards\AbilityEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TrialOfFortune.Classes.ModifierEventEnum" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAQQAAAAkAAAAAAAA=</HashCode>
+      <FileName>Classes\ModifierEventEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
