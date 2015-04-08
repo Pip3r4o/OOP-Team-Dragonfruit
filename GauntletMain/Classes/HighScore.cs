@@ -10,7 +10,7 @@ namespace TrialOfFortune.Classes
     {
 
 
-        public Record PlayerScore { get; private set; }
+        public Record playerScore { get; private set; }
 
         public string Name { get; set; }
         public int Position { get; set; }
@@ -18,12 +18,12 @@ namespace TrialOfFortune.Classes
 
         public Highscore(string name, int coins)
         {
-            PlayerScore = new Record(name, coins, Guid.NewGuid().ToString(), DateTime.Today);
+            playerScore = new Record(name, coins, Guid.NewGuid().ToString(), DateTime.Today);
         }
 
         public override string ToString()
         {
-            return String.Format("{0}: {1}", PlayerScore.Name, PlayerScore.Score);
+            return String.Format("{0}: {1}", playerScore.Name, playerScore.Score);
         }
 
 
@@ -34,12 +34,12 @@ namespace TrialOfFortune.Classes
                 FileStream fs = new FileStream(path, FileMode.Append);
                 using (StreamWriter sw = new StreamWriter(fs))
                 {
-                    sw.WriteLine(PlayerScore.Name + " " + PlayerScore.Score.ToString() + " " + PlayerScore.UID + " " + PlayerScore.Date.ToString("dd.MM.yyyy"));
+                    sw.WriteLine(playerScore.Serialize());
                 }
             }
             catch (Exception e)
             {
-                throw new MyException(e, "There was a problew when saving the result!");
+                throw new HighscoresFileAccessConflictException(e, "There was a problem when saving the result!");
             }
         }
 
@@ -52,14 +52,14 @@ namespace TrialOfFortune.Classes
                 {
                     while (!reader.EndOfStream)
                     {
-                        string[] line = reader.ReadLine().Split(' ');
-                        returnVal.Add(new Record(line[0], Convert.ToInt32(line[1]), line[2], DateTime.ParseExact(line[3], "dd.MM.yyyy", CultureInfo.InvariantCulture)));
+                        string recordLine = reader.ReadLine();
+                        returnVal.Add((new Record()).Deserialize(recordLine));
                     }
                 }
             }
             catch (Exception e)
             {
-                throw new MyException(e, "There was a problew when reading the result!");
+                throw new HighscoresFileAccessConflictException(e, "There was a problem when reading the result!");
             }
             return returnVal;
         }

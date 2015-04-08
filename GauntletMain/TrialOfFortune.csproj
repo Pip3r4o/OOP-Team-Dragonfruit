@@ -95,6 +95,9 @@
     <Compile Include="Cards\IStats.cs" />
     <Compile Include="Classes\HighScore.cs" />
     <Compile Include="Cards\ModifierCard.cs" />
+    <Compile Include="Classes\IHighscore.cs" />
+    <Compile Include="Classes\InvalidHighscoresDataException.cs" />
+    <Compile Include="Classes\ISerializable.cs" />
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
     <Compile Include="Cards\MonsterCard.cs" />
