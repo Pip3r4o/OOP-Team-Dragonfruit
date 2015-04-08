@@ -184,6 +184,9 @@
   <data name="QuitButtonTransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\QuitButtonTransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ScoresPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ScoresPNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="StartCardsField" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\StartCardsField.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

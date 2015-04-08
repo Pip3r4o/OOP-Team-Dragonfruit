@@ -283,6 +283,16 @@ namespace TrialOfFortune {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ScoresPNG {
+            get {
+                object obj = ResourceManager.GetObject("ScoresPNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap StartCardsField {
             get {
                 object obj = ResourceManager.GetObject("StartCardsField", resourceCulture);

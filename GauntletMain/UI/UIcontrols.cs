@@ -103,6 +103,9 @@ namespace TrialOfFortune
 
     public class btnGame : Button
     {
+        public delegate void OnClick();
+        public event OnClick click;
+
         public btnGame()
         {
             this.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -112,6 +115,11 @@ namespace TrialOfFortune
         {
             this.BackColor = Color.Transparent;
             base.OnCreateControl();
+        }
+
+        protected override void OnMouseClick(MouseEventArgs e)
+        {
+            click();
         }
     }
 

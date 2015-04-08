@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Media;
 using System.Windows.Forms;
 using TrialOfFortune.Cards;
 using TrialOfFortune.Classes;
@@ -36,6 +37,12 @@ namespace TrialOfFortune
             weaponImgContainer1.click += PlayOnClick;
             weaponImgContainer2.click += PlayOnClick;
             weaponImgContainer3.click += PlayOnClick;
+
+            SpecialButton.click += PlayOnSpecial;
+            FightButton.click += PlayOnAttack;
+            PlayButton.click += PlayLoopingWhilePlaying;
+            ContinueButton.click += PlayOnClick;
+
 
             //Hides the tab headers
             tabCtrlGame1.Appearance = TabAppearance.FlatButtons;
@@ -201,8 +208,27 @@ namespace TrialOfFortune
 
         public void PlayOnClick()
         {
-            StaticResources.sp = new System.Media.SoundPlayer(AssetsSounds.ChooseCard);
+            StaticResources.sp = new SoundPlayer(AssetsSounds.ChooseCard);
             StaticResources.sp.Play();
+        }
+
+        public void PlayOnSpecial()
+        {
+            StaticResources.sp = new SoundPlayer(AssetsSounds.SpecialAbility);
+            StaticResources.sp.Play();
+        }
+
+        public void PlayOnAttack()
+        {
+            StaticResources.sp = new SoundPlayer(AssetsSounds.Attac2);
+            StaticResources.sp.Play();
+        }
+
+        public void PlayLoopingWhilePlaying()
+        {
+
+            StaticResources.sp = new SoundPlayer(AssetsSounds.MusicLoopFade);
+            StaticResources.sp.PlayLooping();
         }
 
     }
