@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace TrialOfFortune.Classes
 {
-    public class Highscore
+    public class Highscore : IHighscore
     {
 
 
@@ -27,7 +27,7 @@ namespace TrialOfFortune.Classes
         }
 
 
-        public void WriteScore(string path)
+        public void WriteScoresToFile(string path)
         {
             try
             {
