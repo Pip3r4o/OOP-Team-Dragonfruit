@@ -410,7 +410,7 @@ namespace TrialOfFortune
         {
             Highscore score = new Highscore(Player.ActivePlayer.Name, Player.ActivePlayer.TotalCoins);
 
-            score.WriteScore("..//..//scores.txt");
+            score.WriteScoresToFile("..//..//scores.txt");
             ShowScore(score);
 
             tabCtrlGame1.TabPages.Clear();

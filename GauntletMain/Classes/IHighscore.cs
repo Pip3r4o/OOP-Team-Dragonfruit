@@ -6,7 +6,7 @@ namespace TrialOfFortune.Classes
     interface IHighscore
     {
         string Name { get; set; }
-        Record PlayerScore { get; }
+        Record playerScore { get; }
         int Score { get; set; }
         string ToString();
 

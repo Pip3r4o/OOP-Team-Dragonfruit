@@ -13,13 +13,13 @@ namespace TrialOfFortune
             InitializeComponent();
         }
 
-        public static void ShowResults(Highscore h)
+        public static void ShowResults(Highscore highscore)
         {
-            List<Record> results = h.ReadScoresFromFile("..//..//scores.txt");
+            List<Record> results = highscore.ReadScoresFromFile("..//..//scores.txt");
             results = results.OrderByDescending(x => x.Score).ToList();
             ResultsForm f = new ResultsForm();
             f.dgvResults1.UpdateDgv(results);
-            f.dgvResults1.FormatDgv(h);
+            f.dgvResults1.FormatDgv(highscore);
             f.ShowDialog();
         }
 
@@ -107,17 +107,17 @@ namespace TrialOfFortune
             for (int i = 0; i < dgvList.Count(); i++)
             {
                 dgvline l = dgvList[i];
-                if (l.r.UID == currScore.PlayerScore.UID)
+                if (l.r.UID == currScore.playerScore.UID)
                 {
-                    l.gameUID = currScore.PlayerScore.UID;
+                    l.gameUID = currScore.playerScore.UID;
                     continue;
                 }
             }
 
 
-            int currPlayerRow = this.dgvList.FindIndex(x => x.r.UID == currScore.PlayerScore.UID);
+            int currPlayerRow = this.dgvList.FindIndex(x => x.r.UID == currScore.playerScore.UID);
 
-            if (currPlayerRow >= 0) dgvList[currPlayerRow].gameUID = currScore.PlayerScore.UID;
+            if (currPlayerRow >= 0) dgvList[currPlayerRow].gameUID = currScore.playerScore.UID;
 
             //  if (currPlayerRow>=0) this.Rows[currPlayerRow].Cells[0].Style.BackColor  = Color.Yellow;
             this.Refresh();
