@@ -98,7 +98,6 @@
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
     <Compile Include="Cards\MonsterCard.cs" />
-    <Compile Include="Classes\MyException.cs" />
     <Compile Include="Cards\PlayerCard.cs" />
     <Compile Include="Classes\PlayerNameValidation.cs" />
     <Compile Include="Cards\WeaponCard.cs" />
@@ -210,7 +209,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\MINER.jpg" />
   </ItemGroup>
@@ -414,6 +412,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FinalTextPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScoresPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attac2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayWithMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpecialAbility.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MusicLoopFade.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

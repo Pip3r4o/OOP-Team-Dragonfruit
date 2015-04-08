@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using TrialOfFortune.Classes;
@@ -34,7 +35,8 @@ namespace TrialOfFortune
         public dgvResults()
             : base()
         {
-
+            this.BackColor = Color.Tan;
+            this.BackgroundColor = Color.Tan;
         }
 
         public void UpdateDgv(List<Record> lis)
@@ -87,6 +89,7 @@ namespace TrialOfFortune
                     return gameUID == r.UID ? "x" : "";
                 }
             }
+
         }
 
         private List<dgvline> dgvList = new List<dgvline>();
@@ -104,6 +107,7 @@ namespace TrialOfFortune
             this.Columns[2].HeaderText = "Date";
             this.Columns[3].HeaderText = "You";
 
+
             for (int i = 0; i < dgvList.Count(); i++)
             {
                 dgvline l = dgvList[i];
@@ -113,6 +117,7 @@ namespace TrialOfFortune
                     continue;
                 }
             }
+
 
 
             int currPlayerRow = this.dgvList.FindIndex(x => x.r.UID == currScore.PlayerScore.UID);
