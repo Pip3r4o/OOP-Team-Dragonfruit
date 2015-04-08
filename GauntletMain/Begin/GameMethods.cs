@@ -38,10 +38,10 @@ namespace TrialOfFortune
             weaponImgContainer2.click += PlayOnClick;
             weaponImgContainer3.click += PlayOnClick;
 
-            SpecialButton.click += PlayOnSpecial;
-            FightButton.click += PlayOnAttack;
-            PlayButton.click += PlayLoopingWhilePlaying;
-            ContinueButton.click += PlayOnClick;
+            //SpecialButton.click += PlayOnSpecial;
+            //FightButton.click += PlayOnAttack;
+            //PlayButton.click += PlayLoopingWhilePlaying;
+            //ContinueButton.click += PlayOnClick;
 
 
             //Hides the tab headers

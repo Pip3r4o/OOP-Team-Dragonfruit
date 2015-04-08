@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 using System.Windows.Forms;
-using System.Drawing;
-using TrialOfFortune.Classes;
 using TrialOfFortune.Cards;
 
 namespace TrialOfFortune
@@ -103,12 +97,12 @@ namespace TrialOfFortune
 
     public class btnGame : Button
     {
-        public delegate void OnClick();
-        public event OnClick click;
+        //public delegate void OnClick();
+        //public event OnClick click;
 
         public btnGame()
         {
-            this.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FlatStyle = FlatStyle.Flat;
         }
 
         protected override void OnCreateControl()
@@ -117,10 +111,10 @@ namespace TrialOfFortune
             base.OnCreateControl();
         }
 
-        protected override void OnMouseClick(MouseEventArgs e)
-        {
-            click();
-        }
+        //protected override void OnMouseClick(MouseEventArgs e)
+        //{
+        //    click();
+        //}
     }
 
 }
