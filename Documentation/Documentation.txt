@@ -15,7 +15,7 @@ Team-Members:
 | kborisov760   | borisov.kiril760 | Kiril Borisov |
 | bbojkov       |
 | DieEin        |
-| koko-9898     |
+| koko-9898     |koko_9898 | Kristiyan Marinov
 ---------------------------------------------
 
 General Requirements
