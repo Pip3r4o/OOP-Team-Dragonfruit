@@ -95,13 +95,13 @@
     <Compile Include="Cards\IStats.cs" />
     <Compile Include="Classes\HighScore.cs" />
     <Compile Include="Cards\ModifierCard.cs" />
+    <Compile Include="Classes\HighscoresFileAccessConflictException.cs" />
     <Compile Include="Classes\IHighscore.cs" />
     <Compile Include="Classes\InvalidHighscoresDataException.cs" />
     <Compile Include="Classes\ISerializable.cs" />
     <Compile Include="Classes\ModifierEvent.cs" />
     <Compile Include="Classes\ModifierEventEnum.cs" />
     <Compile Include="Cards\MonsterCard.cs" />
-    <Compile Include="Classes\MyException.cs" />
     <Compile Include="Cards\PlayerCard.cs" />
     <Compile Include="Classes\PlayerNameValidation.cs" />
     <Compile Include="Cards\WeaponCard.cs" />
